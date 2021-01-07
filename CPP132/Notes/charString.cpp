@@ -14,6 +14,8 @@ int main() {
     
     char x = 'a';
     char z[12] = "Hello World"; // secret char '\0' null character to signify the end of the string
+//    char* str1 = "Hello World";
+//    char str2[] = "Hello Word"; // c style string
     
     x = toupper(x);
     
