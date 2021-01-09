@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		95C0EDED25A4E7B20038D9D8 /* charString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95C0EDEB25A4E7B20038D9D8 /* charString.cpp */; };
+		95D5F69025A8D5ED0031B7DD /* StructData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95D5F68F25A8D5ED0031B7DD /* StructData.cpp */; };
+		95E4302125A78587000BD22A /* AssignmentOne.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95E4302025A78587000BD22A /* AssignmentOne.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,9 @@
 /* Begin PBXFileReference section */
 		95C0EDD425A4E3D60038D9D8 /* CPP132 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPP132; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C0EDEB25A4E7B20038D9D8 /* charString.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = charString.cpp; sourceTree = "<group>"; };
+		95D5F68F25A8D5ED0031B7DD /* StructData.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StructData.cpp; sourceTree = "<group>"; };
+		95E4302025A78587000BD22A /* AssignmentOne.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AssignmentOne.cpp; sourceTree = "<group>"; };
+		95E4302325A78646000BD22A /* WordList.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = WordList.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +62,7 @@
 		95C0EDD625A4E3D60038D9D8 /* CPP132 */ = {
 			isa = PBXGroup;
 			children = (
+				95E4302325A78646000BD22A /* WordList.txt */,
 				95C0EDE125A4E3F30038D9D8 /* Homework */,
 				95C0EDE025A4E3E90038D9D8 /* Notes */,
 			);
@@ -67,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				95C0EDEB25A4E7B20038D9D8 /* charString.cpp */,
+				95D5F68F25A8D5ED0031B7DD /* StructData.cpp */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -74,8 +81,25 @@
 		95C0EDE125A4E3F30038D9D8 /* Homework */ = {
 			isa = PBXGroup;
 			children = (
+				95E4302625A787EC000BD22A /* Mini assignments */,
+				95E4302525A787E1000BD22A /* Assignments */,
 			);
 			path = Homework;
+			sourceTree = "<group>";
+		};
+		95E4302525A787E1000BD22A /* Assignments */ = {
+			isa = PBXGroup;
+			children = (
+				95E4302025A78587000BD22A /* AssignmentOne.cpp */,
+			);
+			path = Assignments;
+			sourceTree = "<group>";
+		};
+		95E4302625A787EC000BD22A /* Mini assignments */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Mini assignments";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				95C0EDED25A4E7B20038D9D8 /* charString.cpp in Sources */,
+				95E4302125A78587000BD22A /* AssignmentOne.cpp in Sources */,
+				95D5F69025A8D5ED0031B7DD /* StructData.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
