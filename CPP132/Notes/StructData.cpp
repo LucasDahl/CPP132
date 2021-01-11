@@ -1,10 +1,10 @@
 //
-////  StructData.cpp
-////  CPP132
-////
-////  Created by Lucas Dahl on 1/8/21.
-////
+//  StructData.cpp
+//  CPP132
 //
+//  Created by Lucas Dahl on 1/8/21.
+//
+
 //#include <iostream>
 //#include <string>
 //
@@ -24,7 +24,8 @@
 //// Prototype
 //bool compareTime(Time a, Time b);
 //void addSecond(Time a);
-//void printTime(Time a);
+//void printTime(const Time &);
+//Time createNoon();
 //
 //int main() {
 //    
@@ -72,6 +73,7 @@
 //    return true;
 //}
 //
+//
 //void addSecond(Time &a) {
 //    a.seconds++;
 //    if(a.seconds == 60) {
@@ -86,12 +88,30 @@
 //    
 //    if(a.hours == 13) {
 //        a.hours = 1;
-//        a.am != a.am;
+//        a.am |= a.am;
 //    }
 //}
 //
-//void printTime(Time a) {
-//    cout << a.hours << ":" << a.minutes << ":" << a.seconds << " ";
+//void printTime(const Time &a) { // passes it by reference to save time/memory, but forces the compiler to watch for changes.
+//    
+//    // FIX
+//    cout << a.hours << ":";
+//    if (a.minutes < 10 ) cout << "0" << a.minutes << ":" << a.seconds << " ";
+//    else cout << a.minutes;
+//    
+//    if (a.seconds < 10 ) cout << "0" << a.minutes << ":" << a.seconds << " ";
+//    else cout << a.seconds;
+//    
 //    if(a.am) cout << "AM";
 //    else cout << "PM";
+//}
+//
+//Time createNoon() { // returns a struct
+//    Time x;
+//    x.hours = 12;
+//    x.minutes = 0;
+//    x.seconds = 0;
+//    x.am = false;
+//    
+//    return x;
 //}

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		954497E425ABB0A6006E0C77 /* InClassAssignment1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 954497E325ABB0A6006E0C77 /* InClassAssignment1.cpp */; };
+		9570D2BD25ACCFDB001C7F50 /* Student.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9570D2BC25ACCFDB001C7F50 /* Student.cpp */; };
 		95C0EDED25A4E7B20038D9D8 /* charString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95C0EDEB25A4E7B20038D9D8 /* charString.cpp */; };
 		95D5F69025A8D5ED0031B7DD /* StructData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95D5F68F25A8D5ED0031B7DD /* StructData.cpp */; };
 		95E4302125A78587000BD22A /* AssignmentOne.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95E4302025A78587000BD22A /* AssignmentOne.cpp */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		954497E325ABB0A6006E0C77 /* InClassAssignment1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InClassAssignment1.cpp; sourceTree = "<group>"; };
+		9570D2BC25ACCFDB001C7F50 /* Student.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Student.cpp; sourceTree = "<group>"; };
 		95C0EDD425A4E3D60038D9D8 /* CPP132 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPP132; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C0EDEB25A4E7B20038D9D8 /* charString.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = charString.cpp; sourceTree = "<group>"; };
 		95D5F68F25A8D5ED0031B7DD /* StructData.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StructData.cpp; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			children = (
 				95C0EDEB25A4E7B20038D9D8 /* charString.cpp */,
 				95D5F68F25A8D5ED0031B7DD /* StructData.cpp */,
+				9570D2BC25ACCFDB001C7F50 /* Student.cpp */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				95C0EDED25A4E7B20038D9D8 /* charString.cpp in Sources */,
 				95E4302125A78587000BD22A /* AssignmentOne.cpp in Sources */,
 				954497E425ABB0A6006E0C77 /* InClassAssignment1.cpp in Sources */,
+				9570D2BD25ACCFDB001C7F50 /* Student.cpp in Sources */,
 				95D5F69025A8D5ED0031B7DD /* StructData.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
