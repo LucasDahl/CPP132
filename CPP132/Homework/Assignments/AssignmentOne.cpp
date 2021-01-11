@@ -11,24 +11,63 @@
 
 using namespace std;
 
+// Prototype functions
+void printStars();
+int userNumber();
+int getTotalWords(int, string);
+void writeFile(string, int, int, string[]);
+void findLongestWord(string);
+
+
+// This is the main method. 
 int main() {
     
     // Properties
-    int userNum, totalWords = 0, index = 0;
+    int userNum, totalWords = 0;
     ifstream inputFile;
-    ofstream outputFile("WordFile2.txt"); // The new Word file.
     string currentLine, longestWord, *wordList, fileName = "WordList.txt";
-    bool flag = true;
+    
 
     cout << "Formal Name: Lucas Dahl" << endl; // Formal name.
     cout << "Preferred Name: Lucas Dahl" << endl; // Preferred name.
     
+    printStars();
+    userNum = userNumber(); // Get the user number.
+    printStars();
+    totalWords = getTotalWords(userNum, fileName); // Get the total number of words.
+    wordList = new string[totalWords]; // Create an array.
+    writeFile(fileName, totalWords, userNum, wordList); // Make the array and write to the file.
+    printStars();
+    findLongestWord(fileName);
+    
+    // Delete the list.
+    delete [] wordList;
+    
+}
+
+// A method that prints stars
+void printStars() {
+    
+    for(int i = 0; i < 50; i++) {
+        cout << "*";
+    }
+    
+    cout << endl;
+}
+
+// This method asks the user for a number.
+int userNumber() {
+    
+    // Properties
+    bool flag = true;
+    int num;
+    
     do {
         
         cout << "What size do you want? "; // Ask for a number
-        cin >> userNum; // assign the number.
+        cin >> num; // assign the number.
         
-        if(userNum < 1 || userNum > 30) {
+        if(num < 1 || num > 30) {
             cout << "Number must be bewtween 1 and 30." << endl;
         } else {
             flag = false;
@@ -36,13 +75,26 @@ int main() {
         
     } while(flag);
     
+    // Return the number
+    return num;
+    
+}
+
+// HTis method gets the total number of words.
+int getTotalWords(int wrdLength, string fileName) {
+    
+    // Properties
+    ifstream inputFile;
+    int totalWords;
+    string currentLine;
+    
     inputFile.open(fileName); // open the file.
     
     if(inputFile) {
         
         while(getline(inputFile, currentLine)) {
             
-            if(currentLine.length() == userNum) {
+            if(currentLine.length() == wrdLength) {
                 totalWords++;
             }
             
@@ -56,7 +108,19 @@ int main() {
     
     inputFile.close(); // Close the file.
     
-    wordList = new string[totalWords]; // Create an array.
+    return totalWords;
+    
+}
+
+// This method wrotes to a file.
+void writeFile(string fileName, int totalWords, int userNum, string wordList[]) {
+    
+    // Proeprties
+    ifstream inputFile;
+    ofstream outputFile("WordFile2.txt"); // The new Word file.
+    int index = 0;
+    string currentLine;
+    
     inputFile.open(fileName); // reopen the file.
     
     if(inputFile) {
@@ -86,6 +150,14 @@ int main() {
     inputFile.close();
     outputFile.close();
     
+}
+
+// This method finds the longest word.
+void findLongestWord(string fileName) {
+    
+    ifstream inputFile;
+    string currentLine, longestWord;
+    
     inputFile.open(fileName); // reopen the file.
     
     // Find the longest word.
@@ -107,8 +179,8 @@ int main() {
     
     cout << "The longest word is: " << longestWord << endl; // Print out the longest word.
     
-    // Close the file and delete the list.
+    // Close the file.
     inputFile.close();
-    delete [] wordList;
-
+    
+    
 }
