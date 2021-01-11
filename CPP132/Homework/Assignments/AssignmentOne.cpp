@@ -2,6 +2,9 @@
 //  AssignmentOne.cpp
 //  CPP132
 //
+// This program is a refresher, that will print some
+// basic info and read from a text file.
+//
 //  Created by Lucas Dahl on 1/7/21.
 //
 
@@ -17,6 +20,7 @@ int userNumber();
 int getTotalWords(int, string);
 void writeFile(string, int, int, string[]);
 void findLongestWord(string);
+void basicInfo();
 
 
 // This is the main method. 
@@ -27,14 +31,13 @@ int main() {
     ifstream inputFile;
     string currentLine, longestWord, *wordList, fileName = "WordList.txt";
     
-
-    cout << "Formal Name: Lucas Dahl" << endl; // Formal name.
-    cout << "Preferred Name: Lucas Dahl" << endl; // Preferred name.
-    
+    // Call each method to get and print some basic info.
+    basicInfo();
     printStars();
     userNum = userNumber(); // Get the user number.
     printStars();
     totalWords = getTotalWords(userNum, fileName); // Get the total number of words.
+    printStars();
     wordList = new string[totalWords]; // Create an array.
     writeFile(fileName, totalWords, userNum, wordList); // Make the array and write to the file.
     printStars();
@@ -42,6 +45,15 @@ int main() {
     
     // Delete the list.
     delete [] wordList;
+    
+}
+
+// This method prints basic info
+void basicInfo() {
+    
+    cout << "Formal Name: Lucas Dahl" << endl; // Formal name.
+    cout << "Preferred Name: Lucas Dahl" << endl; // Preferred name.
+    cout << "I would like to learn more about heaps." << endl; // What I would like to learn.
     
 }
 
@@ -85,7 +97,7 @@ int getTotalWords(int wrdLength, string fileName) {
     
     // Properties
     ifstream inputFile;
-    int totalWords;
+    int totalWords = 0;
     string currentLine;
     
     inputFile.open(fileName); // open the file.
@@ -107,6 +119,8 @@ int getTotalWords(int wrdLength, string fileName) {
     }
     
     inputFile.close(); // Close the file.
+    
+    cout << "There are " << totalWords << " of length " << wrdLength << "." << endl;
     
     return totalWords;
     
@@ -142,7 +156,7 @@ void writeFile(string fileName, int totalWords, int userNum, string wordList[]) 
     
     
     for(int i = 1; i < totalWords; i++) {
-        cout << wordList[i - 1] << endl; // Print each word to the screen.
+        cout << wordList[totalWords - i] << endl; // Print each word to the screen.
         outputFile << wordList[totalWords - i] << endl; // Write to the file backwards.
     }
     
