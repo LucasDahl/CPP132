@@ -59,11 +59,19 @@
 		9540719325B0BF0600C84EDE /* Classes in diff files */ = {
 			isa = PBXGroup;
 			children = (
+				95AC31E325B210C7009835D4 /* shapes */,
+			);
+			path = "Classes in diff files";
+			sourceTree = "<group>";
+		};
+		95AC31E325B210C7009835D4 /* shapes */ = {
+			isa = PBXGroup;
+			children = (
 				9540719925B0C10D00C84EDE /* Shapes.cpp */,
 				9540719425B0C04500C84EDE /* ClassR.cpp */,
 				9540719525B0C04500C84EDE /* ClassR.hpp */,
 			);
-			path = "Classes in diff files";
+			path = shapes;
 			sourceTree = "<group>";
 		};
 		95C0EDCB25A4E3D60038D9D8 = {

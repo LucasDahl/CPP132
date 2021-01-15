@@ -2,12 +2,15 @@
 //  SoccerPlayers.cpp
 //  CPP132
 //
+// This progrma use a struct of players to create
+// a soccer team, uses methods to print out their data.
+//
 //  Created by Lucas Dahl on 1/12/21.
 //
 
-#include <iostream>
-#include <string>
-
+//#include <iostream>
+//#include <string>
+//
 //using namespace std;
 //
 //// A struct for a soccer player.
@@ -28,7 +31,6 @@
 //    
 //    // Properties
 //    SoccerPlayer sounders[5];
-//    int length = *(&sounders + 1) - sounders;
 //    int size = 5;
 //    
 //    // Set the array
@@ -39,7 +41,7 @@
 //    sounders[4] = {"Zinedine", 88, 32};
 //    
 //    // Print out each player
-//    for (int i = 0; i < length; i++) {
+//    for (int i = 0; i < size; i++) {
 //        playerInfo(sounders[i]);
 //        cout << endl;
 //    }
