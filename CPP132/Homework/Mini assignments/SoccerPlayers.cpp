@@ -5,9 +5,9 @@
 //  Created by Lucas Dahl on 1/12/21.
 //
 
-//#include <iostream>
-//#include <string>
-//
+#include <iostream>
+#include <string>
+
 //using namespace std;
 //
 //// A struct for a soccer player.
@@ -22,13 +22,14 @@
 //
 //// Prototype methods
 //void playerInfo(SoccerPlayer);
-//int totalGoals(SoccerPlayer[]);
+//int totalGoals(SoccerPlayer[], int);
 //
 //int main() {
 //    
 //    // Properties
 //    SoccerPlayer sounders[5];
 //    int length = *(&sounders + 1) - sounders;
+//    int size = 5;
 //    
 //    // Set the array
 //    sounders[0] = {"Pele", 5, 16};
@@ -43,7 +44,7 @@
 //        cout << endl;
 //    }
 //    
-//    cout << "The number of goals for the team is : " << totalGoals(sounders) << endl;
+//    cout << "The number of goals for the team is : " << totalGoals(sounders, size) << endl;
 //    
 //}
 //
@@ -55,13 +56,12 @@
 //    
 //}
 //
-//int totalGoals(SoccerPlayer players[]) {
+//int totalGoals(SoccerPlayer players[], int size) {
 //    
 //    // Properties
 //    int total = 0;
-//    int length = *(&players + 1) - players;
 //    
-//    for (int i = 0; i < length; i++) {
+//    for (int i = 0; i < size; i++) {
 //        total = total + players[i].totalGoals;
 //    }
 //    
