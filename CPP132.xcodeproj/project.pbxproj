@@ -47,7 +47,7 @@
 		95C0EDD425A4E3D60038D9D8 /* CPP132 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPP132; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C0EDEB25A4E7B20038D9D8 /* charString.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = charString.cpp; sourceTree = "<group>"; };
 		95C28D1825B5F24A004813B4 /* PasswordEncrypter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PasswordEncrypter.cpp; sourceTree = "<group>"; };
-		95C28D1B25B5F253004813B4 /* masterFile.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = masterFile.txt; sourceTree = "<group>"; };
+		95C28D1D25B6ADBF004813B4 /* masterFile.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = masterFile.txt; sourceTree = "<group>"; };
 		95D5F68F25A8D5ED0031B7DD /* StructData.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StructData.cpp; sourceTree = "<group>"; };
 		95E4302025A78587000BD22A /* AssignmentOne.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AssignmentOne.cpp; sourceTree = "<group>"; };
 		95E4302325A78646000BD22A /* WordList.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = WordList.txt; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 		95C0EDD625A4E3D60038D9D8 /* CPP132 */ = {
 			isa = PBXGroup;
 			children = (
-				95C28D1B25B5F253004813B4 /* masterFile.txt */,
+				95C28D1D25B6ADBF004813B4 /* masterFile.txt */,
 				95E4302325A78646000BD22A /* WordList.txt */,
 				95C0EDE125A4E3F30038D9D8 /* Homework */,
 				95C0EDE025A4E3E90038D9D8 /* Notes */,

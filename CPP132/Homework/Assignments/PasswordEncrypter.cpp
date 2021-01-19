@@ -25,6 +25,7 @@ void checkFile(string fname);
 bool validatePassword(string);
 string charToMorse(char);
 void makeTrim(string &);
+string morseString(string);
 
 
  int main()
@@ -91,17 +92,31 @@ void addToFile(string fname) {
     // YOUR CODE GOES HERE;
     // properties
     string password;
+    string morse;
+    ofstream file;
+    
+    // Append to the file on a new line.
+    file.open(fname, std::ios_base::app);
     
     
-    cout << "Please enter a word or phrase to add to the list of acceptable passwords" << endl;
+    cout << "Please enter a word or phrase to add to the list of acceptable passwords: ";
+    cin.ignore();
     getline(cin, password);
-    
+    //cin >> password;
     
     // Check that the password is valid.
     if(!validatePassword(password)) return;
+
+
+    // Encode the password.
+    morse = morseString(password);
+
+    // Write to the file, since the password is valid.
+    file << morse;
+    file.close();
     
-    
-    cout << "Temporary message :  Not working yet" << endl;
+
+//    cout << "Temporary message :  Not working yet" << endl;
     return;
 
 }
@@ -111,14 +126,53 @@ void checkFile(string fname) {
     
     // properties
     string password;
-    
-    cout << "Please enter a password." << endl;
-    cin >> password;
-    
+    string morse;
+    ifstream file;
     
     
-    cout << "Temporary message :  Not working yet" << endl;
-    return;
+    
+    cout << "Please enter a password: ";
+    cin.ignore();
+    getline(cin, password);
+    
+    // Validate the password.
+    if (!validatePassword(password)) {
+        cout << "Password was unacceptable.";
+    } else {
+        
+        // Encode the password.
+        morse = morseString(password);
+        
+        // Open the file.
+        file.open(fname);
+        
+        // Read through the file.
+        while(file) {
+            
+            string fileLine;
+            
+            getline(file, fileLine);
+            
+            // Trim the file
+            makeTrim(fileLine);
+            
+            // There is a matching password
+            if(morse == fileLine) {
+                cout << "There is a matching password.";
+                return;
+            }
+            
+        }
+        
+        // No matching password.
+        cout << "Password was unacceptable.";
+        
+    }
+    
+    
+    
+//    cout << "Temporary message :  Not working yet" << endl;
+//    return;
 }
 
 // Checks if the password is valid or not.
@@ -158,10 +212,48 @@ bool validatePassword(string password) {
 // This method will change each char to its morse code equivalent.
 string charToMorse(char character) {
     
-    // Proeprties
-    string morse;
     
-    return morse;
+    if(character == 'A')return "*-";
+    if(character == 'B')return "-***";
+    if(character == 'C')return "-*-*";
+    if(character == 'D')return "-**";
+    if(character == 'E')return "*";
+    if(character == 'F')return "**-*";
+    if(character == 'G')return "--*";
+    if(character == 'H')return "****";
+    if(character == 'I')return "**";
+    if(character == 'J')return "*---";
+    if(character == 'K')return "-*-";
+    if(character == 'L')return "*-**";
+    if(character == 'M')return "--";
+    if(character == 'N')return "-*";
+    if(character == 'O')return "---";
+    if(character == 'P')return "*--*";
+    if(character == 'Q')return "--*-";
+    if(character == 'R')return "*-*";
+    if(character == 'S')return "***";
+    if(character == 'T')return "-";
+    if(character == 'U')return "**-";
+    if(character == 'V')return "***-";
+    if(character == 'W')return "*--";
+    if(character == 'X')return "--*--";
+    if(character == 'Y')return "-*--";
+    if(character == 'Z')return "--**";
+    if(character == '0')return "-----";
+    if(character == '1')return "*----";
+    if(character == '2')return "**---";
+    if(character == '3')return "***--";
+    if(character == '4')return "****-";
+    if(character == '5')return "*****";
+    if(character == '6')return "-****";
+    if(character == '7')return "--***";
+    if(character == '8')return "---**";
+    if(character == '9')return "----*";
+    if(character == ',')return "--**--";
+    if(character == '.')return "*-*-*-";
+    if(character == '?')return "**--**";
+    
+    return "/";
     
 }
 
@@ -170,4 +262,20 @@ void makeTrim(string &x) {
     const char* ws = " \t\n\r\f\v"; //List of space Characters x.erase(0,
     x.find_first_not_of(ws); //prefixing spaces
     x.erase(x.find_last_not_of(ws)+1); //surfixing spaces
+}
+
+string morseString(string password) {
+    
+    string morse;
+    
+    for(int i = 0; i < password.length(); i++) {
+        
+        char c = password.at(i);
+        
+        morse += charToMorse(toupper(c)) + " ";
+    
+    }
+    
+    return morse;
+    
 }
