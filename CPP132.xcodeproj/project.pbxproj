@@ -16,6 +16,7 @@
 		95AC31EB25B211F7009835D4 /* StudentClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95AC31E925B211F7009835D4 /* StudentClass.cpp */; };
 		95BA45A225AF6D390008AE9C /* ClassNotes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95BA45A125AF6D390008AE9C /* ClassNotes.cpp */; };
 		95C0EDED25A4E7B20038D9D8 /* charString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95C0EDEB25A4E7B20038D9D8 /* charString.cpp */; };
+		95C28D1925B5F24A004813B4 /* PasswordEncrypter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95C28D1825B5F24A004813B4 /* PasswordEncrypter.cpp */; };
 		95D5F69025A8D5ED0031B7DD /* StructData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95D5F68F25A8D5ED0031B7DD /* StructData.cpp */; };
 		95E4302125A78587000BD22A /* AssignmentOne.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95E4302025A78587000BD22A /* AssignmentOne.cpp */; };
 /* End PBXBuildFile section */
@@ -45,6 +46,8 @@
 		95BA45A125AF6D390008AE9C /* ClassNotes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ClassNotes.cpp; sourceTree = "<group>"; };
 		95C0EDD425A4E3D60038D9D8 /* CPP132 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPP132; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C0EDEB25A4E7B20038D9D8 /* charString.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = charString.cpp; sourceTree = "<group>"; };
+		95C28D1825B5F24A004813B4 /* PasswordEncrypter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PasswordEncrypter.cpp; sourceTree = "<group>"; };
+		95C28D1B25B5F253004813B4 /* masterFile.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = masterFile.txt; sourceTree = "<group>"; };
 		95D5F68F25A8D5ED0031B7DD /* StructData.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StructData.cpp; sourceTree = "<group>"; };
 		95E4302025A78587000BD22A /* AssignmentOne.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AssignmentOne.cpp; sourceTree = "<group>"; };
 		95E4302325A78646000BD22A /* WordList.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = WordList.txt; sourceTree = "<group>"; };
@@ -109,6 +112,7 @@
 		95C0EDD625A4E3D60038D9D8 /* CPP132 */ = {
 			isa = PBXGroup;
 			children = (
+				95C28D1B25B5F253004813B4 /* masterFile.txt */,
 				95E4302325A78646000BD22A /* WordList.txt */,
 				95C0EDE125A4E3F30038D9D8 /* Homework */,
 				95C0EDE025A4E3E90038D9D8 /* Notes */,
@@ -140,6 +144,7 @@
 		95E4302525A787E1000BD22A /* Assignments */ = {
 			isa = PBXGroup;
 			children = (
+				95C28D1825B5F24A004813B4 /* PasswordEncrypter.cpp */,
 				95E4302025A78587000BD22A /* AssignmentOne.cpp */,
 			);
 			path = Assignments;
@@ -216,6 +221,7 @@
 				95BA45A225AF6D390008AE9C /* ClassNotes.cpp in Sources */,
 				95E4302125A78587000BD22A /* AssignmentOne.cpp in Sources */,
 				9540719625B0C04500C84EDE /* ClassR.cpp in Sources */,
+				95C28D1925B5F24A004813B4 /* PasswordEncrypter.cpp in Sources */,
 				954497E425ABB0A6006E0C77 /* InClassAssignment1.cpp in Sources */,
 				9570D2BD25ACCFDB001C7F50 /* Student.cpp in Sources */,
 				9540719A25B0C10D00C84EDE /* Shapes.cpp in Sources */,
