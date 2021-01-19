@@ -157,8 +157,8 @@ void checkFile(string fname) {
             makeTrim(fileLine);
             
             // There is a matching password
-            if(morse == fileLine) {
-                cout << "There is a matching password.";
+            if(fileLine.compare(morse)) {
+                cout << "There is a matching password." << endl;
                 return;
             }
             
