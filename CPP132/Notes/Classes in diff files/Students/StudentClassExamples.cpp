@@ -5,12 +5,12 @@
 //  Created by Lucas Dahl on 1/15/21.
 //
 
-#include <iostream>
-#include <string>
-#include "StudentClass.hpp"
-
-using namespace std;
-
+//#include <iostream>
+//#include <string>
+//#include "StudentClass.hpp"
+//
+//using namespace std;
+//
 //int main() {
 //    
 //    Student s1;
@@ -28,34 +28,41 @@ using namespace std;
 //
 //    
 //    // Add the quizes
-//    s1.addQuiz(1);
-//    s1.addQuiz(2);
-//    s1.addQuiz(10);
-//    s1.addQuiz(29);
+////    s1.addQuiz(1);
+////    s1.addQuiz(2);
+////    s1.addQuiz(10);
+////    s1.addQuiz(29);
 //    
 //    // Print the student
-//    s1.printStudent();
+//    //s1.printStudent();
 //
 //    // Student 2
-//    Student s2;
+//    Student s2; // creates s2 with the constructor.
 //    
 //    y.street = "1234 blackbird";
 //    y.state = "Wa";
 //    y.zip = 80030;
 //    
 //    // Student
-//    s2.setName("Sue");
-//    s2.setID("12334");
-//    s2.setAddress(x);
-//
-//    
-//    // Add the quizes
-//    s2.addQuiz(4);
-//    s2.addQuiz(1);
-//    s2.addQuiz(3);
-//    s2.addQuiz(2);
+////    s2.setName("Sue");
+////    s2.setID("12334");
+////    s2.setAddress(x);
+////
+////
+////    // Add the quizes
+////    s2.addQuiz(4);
+////    s2.addQuiz(1);
+////    s2.addQuiz(3);
+////    s2.addQuiz(2);
 //    
 //    // Print the student
 //    s2.printStudent();
+//    
+//    Student s3("billy", "1234");
+//    s3.printStudent();
+//    
+//    Student s4("Jane", "13435", x);
+//    
+//    Student s5("suesan"); // created using string, but use the default value for the second string for ID
 //    
 //}

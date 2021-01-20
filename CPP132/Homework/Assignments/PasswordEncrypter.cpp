@@ -7,10 +7,13 @@
  * version 2.0
  */
 
-// Lucas Dahl, CS132, Winter 2020, Section XX
+// Lucas Dahl, CS132, Winter 2020, Section A
 // Programming Assignment #2, 1/15/21
 //
-// This program's behavior is ...
+// This program's will take user input and
+// check if its a valid password or not. This
+// program will also allow the user to check if a
+// password is matches any inside the master file.
 
 #include <string>
 #include <cstdlib>
@@ -26,6 +29,7 @@ bool validatePassword(string);
 string charToMorse(char);
 void makeTrim(string &);
 string morseString(string);
+string getPassword(string);
 
 
  int main()
@@ -99,13 +103,7 @@ void addToFile(string fname) {
     file.open(fname, std::ios_base::app);
     
     
-    cout << "Please enter a word or phrase to add to the list of acceptable passwords: ";
-    cin.ignore();
-    getline(cin, password);
-    //cin >> password;
-    
-    // Check that the password is valid.
-    if(!validatePassword(password)) return;
+    password = getPassword("Please enter a word or phrase to add to the list of acceptable passwords: ");
 
 
     // Encode the password.
@@ -129,50 +127,75 @@ void checkFile(string fname) {
     string morse;
     ifstream file;
     
+    password = getPassword("Please enter a password: ");
     
+    // Encode the password.
+    morse = morseString(password);
     
-    cout << "Please enter a password: ";
-    cin.ignore();
-    getline(cin, password);
+    // Open the file.
+    file.open(fname);
     
-    // Validate the password.
-    if (!validatePassword(password)) {
-        cout << "Password was unacceptable.";
-    } else {
+    // Read through the file.
+    while(file) {
         
-        // Encode the password.
-        morse = morseString(password);
+        string fileLine;
         
-        // Open the file.
-        file.open(fname);
+        getline(file, fileLine);
         
-        // Read through the file.
-        while(file) {
-            
-            string fileLine;
-            
-            getline(file, fileLine);
-            
-            // Trim the file
-            makeTrim(fileLine);
-            
-            // There is a matching password
-            if(fileLine.compare(morse)) {
-                cout << "There is a matching password." << endl;
-                return;
-            }
-            
+        // Trim the file
+        makeTrim(fileLine);
+        
+        // There is a matching password
+        if(fileLine.compare(morse)) {
+            cout << endl;
+            cout << "There is a matching password." << endl << endl;
+            return;
         }
         
-        // No matching password.
-        cout << "Password was unacceptable.";
-        
     }
-    
+   
+    // Close the file.
+    file.close();
     
     
 //    cout << "Temporary message :  Not working yet" << endl;
-//    return;
+    return;
+}
+
+
+
+string getPassword(string message) {
+    
+    // Properties
+    string password;
+    string morse;
+    bool flag = false;
+    
+    do {
+        
+        cout << "Passsword must have the following: " << endl;
+        cout << "Must contain at least 8 letters." << endl;
+        cout << "Must contain at least 4 numbers." << endl;
+        cout << "Must contain at least 1 valid symbol." << endl;
+        cout << "Valid symbols: '.', ',', '?', ' '." << endl;
+        cout << endl;
+        
+        cout << message;
+        cin.ignore();
+        getline(cin, password);
+        
+        
+        // Check that the password is valid.
+        if(validatePassword(password)) {
+            flag = true;
+        }
+        
+        cout << "Word/Phrase does not follow the rules.." << endl;
+        
+    } while(!flag);
+    
+    return password;
+    
 }
 
 // Checks if the password is valid or not.
@@ -264,6 +287,7 @@ void makeTrim(string &x) {
     x.erase(x.find_last_not_of(ws)+1); //surfixing spaces
 }
 
+// This method returns the morse code string.
 string morseString(string password) {
     
     string morse;
