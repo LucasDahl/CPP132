@@ -22,7 +22,6 @@
 
 using namespace std;
 
-
 void addToFile(string fname);
 void checkFile(string fname);
 bool validatePassword(string);
@@ -92,17 +91,17 @@ string getPassword(string);
 
 // This method will add a password to the file.
 void addToFile(string fname) {
-    
+
     // YOUR CODE GOES HERE;
     // properties
     string password;
     string morse;
     ofstream file;
-    
+
     // Append to the file on a new line.
     file.open(fname, std::ios_base::app);
-    
-    
+
+
     password = getPassword("Please enter a word or phrase to add to the list of acceptable passwords: ");
 
 
@@ -112,7 +111,7 @@ void addToFile(string fname) {
     // Write to the file, since the password is valid.
     file << morse;
     file.close();
-    
+
 
 //    cout << "Temporary message :  Not working yet" << endl;
     return;
@@ -121,43 +120,50 @@ void addToFile(string fname) {
 
 void checkFile(string fname) {
     //YOUR CODE GOES HERE;
-    
+
     // properties
     string password;
     string morse;
     ifstream file;
-    
+
     password = getPassword("Please enter a password: ");
-    
+
     // Encode the password.
     morse = morseString(password);
-    
+
     // Open the file.
     file.open(fname);
     
+    // Trim morse
+    makeTrim(morse);
+
     // Read through the file.
     while(file) {
-        
+
         string fileLine;
-        
+
         getline(file, fileLine);
-        
+
         // Trim the file
         makeTrim(fileLine);
-        
+
         // There is a matching password
-        if(fileLine.compare(morse)) {
+        if(fileLine.compare(morse) == 0) {
             cout << endl;
             cout << "There is a matching password." << endl << endl;
             return;
         }
-        
+
     }
-   
+    
+    // NO matching passwords
+    cout << endl;
+    cout << "There is no matching password." << endl << endl;
+
     // Close the file.
     file.close();
-    
-    
+
+
 //    cout << "Temporary message :  Not working yet" << endl;
     return;
 }
@@ -165,53 +171,55 @@ void checkFile(string fname) {
 
 
 string getPassword(string message) {
-    
+
     // Properties
     string password;
     string morse;
     bool flag = false;
-    
+
     do {
-        
+
         cout << "Passsword must have the following: " << endl;
         cout << "Must contain at least 8 letters." << endl;
         cout << "Must contain at least 4 numbers." << endl;
         cout << "Must contain at least 1 valid symbol." << endl;
         cout << "Valid symbols: '.', ',', '?', ' '." << endl;
         cout << endl;
-        
+
         cout << message;
         cin.ignore();
         getline(cin, password);
-        
-        
+
+
         // Check that the password is valid.
         if(validatePassword(password)) {
             flag = true;
+        } else {
+            cout << "Word/Phrase does not follow the rules.." << endl;
         }
-        
-        cout << "Word/Phrase does not follow the rules.." << endl;
-        
+
+
+
     } while(!flag);
-    
+
     return password;
-    
+
 }
 
 // Checks if the password is valid or not.
 bool validatePassword(string password) {
-    
+
     // Properties
     string validSymbols = ".,?";
     int letters = 0;
     int nums = 0;
     int symbols = 0;
-    
+
     // Get the total number of letters, numbers, and symbols.
     for(int i = 0; i < password.length(); i++) {
-        
+
         char currentChar = password.at(i);
-        
+
         if(isdigit(currentChar)) {
             nums++;
         } else if(isalpha(currentChar)) {
@@ -219,23 +227,23 @@ bool validatePassword(string password) {
         } else if(validSymbols.find(1, currentChar) || isspace(currentChar)) {
             symbols++;
         }
-    
+
     }
-    
+
     if(password.length() < 10) return false; // Word is at least 10 characters.
     if(letters < 8) return false; // Word contains at least 8 letters.
     if(nums < 4) return false; // Word contains at least 4 numbers.
     if(symbols < 1) return false; // Word contains at least 1 symbol.
-    
+
     // The word is a valid password.
     return true;
-    
+
 }
 
 // This method will change each char to its morse code equivalent.
 string charToMorse(char character) {
-    
-    
+
+
     if(character == 'A')return "*-";
     if(character == 'B')return "-***";
     if(character == 'C')return "-*-*";
@@ -275,9 +283,9 @@ string charToMorse(char character) {
     if(character == ',')return "--**--";
     if(character == '.')return "*-*-*-";
     if(character == '?')return "**--**";
-    
+
     return "/";
-    
+
 }
 
 // Trims while reading from a file.
@@ -289,17 +297,17 @@ void makeTrim(string &x) {
 
 // This method returns the morse code string.
 string morseString(string password) {
-    
+
     string morse;
-    
+
     for(int i = 0; i < password.length(); i++) {
-        
+
         char c = password.at(i);
-        
+
         morse += charToMorse(toupper(c)) + " ";
-    
+
     }
-    
+
     return morse;
-    
+
 }
