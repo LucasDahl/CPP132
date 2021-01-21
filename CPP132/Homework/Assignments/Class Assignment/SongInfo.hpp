@@ -17,7 +17,7 @@ using namespace std;
 class SongInfo {
   
     private:
-        string songName;
+        string songName = "Unknown";
         int recordedYear;
         double songLength;
     
@@ -32,6 +32,9 @@ class SongInfo {
         // Methods
         void printSong();
         double getTime();
+        string checkName(string);
+        double checkLength(double);
+        int checkYear(int);
     
 };
 

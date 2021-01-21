@@ -22,6 +22,7 @@
 //
 //using namespace std;
 //
+//// Prototype functions
 //void addToFile(string fname);
 //void checkFile(string fname);
 //bool validatePassword(string);
@@ -31,21 +32,30 @@
 //string getPassword(string);
 //
 //
+//// The main method
 // int main()
 // {
+//     
+//     // Properties
 //     string userPassword;
 //     int option;
 //
 //     cout << "***************************************************************" << endl;
 //     cout << "Hello and welcome to the CS132 Ultra Secure Password Generator." << endl;
 //     cout << "***************************************************************" << endl;
-//
+//     
+//     // This validation loop will fall into one of three options
+//     // based on user input, and in an error if the user types
+//     // in anything other than 1 - 3.
 //     while (true)
 //     {
+//        // This is the file that contains the valid passwords
+//         // it is also the file that new valid passwords will be added.
 //        const string fileName = "masterFile.txt";
 //
 //        do
 //        {
+//            // The list of options
 //            cout << "Would you like to test a password, or add a password?" << endl;
 //            cout << "  1 : for test a password"<< endl;
 //            cout << "  2 : for add a password" << endl;
@@ -56,16 +66,21 @@
 //        } while (option < 1 || option > 3);
 //
 //
+//         // This is the decision tree to determine
+//         // which method to call.
 //        if (option == 1)
 //        {
+//            // This will call the checkFile method to check a password.
 //            checkFile(fileName);
 //        }
 //        else if (option == 2)
 //        {
+//            // This will call the addToFile method to add a file.
 //            addToFile(fileName);
 //        }
 //        else if (option == 3)
 //        {
+//            // User picked something other than 1 - 3.
 //            cout << "Thank you, have a good day." << endl;
 //            return 0;
 //        }
@@ -89,7 +104,8 @@
 //// MARK: Functions
 //// ===============
 //
-//// This method will add a password to the file.
+//// This method will add a password to the file
+//// if its valid.
 //void addToFile(string fname) {
 //
 //    // YOUR CODE GOES HERE;
@@ -124,6 +140,7 @@
 //
 //}
 //
+//// This function will check if a password is contained in the file.
 //void checkFile(string fname) {
 //    //YOUR CODE GOES HERE;
 //
@@ -185,6 +202,7 @@
 //    string password;
 //    string morse;
 //    
+//    // This is what makes a password valid.
 //    cout << "Passsword must have the following: " << endl;
 //    cout << "Must contain at least 8 letters." << endl;
 //    cout << "Must contain at least 4 numbers." << endl;
@@ -192,6 +210,7 @@
 //    cout << "Valid symbols: '.', ',', '?', ' '." << endl;
 //    cout << endl;
 //
+//    // Takes user input to assign to the password.
 //    cout << message;
 //    cin.ignore();
 //    getline(cin, password);
@@ -293,8 +312,10 @@
 //// This method returns the morse code string.
 //string morseString(string password) {
 //
+//    // Properties
 //    string morse;
 //
+//    // This loop will convert each char into its morse code.
 //    for(int i = 0; i < password.length(); i++) {
 //
 //        char c = password.at(i);
