@@ -56,7 +56,7 @@ void SongInfo::printSong() {
     
     // Make sure the song length is more than zero, or dont print it.
     if(checkLength(songLength) > 1) {
-        cout << ": length- " << left << setw(10) <<setprecision(2) << fixed << songLength << " minutes";
+        cout << ": length- "  << setprecision(2) << fixed << songLength << " minutes";
     }
     
     // Move to the next lie.
