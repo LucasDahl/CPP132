@@ -12,6 +12,8 @@
 		954497E425ABB0A6006E0C77 /* InClassAssignment1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 954497E325ABB0A6006E0C77 /* InClassAssignment1.cpp */; };
 		954BB32725AE9928000FBDD5 /* SoccerPlayers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 954BB32625AE9928000FBDD5 /* SoccerPlayers.cpp */; };
 		9570D2BD25ACCFDB001C7F50 /* Student.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9570D2BC25ACCFDB001C7F50 /* Student.cpp */; };
+		95919B4D25B8FAEB00C92645 /* InClass_ClassMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95919B4C25B8FAEB00C92645 /* InClass_ClassMain.cpp */; };
+		95919B5125B8FB2800C92645 /* SongInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95919B4F25B8FB2800C92645 /* SongInfo.cpp */; };
 		95AC31E625B21129009835D4 /* StudentClassExamples.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95AC31E525B21129009835D4 /* StudentClassExamples.cpp */; };
 		95AC31EB25B211F7009835D4 /* StudentClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95AC31E925B211F7009835D4 /* StudentClass.cpp */; };
 		95BA45A225AF6D390008AE9C /* ClassNotes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95BA45A125AF6D390008AE9C /* ClassNotes.cpp */; };
@@ -40,6 +42,9 @@
 		954497E325ABB0A6006E0C77 /* InClassAssignment1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InClassAssignment1.cpp; sourceTree = "<group>"; };
 		954BB32625AE9928000FBDD5 /* SoccerPlayers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SoccerPlayers.cpp; sourceTree = "<group>"; };
 		9570D2BC25ACCFDB001C7F50 /* Student.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Student.cpp; sourceTree = "<group>"; };
+		95919B4C25B8FAEB00C92645 /* InClass_ClassMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InClass_ClassMain.cpp; sourceTree = "<group>"; };
+		95919B4F25B8FB2800C92645 /* SongInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SongInfo.cpp; sourceTree = "<group>"; };
+		95919B5025B8FB2800C92645 /* SongInfo.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SongInfo.hpp; sourceTree = "<group>"; };
 		95AC31E525B21129009835D4 /* StudentClassExamples.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StudentClassExamples.cpp; sourceTree = "<group>"; };
 		95AC31E925B211F7009835D4 /* StudentClass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StudentClass.cpp; sourceTree = "<group>"; };
 		95AC31EA25B211F7009835D4 /* StudentClass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StudentClass.hpp; sourceTree = "<group>"; };
@@ -71,6 +76,16 @@
 				95AC31E325B210C7009835D4 /* shapes */,
 			);
 			path = "Classes in diff files";
+			sourceTree = "<group>";
+		};
+		95919B4B25B8FACD00C92645 /* Class Assignment */ = {
+			isa = PBXGroup;
+			children = (
+				95919B4C25B8FAEB00C92645 /* InClass_ClassMain.cpp */,
+				95919B4F25B8FB2800C92645 /* SongInfo.cpp */,
+				95919B5025B8FB2800C92645 /* SongInfo.hpp */,
+			);
+			path = "Class Assignment";
 			sourceTree = "<group>";
 		};
 		95AC31E325B210C7009835D4 /* shapes */ = {
@@ -144,6 +159,7 @@
 		95E4302525A787E1000BD22A /* Assignments */ = {
 			isa = PBXGroup;
 			children = (
+				95919B4B25B8FACD00C92645 /* Class Assignment */,
 				95C28D1825B5F24A004813B4 /* PasswordEncrypter.cpp */,
 				95E4302025A78587000BD22A /* AssignmentOne.cpp */,
 			);
@@ -218,12 +234,14 @@
 			files = (
 				95C0EDED25A4E7B20038D9D8 /* charString.cpp in Sources */,
 				95AC31E625B21129009835D4 /* StudentClassExamples.cpp in Sources */,
+				95919B5125B8FB2800C92645 /* SongInfo.cpp in Sources */,
 				95BA45A225AF6D390008AE9C /* ClassNotes.cpp in Sources */,
 				95E4302125A78587000BD22A /* AssignmentOne.cpp in Sources */,
 				9540719625B0C04500C84EDE /* ClassR.cpp in Sources */,
 				95C28D1925B5F24A004813B4 /* PasswordEncrypter.cpp in Sources */,
 				954497E425ABB0A6006E0C77 /* InClassAssignment1.cpp in Sources */,
 				9570D2BD25ACCFDB001C7F50 /* Student.cpp in Sources */,
+				95919B4D25B8FAEB00C92645 /* InClass_ClassMain.cpp in Sources */,
 				9540719A25B0C10D00C84EDE /* Shapes.cpp in Sources */,
 				95D5F69025A8D5ED0031B7DD /* StructData.cpp in Sources */,
 				95AC31EB25B211F7009835D4 /* StudentClass.cpp in Sources */,
