@@ -2,6 +2,11 @@
 //  SongInfo.cpp
 //  CPP132
 //
+// This class is to contain the methods
+// that will setup the SongInfo object.
+// Other methods will allow the program
+// to print the songInfo or get teh year.
+//
 //  Created by Lucas Dahl on 1/20/21.
 //
 
@@ -15,10 +20,22 @@ using namespace std;
 //===================
 // MARK: Constructors
 //===================
+
+// This is the default constructor that will set all the values.
 SongInfo::SongInfo() {
 
+    // This will set the constructors to the default values, sicne none were given.
+    // Default values:
+    // songName = "Unknown"
+    // recordedYear = 0
+    // songLength = 0
+    songName = checkName(songName);
+    recordedYear = checkYear(recordedYear);
+    songLength = checkLength(songLength);
     
 }
+
+// This constructor will set all the fields
 SongInfo::SongInfo(string name, int year, double time) {
     
     songName = checkName(name);
@@ -27,12 +44,14 @@ SongInfo::SongInfo(string name, int year, double time) {
     
 }
 
+// This constructor is used to set just the name.
 SongInfo::SongInfo(string name) {
     
     songName = checkName(name);
     
 }
 
+// This constructor will set everything except the son length
 SongInfo::SongInfo(string name, int year) {
     
     songName = checkName(name);

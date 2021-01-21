@@ -2,6 +2,9 @@
 //  SongInfo.hpp
 //  CPP132
 //
+// This is the header file for
+// the songInfo class
+//
 //  Created by Lucas Dahl on 1/20/21.
 //
 
@@ -21,6 +24,11 @@ class SongInfo {
         int recordedYear;
         double songLength;
     
+        // Small helper methods, that wont be used by the outside program.
+        string checkName(string);
+        double checkLength(double);
+        int checkYear(int);
+    
     public:
     
         // Constructors
@@ -32,9 +40,6 @@ class SongInfo {
         // Methods
         void printSong();
         double getTime();
-        string checkName(string);
-        double checkLength(double);
-        int checkYear(int);
     
 };
 
