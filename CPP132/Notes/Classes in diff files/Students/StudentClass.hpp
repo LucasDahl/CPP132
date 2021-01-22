@@ -32,6 +32,7 @@ class Student {
     
         int* quizList;
         int numQuiz;
+        static int maxQuizGrade;
     
     public:
     
@@ -53,6 +54,9 @@ class Student {
     
         void addQuiz(int);
         double getAverage();
+    
+        // Static methods can only use static data.
+        // friend functions can access private methods
     
 };
 

@@ -20,14 +20,14 @@ using namespace std;
 class SongInfo {
   
     private:
-        string songName = "Unknown";
+        string songName;
         int recordedYear;
         double songLength;
     
         // Small helper methods, that wont be used by the outside program.
-        string checkName(string);
-        double checkLength(double);
-        int checkYear(int);
+        string setName(string);
+        double setLength(double);
+        int setYear(int);
     
     public:
     

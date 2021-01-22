@@ -21,6 +21,8 @@
 		95C28D1925B5F24A004813B4 /* PasswordEncrypter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95C28D1825B5F24A004813B4 /* PasswordEncrypter.cpp */; };
 		95D5F69025A8D5ED0031B7DD /* StructData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95D5F68F25A8D5ED0031B7DD /* StructData.cpp */; };
 		95E4302125A78587000BD22A /* AssignmentOne.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95E4302025A78587000BD22A /* AssignmentOne.cpp */; };
+		95E4D31A25BB38F6004F90F2 /* CS132_InventoryExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95E4D31925BB38F6004F90F2 /* CS132_InventoryExample.cpp */; };
+		95E4D31D25BB3900004F90F2 /* InventoryItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95E4D31C25BB3900004F90F2 /* InventoryItem.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,6 +58,9 @@
 		95D5F68F25A8D5ED0031B7DD /* StructData.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StructData.cpp; sourceTree = "<group>"; };
 		95E4302025A78587000BD22A /* AssignmentOne.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AssignmentOne.cpp; sourceTree = "<group>"; };
 		95E4302325A78646000BD22A /* WordList.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = WordList.txt; sourceTree = "<group>"; };
+		95E4D31925BB38F6004F90F2 /* CS132_InventoryExample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CS132_InventoryExample.cpp; sourceTree = "<group>"; };
+		95E4D31C25BB3900004F90F2 /* InventoryItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InventoryItem.cpp; sourceTree = "<group>"; };
+		95E4D31F25BB3905004F90F2 /* InventoryItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InventoryItem.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +77,7 @@
 		9540719325B0BF0600C84EDE /* Classes in diff files */ = {
 			isa = PBXGroup;
 			children = (
+				95E4D31825BB38E8004F90F2 /* Inventory class */,
 				95AC31E425B210EC009835D4 /* Students */,
 				95AC31E325B210C7009835D4 /* shapes */,
 			);
@@ -175,6 +181,16 @@
 			path = "Mini assignments";
 			sourceTree = "<group>";
 		};
+		95E4D31825BB38E8004F90F2 /* Inventory class */ = {
+			isa = PBXGroup;
+			children = (
+				95E4D31F25BB3905004F90F2 /* InventoryItem.h */,
+				95E4D31C25BB3900004F90F2 /* InventoryItem.cpp */,
+				95E4D31925BB38F6004F90F2 /* CS132_InventoryExample.cpp */,
+			);
+			path = "Inventory class";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -246,6 +262,8 @@
 				95D5F69025A8D5ED0031B7DD /* StructData.cpp in Sources */,
 				95AC31EB25B211F7009835D4 /* StudentClass.cpp in Sources */,
 				954BB32725AE9928000FBDD5 /* SoccerPlayers.cpp in Sources */,
+				95E4D31A25BB38F6004F90F2 /* CS132_InventoryExample.cpp in Sources */,
+				95E4D31D25BB3900004F90F2 /* InventoryItem.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
