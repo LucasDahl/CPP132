@@ -40,6 +40,9 @@ class Student {
         Student(); // Constructor (default)
         Student(string, string = "00000"); // Two part constructor with default values.
         Student(string, string, Address);
+    
+        // COPY CONSTRUCTOR
+        Student(const Student &Student);
 
         // Destructors - must have ~, only called when the object is about to go away. Never have to run it, just prep it.
         ~Student();

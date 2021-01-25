@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9527865B25BD2F0400E66D35 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9527865A25BD2F0400E66D35 /* main.cpp */; };
+		9527865F25BD2F8400E66D35 /* FractionalComplex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9527865D25BD2F8400E66D35 /* FractionalComplex.cpp */; };
 		9540719625B0C04500C84EDE /* ClassR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9540719425B0C04500C84EDE /* ClassR.cpp */; };
 		9540719A25B0C10D00C84EDE /* Shapes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9540719925B0C10D00C84EDE /* Shapes.cpp */; };
 		954497E425ABB0A6006E0C77 /* InClassAssignment1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 954497E325ABB0A6006E0C77 /* InClassAssignment1.cpp */; };
@@ -17,6 +19,8 @@
 		95AC31E625B21129009835D4 /* StudentClassExamples.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95AC31E525B21129009835D4 /* StudentClassExamples.cpp */; };
 		95AC31EB25B211F7009835D4 /* StudentClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95AC31E925B211F7009835D4 /* StudentClass.cpp */; };
 		95BA45A225AF6D390008AE9C /* ClassNotes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95BA45A125AF6D390008AE9C /* ClassNotes.cpp */; };
+		95BC9D6025BF450400945266 /* Purse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95BC9D5E25BF450400945266 /* Purse.cpp */; };
+		95BC9D6425BF452100945266 /* PurseMainExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95BC9D6325BF452100945266 /* PurseMainExample.cpp */; };
 		95C0EDED25A4E7B20038D9D8 /* charString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95C0EDEB25A4E7B20038D9D8 /* charString.cpp */; };
 		95C28D1925B5F24A004813B4 /* PasswordEncrypter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95C28D1825B5F24A004813B4 /* PasswordEncrypter.cpp */; };
 		95D5F69025A8D5ED0031B7DD /* StructData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95D5F68F25A8D5ED0031B7DD /* StructData.cpp */; };
@@ -38,6 +42,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9527865A25BD2F0400E66D35 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9527865D25BD2F8400E66D35 /* FractionalComplex.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FractionalComplex.cpp; sourceTree = "<group>"; };
+		9527865E25BD2F8400E66D35 /* FractionalComplex.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FractionalComplex.hpp; sourceTree = "<group>"; };
 		9540719425B0C04500C84EDE /* ClassR.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ClassR.cpp; sourceTree = "<group>"; };
 		9540719525B0C04500C84EDE /* ClassR.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ClassR.hpp; sourceTree = "<group>"; };
 		9540719925B0C10D00C84EDE /* Shapes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Shapes.cpp; sourceTree = "<group>"; };
@@ -51,6 +58,9 @@
 		95AC31E925B211F7009835D4 /* StudentClass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StudentClass.cpp; sourceTree = "<group>"; };
 		95AC31EA25B211F7009835D4 /* StudentClass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StudentClass.hpp; sourceTree = "<group>"; };
 		95BA45A125AF6D390008AE9C /* ClassNotes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ClassNotes.cpp; sourceTree = "<group>"; };
+		95BC9D5E25BF450400945266 /* Purse.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Purse.cpp; sourceTree = "<group>"; };
+		95BC9D5F25BF450400945266 /* Purse.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Purse.hpp; sourceTree = "<group>"; };
+		95BC9D6325BF452100945266 /* PurseMainExample.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PurseMainExample.cpp; sourceTree = "<group>"; };
 		95C0EDD425A4E3D60038D9D8 /* CPP132 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPP132; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C0EDEB25A4E7B20038D9D8 /* charString.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = charString.cpp; sourceTree = "<group>"; };
 		95C28D1825B5F24A004813B4 /* PasswordEncrypter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PasswordEncrypter.cpp; sourceTree = "<group>"; };
@@ -74,9 +84,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9527865925BD2EE500E66D35 /* Fractions */ = {
+			isa = PBXGroup;
+			children = (
+				9527865A25BD2F0400E66D35 /* main.cpp */,
+				9527865D25BD2F8400E66D35 /* FractionalComplex.cpp */,
+				9527865E25BD2F8400E66D35 /* FractionalComplex.hpp */,
+			);
+			path = Fractions;
+			sourceTree = "<group>";
+		};
 		9540719325B0BF0600C84EDE /* Classes in diff files */ = {
 			isa = PBXGroup;
 			children = (
+				95BC9D5425BF413B00945266 /* Overload */,
 				95E4D31825BB38E8004F90F2 /* Inventory class */,
 				95AC31E425B210EC009835D4 /* Students */,
 				95AC31E325B210C7009835D4 /* shapes */,
@@ -112,6 +133,16 @@
 				95AC31EA25B211F7009835D4 /* StudentClass.hpp */,
 			);
 			path = Students;
+			sourceTree = "<group>";
+		};
+		95BC9D5425BF413B00945266 /* Overload */ = {
+			isa = PBXGroup;
+			children = (
+				95BC9D6325BF452100945266 /* PurseMainExample.cpp */,
+				95BC9D5F25BF450400945266 /* Purse.hpp */,
+				95BC9D5E25BF450400945266 /* Purse.cpp */,
+			);
+			path = Overload;
 			sourceTree = "<group>";
 		};
 		95C0EDCB25A4E3D60038D9D8 = {
@@ -165,6 +196,7 @@
 		95E4302525A787E1000BD22A /* Assignments */ = {
 			isa = PBXGroup;
 			children = (
+				9527865925BD2EE500E66D35 /* Fractions */,
 				95919B4B25B8FACD00C92645 /* Class Assignment */,
 				95C28D1825B5F24A004813B4 /* PasswordEncrypter.cpp */,
 				95E4302025A78587000BD22A /* AssignmentOne.cpp */,
@@ -249,17 +281,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				95C0EDED25A4E7B20038D9D8 /* charString.cpp in Sources */,
+				95BC9D6025BF450400945266 /* Purse.cpp in Sources */,
 				95AC31E625B21129009835D4 /* StudentClassExamples.cpp in Sources */,
 				95919B5125B8FB2800C92645 /* SongInfo.cpp in Sources */,
 				95BA45A225AF6D390008AE9C /* ClassNotes.cpp in Sources */,
 				95E4302125A78587000BD22A /* AssignmentOne.cpp in Sources */,
+				9527865B25BD2F0400E66D35 /* main.cpp in Sources */,
 				9540719625B0C04500C84EDE /* ClassR.cpp in Sources */,
 				95C28D1925B5F24A004813B4 /* PasswordEncrypter.cpp in Sources */,
 				954497E425ABB0A6006E0C77 /* InClassAssignment1.cpp in Sources */,
 				9570D2BD25ACCFDB001C7F50 /* Student.cpp in Sources */,
 				95919B4D25B8FAEB00C92645 /* InClass_ClassMain.cpp in Sources */,
 				9540719A25B0C10D00C84EDE /* Shapes.cpp in Sources */,
+				95BC9D6425BF452100945266 /* PurseMainExample.cpp in Sources */,
 				95D5F69025A8D5ED0031B7DD /* StructData.cpp in Sources */,
+				9527865F25BD2F8400E66D35 /* FractionalComplex.cpp in Sources */,
 				95AC31EB25B211F7009835D4 /* StudentClass.cpp in Sources */,
 				954BB32725AE9928000FBDD5 /* SoccerPlayers.cpp in Sources */,
 				95E4D31A25BB38F6004F90F2 /* CS132_InventoryExample.cpp in Sources */,
