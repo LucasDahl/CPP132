@@ -73,6 +73,62 @@ void Purse::printData() { // Eventually will be replaced with <<
     
 }
 
+
+//=========================
+// MARK: Overload operators
+//=========================
+
+// Adds two Purse objects together 
+Purse Purse::operator + (const Purse &rhs) const {
+    
+    // Create a new Purse(object)
+    Purse temp;
+    
+    // Get the values from teh fields of the passed in purse(object)
+    // plus the object itself(left hand side of operator)
+    // This is not needed in
+    temp.gold = this->gold + rhs.gold;
+    temp.silver = this->silver + rhs.silver;
+    temp.copper = this->copper + rhs.copper;
+    
+    // Retunr the combined Purse(object)
+    return temp;
+}
+
+// This will only add the copper to the purse
+// Not everything else.
+Purse Purse::operator + (int c) const {
+    
+    // Create a new Purse(object)
+    Purse temp;
+    
+    // Get the values from teh fields of the passed in purse(object)
+    // plus the object itself(left hand side of operator)
+    // This is not needed in
+    temp.gold = this->gold;
+    temp.silver = this->silver;
+    temp.copper = this->copper + c;
+    
+    // Retunr the combined Purse(object)
+    return temp;
+}
+
+//==========================
+// MARK: NON member function
+//==========================
+
+// Does not need Purse:: since its not in the class(will need to be marked friend)
+Purse operator+(int lhs,  const Purse &rhs) {
+    
+    Purse temp;
+    temp.gold = rhs.gold;
+    temp.silver = rhs.silver;
+    temp.copper = lhs + rhs.copper;
+    
+    return temp;
+    
+}
+
 //====================
 // MARK: Deconstructor
 //====================
