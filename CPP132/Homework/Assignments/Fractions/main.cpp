@@ -15,21 +15,21 @@
  */
 
 
-//#include <iostream>
-//#include "FractionalComplex.hpp"
-//
-//using namespace std;
-//
-//void intro();
-//void section1();
-//void section2();
-//void section3();
-//void section4();
-//void section5();
+#include <iostream>
+#include "FractionalComplex.hpp"
+
+using namespace std;
+
+void intro();
+void section1();
+void section2();
+void section3();
+void section4();
+void section5();
 //void section6();
 //void section7();
 //void section8();
-//
+
 //int main()
 //{
 //    intro();
@@ -208,7 +208,7 @@
 //    else {cout << "They are equal?? This is an error" << endl;}
 //
 //}
-//
+
 //void section6()
 //{
 //

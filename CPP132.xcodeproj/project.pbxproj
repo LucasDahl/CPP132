@@ -13,6 +13,7 @@
 		9540719A25B0C10D00C84EDE /* Shapes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9540719925B0C10D00C84EDE /* Shapes.cpp */; };
 		954497E425ABB0A6006E0C77 /* InClassAssignment1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 954497E325ABB0A6006E0C77 /* InClassAssignment1.cpp */; };
 		954BB32725AE9928000FBDD5 /* SoccerPlayers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 954BB32625AE9928000FBDD5 /* SoccerPlayers.cpp */; };
+		9554619725C11501002DCAA5 /* Testing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9554619625C11501002DCAA5 /* Testing.cpp */; };
 		9570D2BD25ACCFDB001C7F50 /* Student.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9570D2BC25ACCFDB001C7F50 /* Student.cpp */; };
 		95919B4D25B8FAEB00C92645 /* InClass_ClassMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95919B4C25B8FAEB00C92645 /* InClass_ClassMain.cpp */; };
 		95919B5125B8FB2800C92645 /* SongInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95919B4F25B8FB2800C92645 /* SongInfo.cpp */; };
@@ -50,6 +51,7 @@
 		9540719925B0C10D00C84EDE /* Shapes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Shapes.cpp; sourceTree = "<group>"; };
 		954497E325ABB0A6006E0C77 /* InClassAssignment1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InClassAssignment1.cpp; sourceTree = "<group>"; };
 		954BB32625AE9928000FBDD5 /* SoccerPlayers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SoccerPlayers.cpp; sourceTree = "<group>"; };
+		9554619625C11501002DCAA5 /* Testing.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Testing.cpp; sourceTree = "<group>"; };
 		9570D2BC25ACCFDB001C7F50 /* Student.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Student.cpp; sourceTree = "<group>"; };
 		95919B4C25B8FAEB00C92645 /* InClass_ClassMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InClass_ClassMain.cpp; sourceTree = "<group>"; };
 		95919B4F25B8FB2800C92645 /* SongInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SongInfo.cpp; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				95D5F68F25A8D5ED0031B7DD /* StructData.cpp */,
 				9570D2BC25ACCFDB001C7F50 /* Student.cpp */,
 				95BA45A125AF6D390008AE9C /* ClassNotes.cpp */,
+				9554619625C11501002DCAA5 /* Testing.cpp */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				95919B4D25B8FAEB00C92645 /* InClass_ClassMain.cpp in Sources */,
 				9540719A25B0C10D00C84EDE /* Shapes.cpp in Sources */,
 				95BC9D6425BF452100945266 /* PurseMainExample.cpp in Sources */,
+				9554619725C11501002DCAA5 /* Testing.cpp in Sources */,
 				95D5F69025A8D5ED0031B7DD /* StructData.cpp in Sources */,
 				9527865F25BD2F8400E66D35 /* FractionalComplex.cpp in Sources */,
 				95AC31EB25B211F7009835D4 /* StudentClass.cpp in Sources */,
