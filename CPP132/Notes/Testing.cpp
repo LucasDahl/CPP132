@@ -13,14 +13,14 @@
 
 //include <cmath>
 
-using namespace std;
-
-
-// Prototypes
-
-
-int main() {
-    
-}
+//using namespace std;
+//
+//
+//// Prototypes
+//
+//
+//int main() {
+//    
+//}
 
 

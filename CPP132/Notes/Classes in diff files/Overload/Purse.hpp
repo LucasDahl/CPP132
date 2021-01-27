@@ -22,6 +22,9 @@ class Purse {
         int silver;
         int copper;
     
+        // Private method - (internal method or helper method)
+        int getCopperValue() const;
+        
     public:
     
         // Could replace Friend functions
@@ -47,14 +50,39 @@ class Purse {
         // return type, name, parameters(what is on the right side).
         // const inside the () makes sure the RHS wont change and the const outside () makes sure
         // the LHS wont change.
-        Purse operator+(const Purse&) const; // What is in the () is whats on the right side.
+        Purse operator+(const Purse &) const; // What is in the () is whats on the right side.
         Purse operator+(int c) const; // Sam as above, but different right hand side. // Wont allow for int + Purse, only Purse + int - see below
     
         //Purse operator -(const Purse&) const;
         
         // Friend methods(not a prototype
-        friend Purse operator+(int,  const Purse&); // Allows for in t+ purse
+        friend Purse operator+(int,  const Purse &); // Allows for in t+ purse
+    
+        bool operator == (const Purse &) const; // We re going to compare based upon VALUE, not coins
+        bool operator != (const Purse &) const;
+        bool operator < (const Purse &) const;
+        bool operator > (const Purse &) const;
+        bool operator <= (const Purse &) const;
+        bool operator >= (const Purse &) const;
+    
+        bool operator == (int) const;
+    
+        // BIG - is needed for assignmetn 3
+        friend std::ostream& operator <<(std::ostream &lhs, const Purse &rhs);
+    friend std::istream& operator >>(std::istream &lhs, Purse &rhs);
+        
+    
 };
+
+// This is needed for assignemnt #3
+// Has to be done outside since the left hand side is not a Purse(object)
+// & is for pointers and is to pass by reference.
+// command line for left hand operator
+// Will need to be a friend or add getters, so it has access to the class data and methods
+// it is one of the most common friend functions
+// lhs and rhs arent needed here, but it helps reability
+std::ostream& operator <<(ostream &lhs, const Purse &rhs); // NOT CONST
+std::istream& operator >>(std::istream &lhs, Purse &rhs);
 
 Purse operator+(int,  const Purse&); // Allows for in t+ purse
 

@@ -13,6 +13,8 @@
 
 #include <iostream>
 
+using namespace std;
+
 class FractionalComplex {
   
     private:
@@ -43,7 +45,7 @@ class FractionalComplex {
         FractionalComplex operator - (const FractionalComplex&);
         FractionalComplex operator * (FractionalComplex&);
     
-        //friend std::ostream &operator <<(std::ostream const &os, const FractionalComplex &rhs);
+        friend ostream& operator <<(ostream &lhs, const FractionalComplex &rhs);
     
         FractionalComplex operator++();
         FractionalComplex operator++(int);
@@ -55,5 +57,10 @@ class FractionalComplex {
         bool operator == (FractionalComplex);
     
 };
+
+//=====================
+// MARK: Friend methods
+//=====================
+ostream& operator <<(ostream &lhs, const FractionalComplex &rhs);
 
 #endif /* FractionalComplex_hpp */

@@ -59,6 +59,10 @@ Purse::Purse(const Purse &other) {
 // MARK: Private Methods
 //======================
 
+int Purse::getCopperValue() const {
+    return this->copper + 50 * silver + 10 * 50 * gold;
+}
+
 //=====================
 // MARK: Public Methods
 //=====================
@@ -72,6 +76,7 @@ void Purse::printData() { // Eventually will be replaced with <<
     cout << total << " copper]" << endl;
     
 }
+
 
 
 //=========================
@@ -113,6 +118,58 @@ Purse Purse::operator + (int c) const {
     return temp;
 }
 
+bool Purse::operator == (const Purse &rhs) const {
+    
+    // Take the value of (this (self object)) and the rhs Purse
+//    int myValue = getCopperValue();
+//    int otherValue = rhs.getCopperValue();
+    
+    
+    return this->getCopperValue() == rhs.getCopperValue();
+}
+
+bool Purse::operator != (const Purse &rhs) const {
+    return this->getCopperValue() != rhs.getCopperValue();
+}
+
+bool Purse::operator <(const Purse &rhs) const {
+    return this->getCopperValue() < rhs.getCopperValue();
+}
+
+bool Purse::operator >(const Purse &rhs) const {
+    return this->getCopperValue() > rhs.getCopperValue();
+}
+
+bool Purse::operator <= (const Purse &rhs) const {
+    return this->getCopperValue() <= rhs.getCopperValue();
+}
+
+bool Purse::operator >=(const Purse &rhs) const {
+    return this->getCopperValue() >= rhs.getCopperValue();
+}
+
+bool Purse::operator==(int c) const {
+    return(this->getCopperValue() == c);
+}
+
+
+std::ostream& operator <<(std::ostream &lhs, const Purse &rhs) {
+    
+    // in this case cout is replaced with lhs
+    
+    lhs << rhs.gold << " : gold " << rhs.silver << " : silver " << rhs.copper << " : copper. For a total of [";
+    lhs << rhs.getCopperValue() << " copper]";
+    
+    // now return the lhs(the stream)
+    return lhs;
+}
+
+std::istream& operator <<(std::istream &lhs, Purse &rhs) {
+    //TODO: write this
+    
+    return lhs;
+}
+
 //==========================
 // MARK: NON member function
 //==========================
@@ -128,6 +185,8 @@ Purse operator+(int lhs,  const Purse &rhs) {
     return temp;
     
 }
+
+
 
 //====================
 // MARK: Deconstructor
