@@ -28,6 +28,7 @@ class FractionalComplex {
     
         // Methods
         void reduce();
+        int findGCD(int, int);
 
     public:
     
