@@ -22,7 +22,7 @@ using namespace std;
 
 void intro();
 void section1(); // Pass
-void section2(); // Pass - may need to change which part shows as negative
+void section2(); // Pass
 void section3(); // Pass
 void section4(); // Pass - May need a check with If statements
 void section5(); // Pass
@@ -34,14 +34,14 @@ int main()
 {
     intro();
 	//Uncomment these as you complete various sections.
-    //section1();
-    //section2();
-    //section3();
-    //section4();
-    //section5();
-    //section6();
-    //section7();
-    //section8();
+//    section1();
+//    section2();
+//    section3();
+//    section4();
+//    section5();
+//    section6();
+//    section7();
+//    section8();
 }
 
 
@@ -266,9 +266,9 @@ void section8()
 
     cout << "PostFix Test" << endl;
     cout << "a = " << a << endl;
-    cout << "a = " << a++ << " This should match above" << endl;
+    cout << "a = " << a << " This should match above" << endl;
     cout << "a = " << a++ << " This should be one bigger" << endl;
-    cout << "a = " << a   << " This should be one bigger" << endl;
+    cout << "a = " << a++   << " This should be one bigger" << endl;
 
     b = FractionalComplex(1,3,1,5);
     cout << "Prefix Test" << endl;

@@ -116,11 +116,27 @@ int FractionalComplex::findGCD(int numerator, int denominator) {
 // complex.
 void FractionalComplex::printme() {
     
-    cout << "[(" << a << "/" << b << ")]";
-    cout << " + ";
-    cout << "[(" << c << "/" << d << ")]" << "i" << endl;
+    if(b < 0 && d < 0) {
+        cout << "[(-" << a << "/" << abs(b) << ")]";
+        cout << " + ";
+        cout << "[(-" << c << "/" << abs(d) << ")]" << "i" << endl;
+    } else if(b < 0) {
+        cout << "[(-" << a << "/" << abs(b) << ")]";
+        cout << " + ";
+        cout << "[(" << c << "/" << d << ")]" << "i";
+    }else if(d < 0) {
+        cout << "[(" << a << "/" << b << ")]";
+        cout << " + ";
+        cout << "[(-" << c << "/" << abs(d) << ")]" << "i" << endl;
+    } else {
+        cout << "[(" << a << "/" << b << ")]";
+        cout << " + ";
+        cout << "[(" << c << "/" << d << ")]" << "i" << endl;
+    }
+   
 }
 
+// This method will find the length
 double FractionalComplex::length() {
     return sqrt(pow((a/b), 2) + pow((c/d), 2));
 }
@@ -129,17 +145,7 @@ double FractionalComplex::length() {
 // MARK: Manipulation
 //===================
 
-// a  c     a  c
-// -  - i + -  - i
-// b  d     b  d
-
-// 1  -1    1  7
-// -  - i + -   - i
-// 6  4     4  11
-
-// a  a     c  c
-// -  - i + -  - i
-// b  b     d  d
+// This overloaded operator will add two FractionalComplexs
 FractionalComplex FractionalComplex::operator + (const FractionalComplex &rhs) {
     
     // Properties
@@ -169,6 +175,7 @@ FractionalComplex FractionalComplex::operator + (const FractionalComplex &rhs) {
     return tempFraction;
 }
 
+// This overloaded operator will subtract two FractionalComplexs
 FractionalComplex FractionalComplex::operator - (const FractionalComplex &rhs) {
     
     // Properties
@@ -187,7 +194,7 @@ FractionalComplex FractionalComplex::operator - (const FractionalComplex &rhs) {
     return tempFraction;
 }
 
-
+// This overloaded operator will multiple a FractionalComplexs with an int
 FractionalComplex operator *(const FractionalComplex &lhs,  int x) {
     
     
@@ -204,6 +211,7 @@ FractionalComplex operator *(const FractionalComplex &lhs,  int x) {
     return tempFraction;
 }
 
+// This overloaded operator will multiple two FractionalComplexs
 FractionalComplex FractionalComplex::operator *(const FractionalComplex &rhs) {
     
 
@@ -231,11 +239,28 @@ FractionalComplex FractionalComplex::operator *(const FractionalComplex &rhs) {
 // MARK: Output
 //=============
 
+// This overloaded operator will output a FractionalComplexs
 ostream& operator <<(ostream &lhs, const FractionalComplex &rhs) {
+
+    if(rhs.b < 0 && rhs.d < 0) {
+        lhs << "[(-" << rhs.a << "/" << abs(rhs.b) << ")]";
+        lhs << " + ";
+        lhs << "[(-" << rhs.c << "/" << abs(rhs.d) << ")]" << "i";
+    } else if(rhs.b < 0) {
+        lhs << "[(-" << rhs.a << "/" << abs(rhs.b) << ")]";
+        lhs << " + ";
+        lhs << "[(" << rhs.c << "/" << rhs.d << ")]" << "i";
+    } else if(rhs.d < 0) {
+        lhs << "[(" << rhs.a << "/" << rhs.b << ")]";
+        lhs << " + ";
+        lhs << "[(-" << rhs.c << "/" << abs(rhs.d) << ")]" << "i";
+    } else {
+        lhs << "[(" << rhs.a << "/" << rhs.b << ")]";
+        lhs << " + ";
+        lhs << "[(" << rhs.c << "/" << rhs.d << ")]" << "i";
+    }
     
-    lhs << "[(" << rhs.a << "/" << rhs.b << ")]";
-    lhs << " + ";
-    lhs << "[(" << rhs.c << "/" << rhs.d << ")]" << "i";
+    
     return lhs;
 }
 
@@ -243,7 +268,7 @@ ostream& operator <<(ostream &lhs, const FractionalComplex &rhs) {
 // MARK: Increment
 //================
 
-// Prefix
+// Prefix increment
 FractionalComplex FractionalComplex::operator++() {
     
     
@@ -257,18 +282,17 @@ FractionalComplex FractionalComplex::operator++() {
     return *this;
 }
 
-// POstfix
+// Postfix increment
 FractionalComplex FractionalComplex::operator++(int) {
     
     a = a + b;
-    c = c + c;
+    c = c + d;
     
     return *this;
 }
 
+// Deconstructor
 FractionalComplex::~FractionalComplex() {}
-
-
 
 
 //==============
@@ -338,19 +362,4 @@ bool FractionalComplex::operator == (const FractionalComplex &rhs) {
     return false;
 }
 
-
-
-//    cout << endl;
-//    cout << "A: " << a << " C: " << c << endl;
-//    cout << "B: " << b << " D: " << d << endl;
-//
-//    cout << endl;
-//
-//    cout << "AR: " << rhs.a << " CR: " << rhs.c << endl;
-//    cout << "BR: " << rhs.b << " DR: " << rhs.d << endl;
-//
-//    cout << endl;
-//
-//    cout << "TA: " << temp.a << " TC: " << temp.c << endl;
-//    cout << "TB: " << temp.b << " TD: " << temp.d << endl;
     

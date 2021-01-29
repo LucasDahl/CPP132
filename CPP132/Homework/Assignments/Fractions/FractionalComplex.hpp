@@ -19,7 +19,7 @@ class FractionalComplex {
   
     private:
     
-        // Properties
+        // Fields
         int a;
         int b;
         int c;
@@ -54,7 +54,6 @@ class FractionalComplex {
         FractionalComplex operator++(int);
     
         
-    
         // Compare
         bool operator < (const FractionalComplex&);
         bool operator > (const FractionalComplex&);
@@ -63,6 +62,7 @@ class FractionalComplex {
         // Output
         friend ostream& operator <<(ostream &lhs, const FractionalComplex &rhs);
     
+        // Deconstructor
         ~FractionalComplex();
     
 };
