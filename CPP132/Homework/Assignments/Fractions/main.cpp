@@ -21,24 +21,24 @@
 using namespace std;
 
 void intro();
-void section1();
-void section2();
-void section3();
-void section4();
-void section5();
-void section6();
-void section7();
-void section8();
+void section1(); // Pass
+void section2(); // Pass - may need to change which part shows as negative
+void section3(); // Pass
+void section4(); // Pass - May need a check with If statements
+void section5(); // Pass
+void section6(); // Pass
+void section7(); // Pass
+void section8(); // Pass
 
 int main()
 {
     intro();
 	//Uncomment these as you complete various sections.
-    //section1(); // Pass
-    //section2(); // Pass - may need to change which part shows as negative
-    //section3(); // Pass - May not need a check with If statements
-    //section4(); // Pass - May need a check with If statements
-    section5();
+    //section1();
+    //section2();
+    //section3();
+    //section4();
+    //section5();
     //section6();
     //section7();
     //section8();

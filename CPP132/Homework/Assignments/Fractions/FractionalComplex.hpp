@@ -20,7 +20,6 @@ class FractionalComplex {
     private:
     
         // Properties
-        int i = sqrt(-1); // Update?
         int a;
         int b;
         int c;
@@ -29,6 +28,7 @@ class FractionalComplex {
         // Methods
         void reduce();
         int findGCD(int, int);
+        int findLCD(int a, int b);
 
     public:
     
@@ -42,20 +42,28 @@ class FractionalComplex {
         double length();
     
         // Overload
+    
+        // Manipulation
         FractionalComplex operator + (const FractionalComplex&);
         FractionalComplex operator - (const FractionalComplex&);
-        FractionalComplex operator * (FractionalComplex&);
+        FractionalComplex operator * (const FractionalComplex&);
+        friend FractionalComplex operator * (const FractionalComplex&,  int);
     
-        friend ostream& operator <<(ostream &lhs, const FractionalComplex &rhs);
-    
+        // Increase
         FractionalComplex operator++();
         FractionalComplex operator++(int);
     
-        int operator *(int);
+        
     
-        bool operator < (FractionalComplex);
-        bool operator > (FractionalComplex);
-        bool operator == (FractionalComplex);
+        // Compare
+        bool operator < (const FractionalComplex&);
+        bool operator > (const FractionalComplex&);
+        bool operator == (const FractionalComplex&);
+    
+        // Output
+        friend ostream& operator <<(ostream &lhs, const FractionalComplex &rhs);
+    
+        ~FractionalComplex();
     
 };
 
@@ -63,5 +71,7 @@ class FractionalComplex {
 // MARK: Friend methods
 //=====================
 ostream& operator <<(ostream &lhs, const FractionalComplex &rhs);
+FractionalComplex operator*(const FractionalComplex&,  int);
+
 
 #endif /* FractionalComplex_hpp */

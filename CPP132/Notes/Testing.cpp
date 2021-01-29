@@ -13,13 +13,15 @@
 
 //include <cmath>
 
-//using namespace std;
+using namespace std;
 //
 //
 //// Prototypes
 //
 //
 //int main() {
+//    
+//    cout << 0 % 0 == 0;
 //    
 //}
 

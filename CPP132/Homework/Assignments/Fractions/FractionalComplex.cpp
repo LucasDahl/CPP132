@@ -60,17 +60,29 @@ FractionalComplex::FractionalComplex(int a, int b, int c, int d) {
 
 // This method will reduce a fraction if possible.
 void FractionalComplex::reduce() {
- 
+
     // Properties
-    int gcdOne = findGCD(a, b);
-    int gcdTwo = findGCD(c, d);
+    int gcdOne = findGCD(a, b), lcdOne = findLCD(a, b);
+    int gcdTwo = findGCD(c, d), lcdTwo = findLCD(c, d);
 
     // Reduce the fractions.
-    a = a / gcdOne;
-    b = b / gcdOne;
-    c = c / gcdTwo;
-    d = d / gcdTwo;
+    
+    if(lcdOne % a == 0 && lcdOne % b == 0) { // ERROR
+        a = a / gcdOne;
+        b = b / gcdOne;
+    }
+    
+    if(lcdTwo % c == 0 && lcdTwo % d == 0) {
+        c = c / gcdTwo;
+        d = d / gcdTwo;
+    }
 
+}
+
+
+// A method to find the LCD
+int  FractionalComplex::findLCD(int a, int b) {
+    return (a * b) / findGCD(a, b);
 }
 
 // This method will find the greates common denominator.
@@ -113,9 +125,9 @@ double FractionalComplex::length() {
     return sqrt(pow((a/b), 2) + pow((c/d), 2));
 }
 
-//===============
-// MARK: Overload
-//===============
+//===================
+// MARK: Manipulation
+//===================
 
 // a  c     a  c
 // -  - i + -  - i
@@ -128,7 +140,7 @@ double FractionalComplex::length() {
 // a  a     c  c
 // -  - i + -  - i
 // b  b     d  d
-FractionalComplex FractionalComplex::operator +(const FractionalComplex &rhs) {
+FractionalComplex FractionalComplex::operator + (const FractionalComplex &rhs) {
     
     // Properties
     FractionalComplex tempFraction;
@@ -137,20 +149,19 @@ FractionalComplex FractionalComplex::operator +(const FractionalComplex &rhs) {
     if(b != rhs.b) {
         tempFraction.a = (a * rhs.b) + (b * rhs.a);
         tempFraction.b = b * rhs.b;
-    } else {
+    } else if(b == rhs.b) {
         tempFraction.a = a + rhs.a;
         tempFraction.b = b;
     }
     
     if(d != rhs.d) {
-        tempFraction.c = (c * rhs.b) + (b * rhs.c);
+        tempFraction.c = (c * rhs.d) + (d * rhs.c);
         tempFraction.d = d * rhs.d;
-    } else {
+    } else if(d == rhs.d) {
         tempFraction.c = c + rhs.c;
         tempFraction.d = d;
     }
     
-
     // Reduce the fraction(if possible);
     tempFraction.reduce();
   
@@ -168,18 +179,7 @@ FractionalComplex FractionalComplex::operator - (const FractionalComplex &rhs) {
     tempFraction.c = (c * rhs.d) - (d * rhs.c);
     tempFraction.d = d * rhs.d;
     
-//        cout << "A: " << a << " C: " << c << endl;
-//        cout << "B: " << b << " D: " << d << endl;
-//
-//        cout << endl;
-//
-//        cout << "AR: " << rhs.a << " CR: " << rhs.c << endl;
-//        cout << "BR: " << rhs.b << " DR: " << rhs.d << endl;
-//
-//        cout << endl;
-//
-//        cout << "TA: " << tempFraction.a << " TC: " << tempFraction.c << endl;
-//        cout << "TB: " << tempFraction.b << " TD: " << tempFraction.d << endl;
+
     
     // Reduce if possible
     tempFraction.reduce();
@@ -187,38 +187,170 @@ FractionalComplex FractionalComplex::operator - (const FractionalComplex &rhs) {
     return tempFraction;
 }
 
-FractionalComplex FractionalComplex::operator *(FractionalComplex &rhs) {
-    FractionalComplex temp;
-    return temp;
+
+FractionalComplex operator *(const FractionalComplex &lhs,  int x) {
+    
+    
+    FractionalComplex tempFraction;
+    
+    tempFraction.a = lhs.a * x;
+    tempFraction.b = lhs.b;
+    tempFraction.c = lhs.c * x;
+    tempFraction.d = lhs.d;
+    
+    // Reduce the fraction if possible.
+    tempFraction.reduce();
+    
+    return tempFraction;
 }
 
+FractionalComplex FractionalComplex::operator *(const FractionalComplex &rhs) {
+    
+
+    FractionalComplex tempFraction, tempFractionOne, tempFractionTwo;
+    
+    tempFractionOne.a = (a * rhs.a);
+    tempFractionOne.b = (b * rhs.b);
+    tempFractionOne.c = (a * rhs.c);
+    tempFractionOne.d = (b * rhs.d);
+    
+    tempFractionTwo.a = -1 * (c * rhs.c);
+    tempFractionTwo.b = (d * rhs.d);
+    tempFractionTwo.c = c * rhs.a;
+    tempFractionTwo.d = (d * rhs.b);
+    
+    // Add them together(+ operator will reduce)
+    tempFraction = tempFractionOne + tempFractionTwo;
+    
+    
+    return tempFraction;
+}
+
+
+//=============
+// MARK: Output
+//=============
+
 ostream& operator <<(ostream &lhs, const FractionalComplex &rhs) {
+    
+    lhs << "[(" << rhs.a << "/" << rhs.b << ")]";
+    lhs << " + ";
+    lhs << "[(" << rhs.c << "/" << rhs.d << ")]" << "i";
     return lhs;
 }
 
+//================
+// MARK: Increment
+//================
+
+// Prefix
 FractionalComplex FractionalComplex::operator++() {
-    FractionalComplex temp;
-    return temp;
+    
+    
+    FractionalComplex tempFraction;
+    
+    this->a = a + b;
+    //tempFraction.b = b;
+    this->c = c + d;
+    //tempFraction.d = d;
+    
+    return *this;
 }
 
-FractionalComplex FractionalComplex::operator++(int x) {
-    FractionalComplex temp;
-    return temp;
+// POstfix
+FractionalComplex FractionalComplex::operator++(int) {
+    
+    a = a + b;
+    c = c + c;
+    
+    return *this;
 }
 
-int FractionalComplex::operator *(int x) {
-    return 5;
-}
+FractionalComplex::~FractionalComplex() {}
 
-bool FractionalComplex::operator <(FractionalComplex x) {
+
+
+
+//==============
+// MARK: Compare
+//==============
+
+// This operator is used to determine if a FractionalComplex is less than than another.
+bool FractionalComplex::operator < ( const FractionalComplex &rhs) {
+    
+    // Properties
+    FractionalComplex tempFraction = rhs;
+    
+    // Make sure both fractions are reduced
+    reduce();
+    tempFraction.reduce();
+    
+
+    if(b < tempFraction.b || d < tempFraction.d) {
+        return true;
+    } else if(b == tempFraction.b && d == tempFraction.d) {
+        
+        if(a < tempFraction.a || c < tempFraction.c) {
+            return true;
+        }
+        
+    }
+
     return false;
 }
 
-bool FractionalComplex::operator >(FractionalComplex x) {
+// This operator is used to determine if a FractionalComplex is greater than another.
+bool FractionalComplex::operator > (const FractionalComplex &rhs) {
+    
+    // Properties
+    FractionalComplex tempFraction = rhs;
+    
+    // Make sure both fractions are reduced
+    reduce();
+    tempFraction.reduce();
+    
+    if(b > tempFraction.b || d > tempFraction.d) {
+        return true;
+    } else if(b == tempFraction.b && d == tempFraction.d) {
+        
+        if(a > tempFraction.a || c > tempFraction.c) {
+            return true;
+        }
+        
+    }
+    
     return false;
 }
 
-bool FractionalComplex::operator ==(FractionalComplex x) {
+// This operator is used to see if two FractionalComplex are equal to each other.
+bool FractionalComplex::operator == (const FractionalComplex &rhs) {
+    
+    FractionalComplex tempFraction = rhs;
+    
+    // Make sure both fractions are reduced
+    reduce();
+    tempFraction.reduce();
+    
+    if(a == tempFraction.a && b == tempFraction.b && c == tempFraction.c && d == tempFraction.d) {
+        return true;
+    }
+    
     return false;
 }
 
+
+
+//    cout << endl;
+//    cout << "A: " << a << " C: " << c << endl;
+//    cout << "B: " << b << " D: " << d << endl;
+//
+//    cout << endl;
+//
+//    cout << "AR: " << rhs.a << " CR: " << rhs.c << endl;
+//    cout << "BR: " << rhs.b << " DR: " << rhs.d << endl;
+//
+//    cout << endl;
+//
+//    cout << "TA: " << temp.a << " TC: " << temp.c << endl;
+//    cout << "TB: " << temp.b << " TD: " << temp.d << endl;
+    

@@ -67,9 +67,17 @@ class Purse {
     
         bool operator == (int) const;
     
-        // BIG - is needed for assignmetn 3
+        int operator[](int);
+    
+        // THIS IS NEEDED FOR ASSIGNMENT #3
+        // There are two operators for ++
+        // One with a parameter and one without
+        Purse operator++(); // Pre- fix ++x , add then return
+        Purse operator++(int); // Post- fix x++ return then add
+    
+        // BIG - is needed for assignment 3
         friend std::ostream& operator <<(std::ostream &lhs, const Purse &rhs);
-    friend std::istream& operator >>(std::istream &lhs, Purse &rhs);
+        friend std::istream& operator >>(std::istream &lhs, Purse &rhs);
         
     
 };
@@ -81,9 +89,9 @@ class Purse {
 // Will need to be a friend or add getters, so it has access to the class data and methods
 // it is one of the most common friend functions
 // lhs and rhs arent needed here, but it helps reability
-std::ostream& operator <<(ostream &lhs, const Purse &rhs); // NOT CONST
-std::istream& operator >>(std::istream &lhs, Purse &rhs);
+std::ostream& operator <<(ostream &lhs, const Purse &rhs);
+std::istream& operator >>(std::istream &lhs, Purse &rhs);// NOT CONST
 
-Purse operator+(int,  const Purse&); // Allows for in t+ purse
+Purse operator+(int,  const Purse&); // Allows for int + purse
 
 #endif /* Purse_hpp */

@@ -9,8 +9,8 @@
 #include <string>
 #include "Purse.hpp"
 
-//using namespace std;
-//
+using namespace std;
+
 //int main() {
 //    
 //    // Purse properties
@@ -37,8 +37,10 @@
 ////    cout << (p1 == p3) << endl;
 //    
 //    // Overloaded operator <<
-//    cout << p1 << endl << p2 << endl << p3 << endl<< p4 << endl << p1 << endl;
+//    //cout << p1 << endl << p2 << endl << p3 << endl<< p4 << endl << p1 << endl;
 //    
+//    // Overloaded operator >>
+//    cin >> p1;
 //
 //    return 0;
 //    

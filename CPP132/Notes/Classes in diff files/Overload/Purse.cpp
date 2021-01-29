@@ -164,11 +164,48 @@ std::ostream& operator <<(std::ostream &lhs, const Purse &rhs) {
     return lhs;
 }
 
-std::istream& operator <<(std::istream &lhs, Purse &rhs) {
-    //TODO: write this
+std::istream& operator >>(std::istream &lhs, Purse &rhs) {
+    
+    int g, c, s;
+    
+    lhs >> g >> s >> c;
+    if(g >= 0) {
+        rhs.gold = g;
+    } else {
+        rhs.gold = 0;
+    }
+    
+    if(s >= 0) {
+        rhs.silver = s;
+    } else {
+        rhs.silver = 0;
+    }
+    
+    if(c >= 0) {
+        rhs.copper = c;
+    } else {
+        rhs.copper = 0;
+    }
     
     return lhs;
 }
+
+int Purse::operator[](int index) {
+    if(index % 3 == 0) return gold;
+    if(index % 3 == 1) return silver;
+    if(index % 3 == 2) return copper;
+    else return -1;
+}
+
+
+Purse Purse::operator++() {
+    copper++;
+    return *this;
+}
+
+//Purse operator++(int) {
+//    
+//}
 
 //==========================
 // MARK: NON member function
