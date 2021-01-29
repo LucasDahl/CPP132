@@ -39,7 +39,7 @@ class FractionalComplex {
     
         // Methods
         void printme();
-        double length();
+        double length() const;
     
         // Overload
     

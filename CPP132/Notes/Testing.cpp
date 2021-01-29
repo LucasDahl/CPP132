@@ -11,21 +11,24 @@
 #include <iostream>
 #include <string>
 
-//include <cmath>
+#include <cmath>
 
-using namespace std;
-//
-//
-//// Prototypes
-//
-//
+//using namespace std;
+////
+////
+////// Prototypes
+//double length();
+////
 //int main() {
-//    int a = 1;
-//    cout << "a = " << a << endl;
-//    cout << "a = " << a++ << " This should match above" << endl;
-//    cout << "a = " << a++ << " This should be one bigger" << endl;
-//    cout << "a = " << a  << " This should be one bigger" << endl;
-//    
+//   
+//    cout << length() << endl;
 //}
 
+double length() {
+    int a = 2;
+    int b = 5;
+    int c = 35;
+    int d = 36;
+    return sqrt(pow(((a * 1.0)/(b * 1.0)), 2.0) + pow(((c * 1.0)/(d * 1.0)), 2.0));
+}
 

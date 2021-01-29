@@ -12,7 +12,6 @@
 #include "FractionalComplex.hpp"
 #include <iostream>
 #include <string>
-#include <cmath> // May not need, ask teacher
 
 using namespace std;
 
@@ -28,10 +27,9 @@ FractionalComplex::FractionalComplex() {
     c = 0;
     d = 1;
     
-    
 }
 
-// This constructor sets the num
+// This constructor sets the numerators
 FractionalComplex::FractionalComplex(int x, int y) {
     
     a = x;
@@ -76,9 +74,7 @@ void FractionalComplex::reduce() {
         c = c / gcdTwo;
         d = d / gcdTwo;
     }
-
 }
-
 
 // A method to find the LCD
 int  FractionalComplex::findLCD(int a, int b) {
@@ -113,7 +109,7 @@ int FractionalComplex::findGCD(int numerator, int denominator) {
 //=====================
 
 // This method simply prints the Fractional
-// complex.
+// complex, without using and overloaded operator.
 void FractionalComplex::printme() {
     
     if(b < 0 && d < 0) {
@@ -137,8 +133,8 @@ void FractionalComplex::printme() {
 }
 
 // This method will find the length
-double FractionalComplex::length() {
-    return sqrt(pow((a/b), 2) + pow((c/d), 2));
+double FractionalComplex::length() const {
+    return sqrt(pow(((a * 1.0)/(b * 1.0)), 2) + pow(((c * 1.0)/(d * 1.0)), 2));
 }
 
 //===================
@@ -186,8 +182,6 @@ FractionalComplex FractionalComplex::operator - (const FractionalComplex &rhs) {
     tempFraction.c = (c * rhs.d) - (d * rhs.c);
     tempFraction.d = d * rhs.d;
     
-
-    
     // Reduce if possible
     tempFraction.reduce();
     
@@ -197,9 +191,9 @@ FractionalComplex FractionalComplex::operator - (const FractionalComplex &rhs) {
 // This overloaded operator will multiple a FractionalComplexs with an int
 FractionalComplex operator *(const FractionalComplex &lhs,  int x) {
     
-    
     FractionalComplex tempFraction;
     
+    // Set teh values
     tempFraction.a = lhs.a * x;
     tempFraction.b = lhs.b;
     tempFraction.c = lhs.c * x;
@@ -213,10 +207,10 @@ FractionalComplex operator *(const FractionalComplex &lhs,  int x) {
 
 // This overloaded operator will multiple two FractionalComplexs
 FractionalComplex FractionalComplex::operator *(const FractionalComplex &rhs) {
-    
 
     FractionalComplex tempFraction, tempFractionOne, tempFractionTwo;
-    
+
+    // Set teh values
     tempFractionOne.a = (a * rhs.a);
     tempFractionOne.b = (b * rhs.b);
     tempFractionOne.c = (a * rhs.c);
@@ -276,7 +270,6 @@ FractionalComplex FractionalComplex::operator++() {
 
     return *this;
     
-    
 }
 
 // Postfix increment
@@ -292,13 +285,12 @@ FractionalComplex FractionalComplex::operator++(int) {
 // Deconstructor
 FractionalComplex::~FractionalComplex() {}
 
-
 //==============
 // MARK: Compare
 //==============
 
 // This operator is used to determine if a FractionalComplex is less than than another.
-bool FractionalComplex::operator < ( const FractionalComplex &rhs) {
+bool FractionalComplex::operator < (const FractionalComplex &rhs) {
     
     // Properties
     FractionalComplex tempFraction = rhs;
@@ -307,15 +299,8 @@ bool FractionalComplex::operator < ( const FractionalComplex &rhs) {
     reduce();
     tempFraction.reduce();
     
-
-    if(b < tempFraction.b || d < tempFraction.d) {
+    if(length() < tempFraction.length()) {
         return true;
-    } else if(b == tempFraction.b && d == tempFraction.d) {
-        
-        if(a < tempFraction.a || c < tempFraction.c) {
-            return true;
-        }
-        
     }
 
     return false;
@@ -330,15 +315,9 @@ bool FractionalComplex::operator > (const FractionalComplex &rhs) {
     // Make sure both fractions are reduced
     reduce();
     tempFraction.reduce();
-    
-    if(b > tempFraction.b || d > tempFraction.d) {
+
+    if(length() > tempFraction.length()) {
         return true;
-    } else if(b == tempFraction.b && d == tempFraction.d) {
-        
-        if(a > tempFraction.a || c > tempFraction.c) {
-            return true;
-        }
-        
     }
     
     return false;
@@ -360,4 +339,3 @@ bool FractionalComplex::operator == (const FractionalComplex &rhs) {
     return false;
 }
 
-    
