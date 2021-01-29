@@ -20,8 +20,11 @@ using namespace std;
 //
 //
 //int main() {
-//    
-//    cout << 0 % 0 == 0;
+//    int a = 1;
+//    cout << "a = " << a << endl;
+//    cout << "a = " << a++ << " This should match above" << endl;
+//    cout << "a = " << a++ << " This should be one bigger" << endl;
+//    cout << "a = " << a  << " This should be one bigger" << endl;
 //    
 //}
 

@@ -41,7 +41,7 @@ int main()
 //    section5();
 //    section6();
 //    section7();
-//    section8();
+    section8();
 }
 
 
@@ -266,9 +266,9 @@ void section8()
 
     cout << "PostFix Test" << endl;
     cout << "a = " << a << endl;
-    cout << "a = " << a << " This should match above" << endl;
+    cout << "a = " << a++ << " This should match above" << endl;
     cout << "a = " << a++ << " This should be one bigger" << endl;
-    cout << "a = " << a++   << " This should be one bigger" << endl;
+    cout << "a = " << a  << " This should be one bigger" << endl;
 
     b = FractionalComplex(1,3,1,5);
     cout << "Prefix Test" << endl;

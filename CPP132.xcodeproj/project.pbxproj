@@ -14,6 +14,8 @@
 		954497E425ABB0A6006E0C77 /* InClassAssignment1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 954497E325ABB0A6006E0C77 /* InClassAssignment1.cpp */; };
 		954BB32725AE9928000FBDD5 /* SoccerPlayers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 954BB32625AE9928000FBDD5 /* SoccerPlayers.cpp */; };
 		9554619725C11501002DCAA5 /* Testing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9554619625C11501002DCAA5 /* Testing.cpp */; };
+		9569DDCF25C4875B0074D02A /* InheratanceGradeExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9569DDCE25C4875B0074D02A /* InheratanceGradeExample.cpp */; };
+		9569DDD325C487C80074D02A /* Activity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9569DDD225C487C80074D02A /* Activity.cpp */; };
 		9570D2BD25ACCFDB001C7F50 /* Student.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9570D2BC25ACCFDB001C7F50 /* Student.cpp */; };
 		95919B4D25B8FAEB00C92645 /* InClass_ClassMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95919B4C25B8FAEB00C92645 /* InClass_ClassMain.cpp */; };
 		95919B5125B8FB2800C92645 /* SongInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95919B4F25B8FB2800C92645 /* SongInfo.cpp */; };
@@ -52,6 +54,9 @@
 		954497E325ABB0A6006E0C77 /* InClassAssignment1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InClassAssignment1.cpp; sourceTree = "<group>"; };
 		954BB32625AE9928000FBDD5 /* SoccerPlayers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SoccerPlayers.cpp; sourceTree = "<group>"; };
 		9554619625C11501002DCAA5 /* Testing.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Testing.cpp; sourceTree = "<group>"; };
+		9569DDCE25C4875B0074D02A /* InheratanceGradeExample.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InheratanceGradeExample.cpp; sourceTree = "<group>"; };
+		9569DDD125C487810074D02A /* Activity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Activity.h; sourceTree = "<group>"; };
+		9569DDD225C487C80074D02A /* Activity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Activity.cpp; sourceTree = "<group>"; };
 		9570D2BC25ACCFDB001C7F50 /* Student.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Student.cpp; sourceTree = "<group>"; };
 		95919B4C25B8FAEB00C92645 /* InClass_ClassMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InClass_ClassMain.cpp; sourceTree = "<group>"; };
 		95919B4F25B8FB2800C92645 /* SongInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SongInfo.cpp; sourceTree = "<group>"; };
@@ -105,6 +110,16 @@
 				95AC31E325B210C7009835D4 /* shapes */,
 			);
 			path = "Classes in diff files";
+			sourceTree = "<group>";
+		};
+		9569DDCD25C487280074D02A /* inheritance */ = {
+			isa = PBXGroup;
+			children = (
+				9569DDCE25C4875B0074D02A /* InheratanceGradeExample.cpp */,
+				9569DDD125C487810074D02A /* Activity.h */,
+				9569DDD225C487C80074D02A /* Activity.cpp */,
+			);
+			path = inheritance;
 			sourceTree = "<group>";
 		};
 		95919B4B25B8FACD00C92645 /* Class Assignment */ = {
@@ -177,6 +192,7 @@
 		95C0EDE025A4E3E90038D9D8 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
+				9569DDCD25C487280074D02A /* inheritance */,
 				9540719325B0BF0600C84EDE /* Classes in diff files */,
 				95C0EDEB25A4E7B20038D9D8 /* charString.cpp */,
 				95D5F68F25A8D5ED0031B7DD /* StructData.cpp */,
@@ -286,6 +302,7 @@
 				95C0EDED25A4E7B20038D9D8 /* charString.cpp in Sources */,
 				95BC9D6025BF450400945266 /* Purse.cpp in Sources */,
 				95AC31E625B21129009835D4 /* StudentClassExamples.cpp in Sources */,
+				9569DDD325C487C80074D02A /* Activity.cpp in Sources */,
 				95919B5125B8FB2800C92645 /* SongInfo.cpp in Sources */,
 				95BA45A225AF6D390008AE9C /* ClassNotes.cpp in Sources */,
 				95E4302125A78587000BD22A /* AssignmentOne.cpp in Sources */,
@@ -304,6 +321,7 @@
 				954BB32725AE9928000FBDD5 /* SoccerPlayers.cpp in Sources */,
 				95E4D31A25BB38F6004F90F2 /* CS132_InventoryExample.cpp in Sources */,
 				95E4D31D25BB3900004F90F2 /* InventoryItem.cpp in Sources */,
+				9569DDCF25C4875B0074D02A /* InheratanceGradeExample.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

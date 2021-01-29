@@ -271,24 +271,22 @@ ostream& operator <<(ostream &lhs, const FractionalComplex &rhs) {
 // Prefix increment
 FractionalComplex FractionalComplex::operator++() {
     
-    
-    FractionalComplex tempFraction;
-    
     this->a = a + b;
-    //tempFraction.b = b;
     this->c = c + d;
-    //tempFraction.d = d;
-    
+
     return *this;
+    
+    
 }
 
 // Postfix increment
 FractionalComplex FractionalComplex::operator++(int) {
-    
+
+    FractionalComplex tempFraction = *this;
     a = a + b;
     c = c + d;
     
-    return *this;
+    return tempFraction;
 }
 
 // Deconstructor
