@@ -75,7 +75,10 @@ void FractionalComplex::reduce() {
     }
     
     // Check for if the fraction is negative, or if the denominator is not zero
-    if(b < 0) {
+    if(a < 0 && b < 0) {
+        a = abs(a);
+        b = abs(b);
+    } else if(b < 0) {
         a = a * -1;
         b = abs(b);
     } else if(b == 0) {
@@ -83,7 +86,10 @@ void FractionalComplex::reduce() {
         b = 1;
     }
     
-    if(d < 0) {
+    if(c < 0 && d < 0) {
+        c = abs(c);
+        d = abs(d);
+    } else if(d < 0) {
         c = c * -1;
         d = abs(d);
     } else if(d == 0) {
@@ -336,4 +342,3 @@ bool FractionalComplex::operator == (const FractionalComplex &rhs) {
     
     return false;
 }
-

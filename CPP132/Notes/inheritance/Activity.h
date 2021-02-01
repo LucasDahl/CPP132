@@ -8,6 +8,8 @@
 #ifndef Activity_h
 #define Activity_h
 
+// Polymorphism doesnt work without pointers
+
 class GradedActivity {
   
     private:
@@ -18,6 +20,8 @@ class GradedActivity {
     
         GradedActivity(double);
         GradedActivity();
+    
+        virtual void printMe(); // putting virtual(must be apointer) will allow for the sub classes to use their override methods
     
     protected: // Private to the outside world. But maybe visable to teh childeren
         double percent;
@@ -35,17 +39,34 @@ class Quiz: public GradedActivity {
     public:
         Quiz(int);
         // Has double getPercent() - From parentClass
+        void printMe(); // updated/improved version of printMe() method that was inherated
     
 };
 
 class Homework: public GradedActivity {
 
-    private:
+    protected:
         int maxScore;
         int score;
     
     public:
+    Homework();
         Homework(int, int);
+        void printMe(); // updated/improved version of printMe() method that was inherated
+};
+
+
+class ExtraCredit : public Homework {
+  
+    private:
+    int extraPoints;
+    
+    public:
+        ~ExtraCredit() {}
+        ExtraCredit(int);
+        void printMe();
+    
+    
 };
 
 #endif /* Activity_h */
