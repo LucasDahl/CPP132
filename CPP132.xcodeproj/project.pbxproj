@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9527865B25BD2F0400E66D35 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9527865A25BD2F0400E66D35 /* main.cpp */; };
 		9527865F25BD2F8400E66D35 /* FractionalComplex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9527865D25BD2F8400E66D35 /* FractionalComplex.cpp */; };
+		952CE82C25C8A15C000FCE0F /* Vectors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 952CE82B25C8A15C000FCE0F /* Vectors.cpp */; };
 		9540719625B0C04500C84EDE /* ClassR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9540719425B0C04500C84EDE /* ClassR.cpp */; };
 		9540719A25B0C10D00C84EDE /* Shapes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9540719925B0C10D00C84EDE /* Shapes.cpp */; };
 		954497E425ABB0A6006E0C77 /* InClassAssignment1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 954497E325ABB0A6006E0C77 /* InClassAssignment1.cpp */; };
@@ -48,6 +49,7 @@
 		9527865A25BD2F0400E66D35 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9527865D25BD2F8400E66D35 /* FractionalComplex.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FractionalComplex.cpp; sourceTree = "<group>"; };
 		9527865E25BD2F8400E66D35 /* FractionalComplex.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FractionalComplex.hpp; sourceTree = "<group>"; };
+		952CE82B25C8A15C000FCE0F /* Vectors.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Vectors.cpp; sourceTree = "<group>"; };
 		9540719425B0C04500C84EDE /* ClassR.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ClassR.cpp; sourceTree = "<group>"; };
 		9540719525B0C04500C84EDE /* ClassR.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ClassR.hpp; sourceTree = "<group>"; };
 		9540719925B0C10D00C84EDE /* Shapes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Shapes.cpp; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				9570D2BC25ACCFDB001C7F50 /* Student.cpp */,
 				95BA45A125AF6D390008AE9C /* ClassNotes.cpp */,
 				9554619625C11501002DCAA5 /* Testing.cpp */,
+				952CE82B25C8A15C000FCE0F /* Vectors.cpp */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				9527865B25BD2F0400E66D35 /* main.cpp in Sources */,
 				9540719625B0C04500C84EDE /* ClassR.cpp in Sources */,
 				95C28D1925B5F24A004813B4 /* PasswordEncrypter.cpp in Sources */,
+				952CE82C25C8A15C000FCE0F /* Vectors.cpp in Sources */,
 				954497E425ABB0A6006E0C77 /* InClassAssignment1.cpp in Sources */,
 				9570D2BD25ACCFDB001C7F50 /* Student.cpp in Sources */,
 				95919B4D25B8FAEB00C92645 /* InClass_ClassMain.cpp in Sources */,
