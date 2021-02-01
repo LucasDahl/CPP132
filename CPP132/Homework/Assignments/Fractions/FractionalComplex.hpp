@@ -53,7 +53,6 @@ class FractionalComplex {
         FractionalComplex operator++();
         FractionalComplex operator++(int);
     
-        
         // Compare
         bool operator < (const FractionalComplex&);
         bool operator > (const FractionalComplex&);
@@ -64,7 +63,6 @@ class FractionalComplex {
     
         // Deconstructor
         ~FractionalComplex();
-    
 };
 
 //=====================
@@ -72,6 +70,5 @@ class FractionalComplex {
 //=====================
 ostream& operator <<(ostream &lhs, const FractionalComplex &rhs);
 FractionalComplex operator*(const FractionalComplex&,  int);
-
 
 #endif /* FractionalComplex_hpp */

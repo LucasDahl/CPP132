@@ -24,25 +24,25 @@ void intro();
 void section1(); // Pass
 void section2(); // Pass
 void section3(); // Pass
-void section4(); // Pass - May need a check with If statements
+void section4(); // Pass
 void section5(); // Pass
 void section6(); // Pass
 void section7(); // Pass
 void section8(); // Pass
 
-int main()
-{
-    intro();
-	//Uncomment these as you complete various sections.
+//int main()
+//{
+//    intro();
+//	//Uncomment these as you complete various sections.
 //    section1();
 //    section2();
 //    section3();
 //    section4();
-    section5();
+//    section5();
 //    section6();
 //    section7();
 //    section8();
-}
+//}
 
 
 

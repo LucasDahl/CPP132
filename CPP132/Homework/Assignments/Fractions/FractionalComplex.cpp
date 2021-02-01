@@ -64,7 +64,6 @@ void FractionalComplex::reduce() {
     int gcdTwo = findGCD(c, d), lcdTwo = findLCD(c, d);
 
     // Reduce the fractions.
-    
     if(lcdOne % a == 0 && lcdOne % b == 0) { // ERROR
         a = a / gcdOne;
         b = b / gcdOne;
@@ -74,6 +73,24 @@ void FractionalComplex::reduce() {
         c = c / gcdTwo;
         d = d / gcdTwo;
     }
+    
+    // Check for if the fraction is negative, or if the denominator is not zero
+    if(b < 0) {
+        a = a * -1;
+        b = abs(b);
+    } else if(b == 0) {
+        a = 0;
+        b = 1;
+    }
+    
+    if(d < 0) {
+        c = c * -1;
+        d = abs(d);
+    } else if(d == 0) {
+        c = 0;
+        d = 1;
+    }
+    
 }
 
 // A method to find the LCD
@@ -112,23 +129,9 @@ int FractionalComplex::findGCD(int numerator, int denominator) {
 // complex, without using and overloaded operator.
 void FractionalComplex::printme() {
     
-    if(b < 0 && d < 0) {
-        cout << "[(-" << a << "/" << abs(b) << ")]";
-        cout << " + ";
-        cout << "[(-" << c << "/" << abs(d) << ")]" << "i" << endl;
-    } else if(b < 0) {
-        cout << "[(-" << a << "/" << abs(b) << ")]";
-        cout << " + ";
-        cout << "[(" << c << "/" << d << ")]" << "i";
-    }else if(d < 0) {
-        cout << "[(" << a << "/" << b << ")]";
-        cout << " + ";
-        cout << "[(-" << c << "/" << abs(d) << ")]" << "i" << endl;
-    } else {
-        cout << "[(" << a << "/" << b << ")]";
-        cout << " + ";
-        cout << "[(" << c << "/" << d << ")]" << "i" << endl;
-    }
+    cout << "[(" << a << "/" << b << ")]";
+    cout << " + ";
+    cout << "[(" << c << "/" << d << ")]" << "i" << endl;
    
 }
 
@@ -182,6 +185,17 @@ FractionalComplex FractionalComplex::operator - (const FractionalComplex &rhs) {
     tempFraction.c = (c * rhs.d) - (d * rhs.c);
     tempFraction.d = d * rhs.d;
     
+    // Make sure the denominators are not zero.
+    if(tempFraction.b < 0) {
+        tempFraction.a = 0;
+        tempFraction.b = 1;
+    }
+    
+    if(tempFraction.d < 0) {
+        tempFraction.c = 0;
+        tempFraction.d = 1;
+    }
+    
     // Reduce if possible
     tempFraction.reduce();
     
@@ -189,7 +203,7 @@ FractionalComplex FractionalComplex::operator - (const FractionalComplex &rhs) {
 }
 
 // This overloaded operator will multiple a FractionalComplexs with an int
-FractionalComplex operator *(const FractionalComplex &lhs,  int x) {
+FractionalComplex operator * (const FractionalComplex &lhs,  int x) {
     
     FractionalComplex tempFraction;
     
@@ -224,7 +238,6 @@ FractionalComplex FractionalComplex::operator *(const FractionalComplex &rhs) {
     // Add them together(+ operator will reduce)
     tempFraction = tempFractionOne + tempFractionTwo;
     
-    
     return tempFraction;
 }
 
@@ -236,24 +249,9 @@ FractionalComplex FractionalComplex::operator *(const FractionalComplex &rhs) {
 // This overloaded operator will output a FractionalComplexs
 ostream& operator <<(ostream &lhs, const FractionalComplex &rhs) {
 
-    if(rhs.b < 0 && rhs.d < 0) {
-        lhs << "[(-" << rhs.a << "/" << abs(rhs.b) << ")]";
-        lhs << " + ";
-        lhs << "[(-" << rhs.c << "/" << abs(rhs.d) << ")]" << "i";
-    } else if(rhs.b < 0) {
-        lhs << "[(-" << rhs.a << "/" << abs(rhs.b) << ")]";
-        lhs << " + ";
-        lhs << "[(" << rhs.c << "/" << rhs.d << ")]" << "i";
-    } else if(rhs.d < 0) {
-        lhs << "[(" << rhs.a << "/" << rhs.b << ")]";
-        lhs << " + ";
-        lhs << "[(-" << rhs.c << "/" << abs(rhs.d) << ")]" << "i";
-    } else {
-        lhs << "[(" << rhs.a << "/" << rhs.b << ")]";
-        lhs << " + ";
-        lhs << "[(" << rhs.c << "/" << rhs.d << ")]" << "i";
-    }
-    
+    lhs << "[(" << rhs.a << "/" << rhs.b << ")]";
+    lhs << " + ";
+    lhs << "[(" << rhs.c << "/" << rhs.d << ")]" << "i";
     
     return lhs;
 }
