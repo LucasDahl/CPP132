@@ -20,6 +20,11 @@
 		9569DDCF25C4875B0074D02A /* InheratanceGradeExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9569DDCE25C4875B0074D02A /* InheratanceGradeExample.cpp */; };
 		9569DDD325C487C80074D02A /* Activity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9569DDD225C487C80074D02A /* Activity.cpp */; };
 		9570D2BD25ACCFDB001C7F50 /* Student.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9570D2BC25ACCFDB001C7F50 /* Student.cpp */; };
+		9579A62F25CDECF300C3CEBB /* Testing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9579A62E25CDECF300C3CEBB /* Testing.cpp */; };
+		9579A63225CE0A2D00C3CEBB /* QuestionFour.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9579A63125CE0A2D00C3CEBB /* QuestionFour.cpp */; };
+		9579A63625CE118B00C3CEBB /* Month.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9579A63425CE118B00C3CEBB /* Month.cpp */; };
+		9579A63A25CE1B6100C3CEBB /* PolarCoordinates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9579A63825CE1B6100C3CEBB /* PolarCoordinates.cpp */; };
+		9579A63E25CE1EAD00C3CEBB /* Vehicle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9579A63C25CE1EAD00C3CEBB /* Vehicle.cpp */; };
 		95919B4D25B8FAEB00C92645 /* InClass_ClassMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95919B4C25B8FAEB00C92645 /* InClass_ClassMain.cpp */; };
 		95919B5125B8FB2800C92645 /* SongInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95919B4F25B8FB2800C92645 /* SongInfo.cpp */; };
 		95AC31E625B21129009835D4 /* StudentClassExamples.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95AC31E525B21129009835D4 /* StudentClassExamples.cpp */; };
@@ -65,6 +70,14 @@
 		9569DDD125C487810074D02A /* Activity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Activity.h; sourceTree = "<group>"; };
 		9569DDD225C487C80074D02A /* Activity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Activity.cpp; sourceTree = "<group>"; };
 		9570D2BC25ACCFDB001C7F50 /* Student.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Student.cpp; sourceTree = "<group>"; };
+		9579A62E25CDECF300C3CEBB /* Testing.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Testing.cpp; sourceTree = "<group>"; };
+		9579A63125CE0A2D00C3CEBB /* QuestionFour.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuestionFour.cpp; sourceTree = "<group>"; };
+		9579A63425CE118B00C3CEBB /* Month.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Month.cpp; sourceTree = "<group>"; };
+		9579A63525CE118B00C3CEBB /* Month.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Month.hpp; sourceTree = "<group>"; };
+		9579A63825CE1B6100C3CEBB /* PolarCoordinates.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PolarCoordinates.cpp; sourceTree = "<group>"; };
+		9579A63925CE1B6100C3CEBB /* PolarCoordinates.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PolarCoordinates.hpp; sourceTree = "<group>"; };
+		9579A63C25CE1EAD00C3CEBB /* Vehicle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Vehicle.cpp; sourceTree = "<group>"; };
+		9579A63D25CE1EAD00C3CEBB /* Vehicle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Vehicle.hpp; sourceTree = "<group>"; };
 		95919B4C25B8FAEB00C92645 /* InClass_ClassMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InClass_ClassMain.cpp; sourceTree = "<group>"; };
 		95919B4F25B8FB2800C92645 /* SongInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SongInfo.cpp; sourceTree = "<group>"; };
 		95919B5025B8FB2800C92645 /* SongInfo.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SongInfo.hpp; sourceTree = "<group>"; };
@@ -132,6 +145,14 @@
 		9568B28225CB1D1A003999D1 /* Midterm */ = {
 			isa = PBXGroup;
 			children = (
+				9579A62E25CDECF300C3CEBB /* Testing.cpp */,
+				9579A63125CE0A2D00C3CEBB /* QuestionFour.cpp */,
+				9579A63425CE118B00C3CEBB /* Month.cpp */,
+				9579A63525CE118B00C3CEBB /* Month.hpp */,
+				9579A63825CE1B6100C3CEBB /* PolarCoordinates.cpp */,
+				9579A63925CE1B6100C3CEBB /* PolarCoordinates.hpp */,
+				9579A63C25CE1EAD00C3CEBB /* Vehicle.cpp */,
+				9579A63D25CE1EAD00C3CEBB /* Vehicle.hpp */,
 			);
 			path = Midterm;
 			sourceTree = "<group>";
@@ -350,7 +371,10 @@
 				95BA45A225AF6D390008AE9C /* ClassNotes.cpp in Sources */,
 				95E4302125A78587000BD22A /* AssignmentOne.cpp in Sources */,
 				9527865B25BD2F0400E66D35 /* main.cpp in Sources */,
+				9579A63E25CE1EAD00C3CEBB /* Vehicle.cpp in Sources */,
 				9540719625B0C04500C84EDE /* ClassR.cpp in Sources */,
+				9579A63625CE118B00C3CEBB /* Month.cpp in Sources */,
+				9579A63225CE0A2D00C3CEBB /* QuestionFour.cpp in Sources */,
 				95C28D1925B5F24A004813B4 /* PasswordEncrypter.cpp in Sources */,
 				952CE82C25C8A15C000FCE0F /* Vectors.cpp in Sources */,
 				954497E425ABB0A6006E0C77 /* InClassAssignment1.cpp in Sources */,
@@ -362,12 +386,14 @@
 				9554619725C11501002DCAA5 /* Testing.cpp in Sources */,
 				95D5F69025A8D5ED0031B7DD /* StructData.cpp in Sources */,
 				9527865F25BD2F8400E66D35 /* FractionalComplex.cpp in Sources */,
+				9579A63A25CE1B6100C3CEBB /* PolarCoordinates.cpp in Sources */,
 				95AC31EB25B211F7009835D4 /* StudentClass.cpp in Sources */,
 				954BB32725AE9928000FBDD5 /* SoccerPlayers.cpp in Sources */,
 				95E4D31A25BB38F6004F90F2 /* CS132_InventoryExample.cpp in Sources */,
 				95E4D31D25BB3900004F90F2 /* InventoryItem.cpp in Sources */,
 				9568B28A25CB1E4C003999D1 /* Train.cpp in Sources */,
 				9569DDCF25C4875B0074D02A /* InheratanceGradeExample.cpp in Sources */,
+				9579A62F25CDECF300C3CEBB /* Testing.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

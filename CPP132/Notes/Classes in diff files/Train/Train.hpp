@@ -33,16 +33,17 @@ class Train {
         Train();
         ~Train(); // needed since there is a pointer.
         Train(string, string);
+        Train(const Train &other); // Copy constructor (const is optional)
         int addCar(TrainCar);
     
-        void operator = (Train&);
+        void operator = (const Train&); // pass objects by reference(the error would be on the deconstructor if there is no &(passed by referene(pointers)))
     
-        friend ostream& operator << (ostream&, Train&);
+        friend ostream& operator << (ostream&, const Train&); // pass objects by reference(the error would be on the deconstructor if there is no &)
     
 };
 
 // Prototype
 
-ostream& operator << (ostream&, Train&);
+ostream& operator << (ostream&, const Train&);
 
 #endif /* Train_hpp */

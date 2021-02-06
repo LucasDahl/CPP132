@@ -24,6 +24,20 @@ Train::Train(string to, string from) {
     numCars = 0;
 }
 
+// Same as the = operator,
+// but called as Train x =y(train being a train)
+Train::Train(const Train &other) {
+    this->startLocation = other.startLocation;
+    this->endLocation = other.endLocation;
+    this->numCars = 0;
+    if(other.numCars == 0) return;
+    
+    // Atleast one car
+    for(int i = 0; i < other.numCars; i++) {
+        this->addCar(other.cars[i]);
+    }
+}
+
 // MARK: Deconstructor
 
 Train::~Train() {
@@ -57,7 +71,10 @@ int Train::addCar(TrainCar newCar) {
 }
 
 // MARK: Operators
-void Train::operator = (Train &other) {
+
+// Same as copy constructor,
+// but called x = y(both x and y are Trains)
+void Train::operator = (const Train &other) {
     
     this->startLocation = other.startLocation;
     this->endLocation = other.endLocation;
@@ -72,18 +89,8 @@ void Train::operator = (Train &other) {
 
 // MARK: Non class functions
 
-ostream& operator << (ostream &o, Train &x) {
+ostream& operator << (ostream &o, const Train &x) {
     
-//    if(x.numCars == 0) {
-//        o << "No cars";
-//    } else {
-//        o << "Train [" << x.startLocation << " <--> " << x.endLocation << "]";
-//        o << " cars: ";
-//        for(int i = 0; i < x.numCars; i++) {
-//            o << x.cars[i].name << ":" << x.cars[i].weight << " ";
-//        }
-//    }
-//
     o << "Train [" << x.startLocation << " <--> " << x.endLocation << "]";
     o << " cars: ";
     for(int i = 0; i < x.numCars; i++) {

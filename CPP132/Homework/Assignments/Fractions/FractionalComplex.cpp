@@ -100,7 +100,7 @@ void FractionalComplex::reduce() {
 }
 
 // A method to find the LCD
-int  FractionalComplex::findLCD(int a, int b) {
+int FractionalComplex::findLCD(int a, int b) {
     return (a * b) / findGCD(a, b);
 }
 
@@ -280,6 +280,7 @@ FractionalComplex FractionalComplex::operator++() {
 FractionalComplex FractionalComplex::operator++(int) {
 
     FractionalComplex tempFraction = *this;
+    
     a = a + b;
     c = c + d;
     
