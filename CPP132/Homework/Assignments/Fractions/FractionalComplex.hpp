@@ -29,6 +29,7 @@ class FractionalComplex {
         void reduce();
         int findGCD(int, int);
         int findLCD(int a, int b);
+        double length();
 
     public:
     
@@ -39,7 +40,6 @@ class FractionalComplex {
     
         // Methods
         void printme();
-        double length() const;
     
         // Overload
     

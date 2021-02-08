@@ -13,12 +13,12 @@
 
 #include <cmath>
 
-//using namespace std;
-////
-////
-////// Prototypes
-//double length();
-////
+using namespace std;
+
+
+// Prototypes
+double length();
+//
 //int main() {
 //   
 //    cout << length() << endl;

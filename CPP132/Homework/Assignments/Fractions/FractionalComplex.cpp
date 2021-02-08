@@ -142,7 +142,7 @@ void FractionalComplex::printme() {
 }
 
 // This method will find the length
-double FractionalComplex::length() const {
+double FractionalComplex::length() {
     return sqrt(pow(((a * 1.0)/(b * 1.0)), 2) + pow(((c * 1.0)/(d * 1.0)), 2));
 }
 
