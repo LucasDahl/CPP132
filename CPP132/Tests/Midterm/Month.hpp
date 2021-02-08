@@ -19,7 +19,7 @@ class Month {
         // Fields
         int month;
         int year;
-
+        const static string months[12]; // Set up here and put the values in the .cpp fgile.
     
     public:
         
@@ -27,6 +27,7 @@ class Month {
         Month();
         Month(int);
         Month(int, int = 1);
+        //Month(int = 1970, int = 1); Can do just this one
     
         // Methods
         string toString() const;

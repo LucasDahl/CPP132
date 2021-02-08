@@ -44,11 +44,13 @@ Month::Month(int year, int month){
     
 }
 
+// This is where you set the values to the static array.
+const string Month:: months[12] = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
+
 // MARK: Methods
 
 string Month::toString() const {
     
-    string months[12] = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
     string yearFormatted;
     
     
