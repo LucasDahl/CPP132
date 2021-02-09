@@ -25,6 +25,12 @@ string produceString(string str) {
     // Properties
     string newString;
     
+    // SHould have checked if the string is 0 or 1.
+    if(str.length() <= 1) {
+        newString = str;
+        return newString;
+    }
+    
     // Loop throught the passed in string
     for(int i = 0; i < str.length(); i ++) {
         

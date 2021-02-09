@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9526DA2225D305C800CE746C /* WeaponExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9526DA2125D305C800CE746C /* WeaponExample.cpp */; };
+		9526DA2725D305ED00CE746C /* Weapon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9526DA2525D305ED00CE746C /* Weapon.cpp */; };
 		9527865B25BD2F0400E66D35 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9527865A25BD2F0400E66D35 /* main.cpp */; };
 		9527865F25BD2F8400E66D35 /* FractionalComplex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9527865D25BD2F8400E66D35 /* FractionalComplex.cpp */; };
 		952CE82C25C8A15C000FCE0F /* Vectors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 952CE82B25C8A15C000FCE0F /* Vectors.cpp */; };
@@ -53,6 +55,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9526DA2125D305C800CE746C /* WeaponExample.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WeaponExample.cpp; sourceTree = "<group>"; };
+		9526DA2525D305ED00CE746C /* Weapon.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Weapon.cpp; sourceTree = "<group>"; };
+		9526DA2625D305ED00CE746C /* Weapon.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Weapon.hpp; sourceTree = "<group>"; };
 		9527865A25BD2F0400E66D35 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9527865D25BD2F8400E66D35 /* FractionalComplex.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FractionalComplex.cpp; sourceTree = "<group>"; };
 		9527865E25BD2F8400E66D35 /* FractionalComplex.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FractionalComplex.hpp; sourceTree = "<group>"; };
@@ -111,6 +116,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9526DA1F25D3059B00CE746C /* Grades */ = {
+			isa = PBXGroup;
+			children = (
+				9569DDD225C487C80074D02A /* Activity.cpp */,
+				9569DDD125C487810074D02A /* Activity.h */,
+				9569DDCE25C4875B0074D02A /* InheratanceGradeExample.cpp */,
+			);
+			path = Grades;
+			sourceTree = "<group>";
+		};
+		9526DA2025D305AA00CE746C /* Weapon Example */ = {
+			isa = PBXGroup;
+			children = (
+				9526DA2125D305C800CE746C /* WeaponExample.cpp */,
+				9526DA2525D305ED00CE746C /* Weapon.cpp */,
+				9526DA2625D305ED00CE746C /* Weapon.hpp */,
+			);
+			path = "Weapon Example";
+			sourceTree = "<group>";
+		};
 		9527865925BD2EE500E66D35 /* Fractions */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,9 +202,8 @@
 		9569DDCD25C487280074D02A /* inheritance */ = {
 			isa = PBXGroup;
 			children = (
-				9569DDCE25C4875B0074D02A /* InheratanceGradeExample.cpp */,
-				9569DDD125C487810074D02A /* Activity.h */,
-				9569DDD225C487C80074D02A /* Activity.cpp */,
+				9526DA2025D305AA00CE746C /* Weapon Example */,
+				9526DA1F25D3059B00CE746C /* Grades */,
 			);
 			path = inheritance;
 			sourceTree = "<group>";
@@ -370,6 +394,7 @@
 				95919B5125B8FB2800C92645 /* SongInfo.cpp in Sources */,
 				95BA45A225AF6D390008AE9C /* ClassNotes.cpp in Sources */,
 				95E4302125A78587000BD22A /* AssignmentOne.cpp in Sources */,
+				9526DA2725D305ED00CE746C /* Weapon.cpp in Sources */,
 				9527865B25BD2F0400E66D35 /* main.cpp in Sources */,
 				9579A63E25CE1EAD00C3CEBB /* Vehicle.cpp in Sources */,
 				9540719625B0C04500C84EDE /* ClassR.cpp in Sources */,
@@ -387,6 +412,7 @@
 				95D5F69025A8D5ED0031B7DD /* StructData.cpp in Sources */,
 				9527865F25BD2F8400E66D35 /* FractionalComplex.cpp in Sources */,
 				9579A63A25CE1B6100C3CEBB /* PolarCoordinates.cpp in Sources */,
+				9526DA2225D305C800CE746C /* WeaponExample.cpp in Sources */,
 				95AC31EB25B211F7009835D4 /* StudentClass.cpp in Sources */,
 				954BB32725AE9928000FBDD5 /* SoccerPlayers.cpp in Sources */,
 				95E4D31A25BB38F6004F90F2 /* CS132_InventoryExample.cpp in Sources */,

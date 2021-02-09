@@ -29,7 +29,7 @@ class FractionalComplex {
         void reduce();
         int findGCD(int, int);
         int findLCD(int a, int b);
-        double length(); // Do i need const?
+        double length();
 
     public:
     

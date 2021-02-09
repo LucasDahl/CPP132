@@ -21,13 +21,15 @@ class PolarCoordinates {
         double l;
         double theta;
     
+        // Methods
+        void reduce();
+    
     public:
         // Constructors
         PolarCoordinates();
         PolarCoordinates(double, double);
     
-        // Methods
-        void reduce();
+        
     
         PolarCoordinates operator*(const PolarCoordinates&);
         bool operator==(const PolarCoordinates&);

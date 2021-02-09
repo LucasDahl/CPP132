@@ -135,9 +135,9 @@ int FractionalComplex::findGCD(int numerator, int denominator) {
 // complex, without using and overloaded operator.
 void FractionalComplex::printme() {
     
-    cout << "[(" << a << "/" << b << ")]";
+    cout << "[(" << a << "/" << b << ")i]";
     cout << " + ";
-    cout << "[(" << c << "/" << d << ")]" << "i" << endl;
+    cout << "[(" << c << "/" << d << ")i]" << endl;
    
 }
 
@@ -255,9 +255,9 @@ FractionalComplex FractionalComplex::operator *(const FractionalComplex &rhs) {
 // This overloaded operator will output a FractionalComplexs
 ostream& operator <<(ostream &lhs, const FractionalComplex &rhs) {
 
-    lhs << "[(" << rhs.a << "/" << rhs.b << ")]";
+    lhs << "[(" << rhs.a << "/" << rhs.b << ")i]";
     lhs << " + ";
-    lhs << "[(" << rhs.c << "/" << rhs.d << ")]" << "i";
+    lhs << "[(" << rhs.c << "/" << rhs.d << ")i]";
     
     return lhs;
 }
@@ -269,8 +269,8 @@ ostream& operator <<(ostream &lhs, const FractionalComplex &rhs) {
 // Prefix increment
 FractionalComplex FractionalComplex::operator++() {
     
-    this->a = a + b;
-    this->c = c + d;
+    a = a + b;
+    c = c + d;
 
     return *this;
     
