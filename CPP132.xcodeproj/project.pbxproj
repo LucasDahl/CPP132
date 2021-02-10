@@ -40,6 +40,8 @@
 		95E4302125A78587000BD22A /* AssignmentOne.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95E4302025A78587000BD22A /* AssignmentOne.cpp */; };
 		95E4D31A25BB38F6004F90F2 /* CS132_InventoryExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95E4D31925BB38F6004F90F2 /* CS132_InventoryExample.cpp */; };
 		95E4D31D25BB3900004F90F2 /* InventoryItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95E4D31C25BB3900004F90F2 /* InventoryItem.cpp */; };
+		95F3EDCB25D457D70005F0C1 /* ExtraMethods.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95F3EDC925D457D70005F0C1 /* ExtraMethods.cpp */; };
+		95F3EDCF25D45E480005F0C1 /* RangedWeapon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95F3EDCD25D45E480005F0C1 /* RangedWeapon.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -103,6 +105,10 @@
 		95E4D31925BB38F6004F90F2 /* CS132_InventoryExample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CS132_InventoryExample.cpp; sourceTree = "<group>"; };
 		95E4D31C25BB3900004F90F2 /* InventoryItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InventoryItem.cpp; sourceTree = "<group>"; };
 		95E4D31F25BB3905004F90F2 /* InventoryItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InventoryItem.h; sourceTree = "<group>"; };
+		95F3EDC925D457D70005F0C1 /* ExtraMethods.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ExtraMethods.cpp; sourceTree = "<group>"; };
+		95F3EDCA25D457D70005F0C1 /* ExtraMethods.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ExtraMethods.hpp; sourceTree = "<group>"; };
+		95F3EDCD25D45E480005F0C1 /* RangedWeapon.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RangedWeapon.cpp; sourceTree = "<group>"; };
+		95F3EDCE25D45E480005F0C1 /* RangedWeapon.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RangedWeapon.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +138,10 @@
 				9526DA2125D305C800CE746C /* WeaponExample.cpp */,
 				9526DA2525D305ED00CE746C /* Weapon.cpp */,
 				9526DA2625D305ED00CE746C /* Weapon.hpp */,
+				95F3EDC925D457D70005F0C1 /* ExtraMethods.cpp */,
+				95F3EDCA25D457D70005F0C1 /* ExtraMethods.hpp */,
+				95F3EDCD25D45E480005F0C1 /* RangedWeapon.cpp */,
+				95F3EDCE25D45E480005F0C1 /* RangedWeapon.hpp */,
 			);
 			path = "Weapon Example";
 			sourceTree = "<group>";
@@ -408,8 +418,10 @@
 				95919B4D25B8FAEB00C92645 /* InClass_ClassMain.cpp in Sources */,
 				9540719A25B0C10D00C84EDE /* Shapes.cpp in Sources */,
 				95BC9D6425BF452100945266 /* PurseMainExample.cpp in Sources */,
+				95F3EDCB25D457D70005F0C1 /* ExtraMethods.cpp in Sources */,
 				9554619725C11501002DCAA5 /* Testing.cpp in Sources */,
 				95D5F69025A8D5ED0031B7DD /* StructData.cpp in Sources */,
+				95F3EDCF25D45E480005F0C1 /* RangedWeapon.cpp in Sources */,
 				9527865F25BD2F8400E66D35 /* FractionalComplex.cpp in Sources */,
 				9579A63A25CE1B6100C3CEBB /* PolarCoordinates.cpp in Sources */,
 				9526DA2225D305C800CE746C /* WeaponExample.cpp in Sources */,

@@ -8,24 +8,9 @@
 #include "Weapon.hpp"
 #include <iostream>
 #include <string>
-#include <random> // needed for random
-#include <chrono> // needed for random
+#include "ExtraMethods.hpp"
 
 using namespace std;
-
-// class Methods
-// Global random number
-unsigned WC_seed1 = chrono::system_clock::now().time_since_epoch().count();
-default_random_engine WC_rd(WC_seed1);
-mt19937 WC_mt(WC_rd());
-
-int makeRandomNumber(int MIN, int MAX) {
-    uniform_int_distribution<int> dist(MIN, MAX);
-    return dist(WC_mt);
-}
-
-// End of random stuff
-//==================================================
 
 // MARK: Constructors - Weapon
 
@@ -47,16 +32,7 @@ bool Weapon::hitChance() {
     return makeRandomNumber() > weaponHitChance;
 }
 
-void Weapon::printResults() {
-    
-    cout << "This weapon ";
-    
-    if(hitChance()) {
-        cout << "HIT for " << doDamage() << " points of damage" << endl;
-    } else {
-        cout << "MISSED" << endl;
-    }
-}
+
 
 // End of Weapon class
 //==================================================
@@ -68,7 +44,7 @@ Sword::Sword() {
 }
 
 Sword::~Sword() {
-    
+//    cout << "Sword deleted" << endl;
 }
 
 // MARK: Methods  - Sword
@@ -139,6 +115,34 @@ void Dagger::printResults() {
     } else {
         cout << "MISSED" << endl;
     }
+}
+
+//==================================================
+
+
+// MARK: Constructors - Club
+
+Club::Club() {
+    weaponHitChance = 80;
+}
+
+Club::~Club() {}
+
+// MARK: Methods  - Club
+
+void Club::printResults() {
+
+    cout << "This Club ";
+
+    if(hitChance()) {
+        cout << "HIT for " << doDamage() << " points of damage" << endl;
+    } else {
+        cout << "MISSED" << endl;
+    }
+}
+
+int Club::doDamage() {
+    return 15;
 }
 
 //==================================================

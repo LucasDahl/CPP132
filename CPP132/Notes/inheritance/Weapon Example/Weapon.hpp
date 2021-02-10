@@ -14,8 +14,6 @@
 
 using namespace std;
 
-// Prototype - (not part of random) - with default values
-int makeRandomNumber(int = 1, int = 100);
 
 // MARK: Super Class
 
@@ -24,8 +22,11 @@ int makeRandomNumber(int = 1, int = 100);
 //
 // 1. virtual methods/functions
 // 2. pointers
+// Common practice to put virtual when using polymorphism
 
-class Weapon {
+
+// Abstract class, is any class with one or more method = 0.
+class Weapon { // Modifiy this to make it "ABSTRACT"
     
     private:
     
@@ -38,12 +39,12 @@ class Weapon {
 
         // Constructors
         Weapon();
-        ~Weapon();
+        virtual ~Weapon(); // Destructors are always virtual so they can be overridden.
     
         // Methods
-        virtual int doDamage(); // Allows to be over ridden and a pointer is still needed
-        bool hitChance();
-        virtual void printResults();
+        virtual int doDamage() = 0; // Allows to be over ridden and a pointer is still needed
+        virtual bool hitChance();
+        virtual void printResults() = 0; // Abstract method MUST BE OVERRIDDEN( = 0) to actually work
     
     
     
@@ -56,10 +57,10 @@ class Sword : public Weapon {
     public:
         // Constructors
         Sword();
-        ~Sword();
+        virtual ~Sword();
     
-        int doDamage();
-        void printResults();
+        virtual int doDamage(); // virtual is not really needed but is used for clarity(same with printResults)
+        virtual void printResults();
     
 };
 
@@ -83,6 +84,17 @@ class Mace : public Weapon {
     
         int doDamage();
         void printResults();
+    
+};
+
+class Club: public Weapon {
+  
+    public:
+        Club();
+        int doDamage();
+        virtual ~Club();
+        virtual void printResults();
+    
     
 };
 
