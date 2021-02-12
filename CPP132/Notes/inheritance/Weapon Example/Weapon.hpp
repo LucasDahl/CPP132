@@ -30,7 +30,6 @@ class Weapon { // Modifiy this to make it "ABSTRACT"
     
     private:
     
-    
     protected:
         // Fields
         int weaponHitChance;
@@ -45,13 +44,13 @@ class Weapon { // Modifiy this to make it "ABSTRACT"
         virtual int doDamage() = 0; // Allows to be over ridden and a pointer is still needed
         virtual bool hitChance();
         virtual void printResults() = 0; // Abstract method MUST BE OVERRIDDEN( = 0) to actually work
-    
-    
-    
+        void setHitChance(int);
 };
 
 // MARK: Sub Classes
 
+// can use private or protected instead of public(protected makes public turn to protected)(making it private turns protected and pbulic to private)
+//(methods)
 class Sword : public Weapon {
   
     public:

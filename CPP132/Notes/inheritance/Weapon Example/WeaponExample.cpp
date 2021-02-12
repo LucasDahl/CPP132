@@ -12,10 +12,22 @@
 #include "RangedWeapon.hpp"
 
 
+
 using namespace std;
 
-int main() {
+void doThing(Sword *);
 
+int main() {
+    
+    Sword x;
+    Dagger y;
+    
+    // Without this being a pointer x(Dagger) would print sword
+    // C++ works well with pointers and subclass
+    doThing(&x);
+    doThing(&y);
+    
+    cout << endl << endl << endl;
     
     vector<Weapon*> myArmy;
     
@@ -28,6 +40,7 @@ int main() {
     myArmy.push_back(new Bow(5));
     myArmy.push_back(new CrossBow(55));
     
+    
     for(int i = 0; i < myArmy.size(); i++) {
         myArmy[i]->printResults();
     }
@@ -38,3 +51,8 @@ int main() {
     }
     
 }
+
+void doThing(Sword *z) {
+    z->printResults();
+}
+

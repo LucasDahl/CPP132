@@ -29,6 +29,7 @@ RangedWeapon::~RangedWeapon() {
 // MARK: Methods - Ranged Weapons
 
 bool RangedWeapon::hitChance() {
+    
     int pro = makeRandomNumber();
     int calculateChanceToHIt = weaponHitChance + currentInc;
     

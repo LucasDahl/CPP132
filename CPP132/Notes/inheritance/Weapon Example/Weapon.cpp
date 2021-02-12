@@ -33,6 +33,14 @@ bool Weapon::hitChance() {
 }
 
 
+// Encapsulation - makes sure different parts of the code always behave the same way
+// getters and setters help with this
+void Weapon::setHitChance(int x) {
+    if(x > 0 && x <= 100) {
+        weaponHitChance = x;
+    }
+}
+
 
 // End of Weapon class
 //==================================================
