@@ -36,6 +36,7 @@
 		95BC9D6425BF452100945266 /* PurseMainExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95BC9D6325BF452100945266 /* PurseMainExample.cpp */; };
 		95C0EDED25A4E7B20038D9D8 /* charString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95C0EDEB25A4E7B20038D9D8 /* charString.cpp */; };
 		95C28D1925B5F24A004813B4 /* PasswordEncrypter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95C28D1825B5F24A004813B4 /* PasswordEncrypter.cpp */; };
+		95D19AA925DC43670074A034 /* DoTry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95D19AA825DC43670074A034 /* DoTry.cpp */; };
 		95D5F69025A8D5ED0031B7DD /* StructData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95D5F68F25A8D5ED0031B7DD /* StructData.cpp */; };
 		95E4302125A78587000BD22A /* AssignmentOne.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95E4302025A78587000BD22A /* AssignmentOne.cpp */; };
 		95E4D31A25BB38F6004F90F2 /* CS132_InventoryExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95E4D31925BB38F6004F90F2 /* CS132_InventoryExample.cpp */; };
@@ -99,6 +100,7 @@
 		95C0EDEB25A4E7B20038D9D8 /* charString.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = charString.cpp; sourceTree = "<group>"; };
 		95C28D1825B5F24A004813B4 /* PasswordEncrypter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PasswordEncrypter.cpp; sourceTree = "<group>"; };
 		95C28D1D25B6ADBF004813B4 /* masterFile.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = masterFile.txt; sourceTree = "<group>"; };
+		95D19AA825DC43670074A034 /* DoTry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DoTry.cpp; sourceTree = "<group>"; };
 		95D5F68F25A8D5ED0031B7DD /* StructData.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StructData.cpp; sourceTree = "<group>"; };
 		95E4302025A78587000BD22A /* AssignmentOne.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AssignmentOne.cpp; sourceTree = "<group>"; };
 		95E4302325A78646000BD22A /* WordList.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = WordList.txt; sourceTree = "<group>"; };
@@ -297,6 +299,7 @@
 				95BA45A125AF6D390008AE9C /* ClassNotes.cpp */,
 				9554619625C11501002DCAA5 /* Testing.cpp */,
 				952CE82B25C8A15C000FCE0F /* Vectors.cpp */,
+				95D19AA825DC43670074A034 /* DoTry.cpp */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				954BB32725AE9928000FBDD5 /* SoccerPlayers.cpp in Sources */,
 				95E4D31A25BB38F6004F90F2 /* CS132_InventoryExample.cpp in Sources */,
 				95E4D31D25BB3900004F90F2 /* InventoryItem.cpp in Sources */,
+				95D19AA925DC43670074A034 /* DoTry.cpp in Sources */,
 				9568B28A25CB1E4C003999D1 /* Train.cpp in Sources */,
 				9569DDCF25C4875B0074D02A /* InheratanceGradeExample.cpp in Sources */,
 				9579A62F25CDECF300C3CEBB /* Testing.cpp in Sources */,
