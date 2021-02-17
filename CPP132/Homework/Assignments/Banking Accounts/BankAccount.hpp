@@ -2,6 +2,11 @@
 //  BankAccount.hpp
 //  CPP132
 //
+// This is the header file for the
+// Bank account class that will
+// have subclasses for different types
+// of bank account.
+//
 //  Created by Lucas Dahl on 2/17/21.
 //
 
@@ -34,10 +39,12 @@ class BankAccount {
         // Methods
         string getID();
         void deposit(double);
-        void withdraw(double);
-        void endOfMonth();
-        void endOfYear();
-        virtual void printStatus();
+        
+        // Abstract
+        virtual void withdraw(double) = 0;
+        virtual void printStatus() = 0;
+        virtual void endOfMonth() = 0;
+        virtual void endOfYear() = 0;
     
         // Overload
         bool operator < (const BankAccount&);
@@ -57,7 +64,10 @@ class SimpleSavings : public BankAccount {
         SimpleSavings(string, double);
     
         // Methods
+    void withdraw(double);
         void printStatus();
+        void endOfMonth();
+        void endOfYear();
     
 };
 
@@ -71,7 +81,10 @@ class AdvancedSavings : public BankAccount {
         AdvancedSavings(string, double);
     
         // Methods
+        void withdraw(double);
         void printStatus();
+        void endOfMonth();
+        void endOfYear();
 };
 
 class CheckingAccount : public BankAccount {
@@ -84,7 +97,11 @@ class CheckingAccount : public BankAccount {
         CheckingAccount(string, double);
     
         // Methods
+        void withdraw(double);
         void printStatus();
+        void endOfMonth();
+        void endOfYear();
+    
 };
 
 class CreditAccount : public BankAccount {
@@ -97,7 +114,11 @@ class CreditAccount : public BankAccount {
         CreditAccount(string, double);
     
         // Method
+        void withdraw(double);
         void printStatus();
+        void endOfMonth();
+        void endOfYear();
+    
 };
 
 #endif /* BankAccount_hpp */
