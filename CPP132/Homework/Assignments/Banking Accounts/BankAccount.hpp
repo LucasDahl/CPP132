@@ -38,12 +38,12 @@ class BankAccount {
     
         // Methods
         string getID();
-        void deposit(double);
+        virtual void deposit(double);
         
         // Abstract
         virtual void withdraw(double) = 0;
         virtual void printStatus() = 0;
-        virtual void endOfMonth() = 0;
+        virtual void endOfMonth() = 0; // not abstract?
         virtual void endOfYear() = 0;
     
         // Overload
@@ -107,13 +107,18 @@ class CheckingAccount : public BankAccount {
 class CreditAccount : public BankAccount {
     
     private:
+        int lateMonths;
+        int totalMonthlyDeposited;
+        bool closed;
 
     public:
     
         // Constructors
+        CreditAccount();
         CreditAccount(string, double);
     
         // Method
+        void deposit(double);
         void withdraw(double);
         void printStatus();
         void endOfMonth();

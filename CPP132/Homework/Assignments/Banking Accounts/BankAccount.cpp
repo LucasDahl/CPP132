@@ -5,8 +5,9 @@
 // This file contains all the methods
 // for the BankAccount and its subclasses.
 //
-//  Created by Lucas Dahl on 2/17/21.
 //
+//  Created by Lucas Dahl on 2/17/21 CS132, Winter 2021.
+// Programming Assignment Bank Accounts
 
 #include "BankAccount.hpp"
 #include <iostream>
@@ -19,6 +20,8 @@ using namespace std;
 //==================
 
 // Constructors
+
+// This is the default constructor.
 BankAccount::BankAccount() {
     
     ID = "Unknown";
@@ -27,6 +30,9 @@ BankAccount::BankAccount() {
     totalWithdrawals = 0;
     
 }
+
+// This constructor will set the ID and startBalance
+// It will set all other values to zero
 BankAccount::BankAccount(string accountID, double startBalance) {
     
     ID = accountID;
@@ -38,8 +44,11 @@ BankAccount::BankAccount(string accountID, double startBalance) {
 
 // Methods
 
+// This method returns the account ID.
 string BankAccount::getID() { return ID;}
 
+// This method will addd the desposited money
+// to the balance.
 void BankAccount::deposit(double deposit) {
     
     // Do error checking for negative
@@ -51,6 +60,8 @@ void BankAccount::deposit(double deposit) {
     
 }
 
+// This method will take away money from the
+// balance.
 void BankAccount::withdraw(double withdrawl) {
     
     // Do error checking for negative
@@ -62,25 +73,16 @@ void BankAccount::withdraw(double withdrawl) {
     
 }
 
-// MARK: REMOVE
-
-//void BankAccount::endOfMonth() {
-//
-//}
-//
-//void BankAccount::endOfYear() {
-//
-//}
-//
-//void BankAccount::printStatus() {
-//
-//}
-
-// MARK: END REMOVE
-
-// Overload
-bool BankAccount::operator < (const BankAccount&) {
-    return true;
+// This method will return true if the
+// lhs is less than the rhs.
+bool BankAccount::operator < (const BankAccount &rhs) {
+    
+    if(ID < rhs.ID) {
+        return true;
+    }
+    
+    return false;
+    
 }
 
 // End BanckAccount===============================
@@ -92,6 +94,8 @@ bool BankAccount::operator < (const BankAccount&) {
 
 // Constructors
 
+// This constructor will set the ID and startBalance
+// It will set all other values to zero
 SimpleSavings::SimpleSavings(string accountID, double startBalance) {
     
     ID = accountID;
@@ -103,10 +107,13 @@ SimpleSavings::SimpleSavings(string accountID, double startBalance) {
 
 // Methods
 
+// This method will print the account infromation.
 void SimpleSavings::printStatus() {
     cout << "Simple Account #" << ID << " has $" << balance << endl;
 }
 
+// This method will subtract from the balance
+// if there is money in the account.
 void SimpleSavings::withdraw(double withdrawal) {
     
     // Check if there is enough money in the
@@ -150,6 +157,8 @@ void SimpleSavings::endOfYear() {
 
 // Constructors
 
+// This constructor will set the ID and startBalance
+// It will set all other values to zero
 AdvancedSavings::AdvancedSavings(string accountID, double startBalance) {
     
     ID = accountID;
@@ -161,11 +170,15 @@ AdvancedSavings::AdvancedSavings(string accountID, double startBalance) {
 
 // Methods
 
+// This method will print the account infromation.
 void AdvancedSavings::printStatus() {
     cout << "Advance Account #" << ID << " has $" << balance << " with ";
     cout << totalWithdrawals << " withdrawls this year." << endl;
 }
 
+// This method will withdaraw money from the
+// balance. It will also add a dolar fee
+// for every withdrawal except the first.
 void AdvancedSavings::withdraw(double withdrawal) {
     
     // Properties
@@ -186,6 +199,8 @@ void AdvancedSavings::withdraw(double withdrawal) {
     
 }
 
+// This method will add the intrest per
+// month based off the balance of the account.
 void AdvancedSavings::endOfMonth() {
     
     // Check the balance to see
@@ -197,6 +212,9 @@ void AdvancedSavings::endOfMonth() {
     }
     
 }
+
+// This method will subtract all the yearly fees
+// from the account.
 void AdvancedSavings::endOfYear() {
     
     // Deduct the annual fee
@@ -222,6 +240,8 @@ void AdvancedSavings::endOfYear() {
 
 // Constructors
 
+// This constructor will set the ID and startBalance
+// It will set all other values to zero
 CheckingAccount::CheckingAccount(string accountID, double startBalance) {
     
     ID = accountID;
@@ -233,11 +253,15 @@ CheckingAccount::CheckingAccount(string accountID, double startBalance) {
 
 // Methods
 
+// This method will print the account infromation.
 void CheckingAccount::printStatus() {
     cout << "Checking Account #" << ID << " has $" << balance << " with ";
     cout << totalWithdrawals << " withdrawls this year." << endl;
 }
 
+// This method will subtract the withdrawal from the
+// balance, but if the balance goes negative an additional
+// $15 is taken from the account.
 void CheckingAccount::withdraw(double withdrawal) {
     
     // Check if there is enough money in the
@@ -268,6 +292,9 @@ void CheckingAccount::endOfMonth() {
     // dont't need?
 }
 
+// This method will add the yearly intrest and
+// subtract a fee based off the amount of
+// withdrawals.
 void CheckingAccount::endOfYear() {
     
     // Add the fee of $5.00 + $0.10 * totalWithdrawals
@@ -289,36 +316,107 @@ void CheckingAccount::endOfYear() {
 
 // Constructors
 
+// This is the default constructor.
+CreditAccount::CreditAccount() {
+    ID = "unknown";
+    balance = 0;
+    totalDeposits = 0;
+    totalWithdrawals = 0;
+    lateMonths = 0;
+    closed = false;
+}
+
+// This constructor will set the ID and startBalance
+// It will set all other values to zero
 CreditAccount::CreditAccount(string accountID, double startBalance) {
     
     ID = accountID;
     balance = startBalance;
     totalDeposits = 0;
     totalWithdrawals = 0;
+    lateMonths = 0;
+    closed = false;
     
 }
 
 // Methods
 
+// This method will print the account infromation.
 void CreditAccount::printStatus() {
     cout << "Credit Account #" << ID << " owes $" << balance << endl;
-    cout << "Credit Account #" << ID << " owes $" << balance << " and is late " << endl;
-    cout << "Credit Account #" << ID << " owes $" << balance << " and is currently closed. " << endl;
+    cout << "Credit Account #" << ID << " owes $" << balance << " and is late (month#" << lateMonths << ")" << endl;
+    cout << "Credit Account #" << ID << " owes $" << balance;
+    
+    if(closed) {
+        cout << " and is currently closed. " << endl;
+    } else {
+        cout << endl;
+    }
     cout << "Credit Account #" << ID << " is overpaid by $" << balance << endl;
 }
 
+// This method will deposit money as
+// long as the balance is negative
+void CreditAccount::deposit(double deposit) {
+    
+    if(balance < 0) {
+        balance += deposit;
+    } else {
+        //Error?
+    }
+    
+    // Add to total deposit to see if the
+    // month will be late or not.
+    totalDeposits += deposit;
+    
+}
+
+// This method will withdraw from the account
+// as long as the account is not open.
 void CreditAccount::withdraw(double withdrawal) {
     
-}
-
-void CreditAccount::endOfMonth() {
+    if(closed) {
+        balance -= withdrawal;
+    } else {
+        // Print error?
+    }
     
 }
 
+// This method will add 5% if there
+// any remaining value and decide if the
+// month was late.
+void CreditAccount::endOfMonth() {
+    
+    // Check if the month is considered late
+    if(totalDeposits < 100) {
+        lateMonths++;
+    }
+    
+    // Add the intrest
+    if(balance < 0) {
+        balance += 1.05;
+    }
+}
+
+// This method will take out any yearly fees.
+// It will also reset fields that track
+// values like deposts and withdrawals
 void CreditAccount::endOfYear() {
+    
+    // Subtract the annual fee.
+    balance -= 25.0;
+    
+    // Check if you the account should be closed.
+    if(lateMonths >= 4) {
+        closed = true;
+    }
+    
+    // Set the values to zero
+    totalWithdrawals = 0;
+    totalDeposits = 0;
+    lateMonths = 0;
     
 }
 
 // End CreditAccount===============================
-
-

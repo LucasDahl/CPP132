@@ -37,21 +37,21 @@ int positiveRoot(double a, double b, double c) {
 
 //int main() {
 //    
-////    int x;
-////
-////    try {
-////        //x = totalDays(5, 4);
-////        x = totalDays(-1, 4);
-////    } catch (string e) {
-////
-////        // something went wrong
-////        cout << "ERROR HAPPENED" << endl;
-////        cout << "TOTAl days set to -99" << endl;
-////
-////        x = -99;
-////    }
-////
-////    cout << x << " Days" << endl;
+//    int x;
+//
+//    try {
+//        x = totalDays(5, 4);
+//       // x = totalDays(-1, 4);
+//    } catch (string error) {
+//
+//        // something went wrong
+//        cout << "ERROR HAPPENED" << endl;
+//        cout << "TOTAl days set to -99" << endl;
+//
+//        x = -99;
+//    }
+//
+//    cout << x << " Days" << endl;
 //    
 //    double z;
 //    
@@ -69,26 +69,26 @@ int positiveRoot(double a, double b, double c) {
 ////    }
 //    
 //    //DO
-//    try {
-//       // z = positiveRoot(1, -5, 6); // good
-//        //z = positiveRoot(0, -5, 6); // throws string
-//        z = positiveRoot(1, -5, 6); // throws int
-//    } catch(string e) {
-//        
-////        if(e == "NEGATIVEROOT") {
-////            cout << "You cannot square root a negative" << endl;
-////            z = -99;
-////        } else if(e == "DIVBYZERO") {
-////            cout << "You cannot divide by zero" << endl;
-////            z = -99;
-////        }
-//        
-//        // OR - cerr is console output error codes(puts it out to where the errors go)
-//        cerr << "Error: " << e << endl;
-//        
-//    }
-//
-//    cout << "The root is " << z << endl;
+////    try {
+////       // z = positiveRoot(1, -5, 6); // good
+////        //z = positiveRoot(0, -5, 6); // throws string
+////        z = positiveRoot(1, -5, 6); // throws int
+////    } catch(string e) {
+////
+//////        if(e == "NEGATIVEROOT") {
+//////            cout << "You cannot square root a negative" << endl;
+//////            z = -99;
+//////        } else if(e == "DIVBYZERO") {
+//////            cout << "You cannot divide by zero" << endl;
+//////            z = -99;
+//////        }
+////
+////        // OR - cerr is console output error codes(puts it out to where the errors go)
+////        cerr << "Error: " << e << endl;
+////
+////    }
+////
+////    cout << "The root is " << z << endl;
 //    
 //}
 
