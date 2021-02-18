@@ -15,6 +15,8 @@
 		9540719625B0C04500C84EDE /* ClassR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9540719425B0C04500C84EDE /* ClassR.cpp */; };
 		9540719A25B0C10D00C84EDE /* Shapes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9540719925B0C10D00C84EDE /* Shapes.cpp */; };
 		954497E425ABB0A6006E0C77 /* InClassAssignment1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 954497E325ABB0A6006E0C77 /* InClassAssignment1.cpp */; };
+		9544D6F625DED4CE006307EF /* templates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9544D6F525DED4CE006307EF /* templates.cpp */; };
+		9544D6F925DEE556006307EF /* containerNotes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9544D6F825DEE556006307EF /* containerNotes.cpp */; };
 		954BB32725AE9928000FBDD5 /* SoccerPlayers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 954BB32625AE9928000FBDD5 /* SoccerPlayers.cpp */; };
 		9554619725C11501002DCAA5 /* Testing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9554619625C11501002DCAA5 /* Testing.cpp */; };
 		9568B28525CB1E30003999D1 /* NewClassExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9568B28425CB1E30003999D1 /* NewClassExample.cpp */; };
@@ -72,6 +74,8 @@
 		9540719525B0C04500C84EDE /* ClassR.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ClassR.hpp; sourceTree = "<group>"; };
 		9540719925B0C10D00C84EDE /* Shapes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Shapes.cpp; sourceTree = "<group>"; };
 		954497E325ABB0A6006E0C77 /* InClassAssignment1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InClassAssignment1.cpp; sourceTree = "<group>"; };
+		9544D6F525DED4CE006307EF /* templates.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = templates.cpp; sourceTree = "<group>"; };
+		9544D6F825DEE556006307EF /* containerNotes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = containerNotes.cpp; sourceTree = "<group>"; };
 		954BB32625AE9928000FBDD5 /* SoccerPlayers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SoccerPlayers.cpp; sourceTree = "<group>"; };
 		9554619625C11501002DCAA5 /* Testing.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Testing.cpp; sourceTree = "<group>"; };
 		9568B28425CB1E30003999D1 /* NewClassExample.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NewClassExample.cpp; sourceTree = "<group>"; };
@@ -327,6 +331,8 @@
 				9554619625C11501002DCAA5 /* Testing.cpp */,
 				952CE82B25C8A15C000FCE0F /* Vectors.cpp */,
 				95D19AA825DC43670074A034 /* DoTry.cpp */,
+				9544D6F525DED4CE006307EF /* templates.cpp */,
+				9544D6F825DEE556006307EF /* containerNotes.cpp */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -442,6 +448,7 @@
 				9540719625B0C04500C84EDE /* ClassR.cpp in Sources */,
 				9579A63625CE118B00C3CEBB /* Month.cpp in Sources */,
 				9579A63225CE0A2D00C3CEBB /* QuestionFour.cpp in Sources */,
+				9544D6F625DED4CE006307EF /* templates.cpp in Sources */,
 				95C28D1925B5F24A004813B4 /* PasswordEncrypter.cpp in Sources */,
 				952CE82C25C8A15C000FCE0F /* Vectors.cpp in Sources */,
 				954497E425ABB0A6006E0C77 /* InClassAssignment1.cpp in Sources */,
@@ -463,6 +470,7 @@
 				954BB32725AE9928000FBDD5 /* SoccerPlayers.cpp in Sources */,
 				95E4D31A25BB38F6004F90F2 /* CS132_InventoryExample.cpp in Sources */,
 				957B5A6B25DD76D8008F71A7 /* main.cpp in Sources */,
+				9544D6F925DEE556006307EF /* containerNotes.cpp in Sources */,
 				95E4D31D25BB3900004F90F2 /* InventoryItem.cpp in Sources */,
 				95D19AA925DC43670074A034 /* DoTry.cpp in Sources */,
 				9568B28A25CB1E4C003999D1 /* Train.cpp in Sources */,
