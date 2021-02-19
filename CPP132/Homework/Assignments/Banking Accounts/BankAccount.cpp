@@ -352,7 +352,13 @@ void CreditAccount::printStatus() {
     } else {
         cout << endl;
     }
-    cout << "Credit Account #" << ID << " is overpaid by $" << balance << endl;
+    
+    if(balance > 0) {
+        cout << "Credit Account #" << ID << " is overpaid by $" << balance << endl;
+    } else {
+        cout << "Credit Account #" << ID << " owes $" << balance << endl;
+    }
+    
 }
 
 // This method will deposit money as
