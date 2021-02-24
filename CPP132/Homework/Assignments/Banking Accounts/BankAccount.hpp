@@ -19,9 +19,7 @@
 using namespace std;
 
 class BankAccount {
-    
-    private:
-        
+
     protected:
     
         // Fields
@@ -39,25 +37,22 @@ class BankAccount {
         // Methods
         string getID();
         virtual void deposit(double);
+        virtual void endOfMonth();
         
         // Abstract
         virtual void withdraw(double) = 0;
         virtual void printStatus() = 0;
-        virtual void endOfMonth(); // not abstract?
-        virtual void endOfYear(); // abstract?
+        virtual void endOfYear() = 0;
     
         // Overload
         bool operator < (const BankAccount&);
-    
     
 };
 
 // MARK: Subclasses
 
 class SimpleSavings : public BankAccount {
-    
-    private:
-    
+
     public:
     
         // Constructors
@@ -73,9 +68,13 @@ class SimpleSavings : public BankAccount {
 
 class AdvancedSavings : public BankAccount {
     
+    private:
+        int withdrawalFee;
+    
     public:
     
         // Constructors
+        AdvancedSavings();
         AdvancedSavings(string, double);
     
         // Methods
@@ -83,6 +82,7 @@ class AdvancedSavings : public BankAccount {
         void printStatus();
         void endOfMonth();
         void endOfYear();
+    
 };
 
 class CheckingAccount : public BankAccount {
@@ -95,7 +95,6 @@ class CheckingAccount : public BankAccount {
         // Methods
         void withdraw(double);
         void printStatus();
-        void endOfMonth();// Need?
         void endOfYear();
     
 };
@@ -121,8 +120,5 @@ class CreditAccount : public BankAccount {
         void endOfYear();
     
 };
-
-
-
 
 #endif /* BankAccount_hpp */

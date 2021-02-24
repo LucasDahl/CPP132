@@ -64,7 +64,12 @@ void BankAccount::deposit(double deposit) {
 // balance.
 void BankAccount::withdraw(double withdrawl) {
     
-    // Do error checking for negative
+    // Balance is neagtive
+    if(balance < 0) {
+        cout << "The balance is negative, cannot withdraw." << endl;
+        return;
+    }
+    
     // Take away from the balance
     balance -= withdrawl;
     
@@ -85,8 +90,9 @@ bool BankAccount::operator < (const BankAccount &rhs) {
     
 }
 
+// This method is required by some subclasses,
+// but no all.
 void BankAccount::endOfMonth() {}
-void BankAccount::endOfYear() {}
 
 // End BanckAccount===============================
 
@@ -136,6 +142,9 @@ void SimpleSavings::withdraw(double withdrawal) {
 // Each month the balance gains 0.5% intrest
 void SimpleSavings::endOfMonth() {
     balance *= 1.05;
+    // Maybe have to do it like:
+    int interest = balance * 0.05;
+    balance = balance + interest;
 }
 
 // This method sets the total deposits to zero and
@@ -160,6 +169,15 @@ void SimpleSavings::endOfYear() {
 
 // Constructors
 
+// This is the default constructor
+AdvancedSavings::AdvancedSavings() {
+    ID = "Unknown";
+    balance = 0;
+    totalDeposits = 0;
+    totalWithdrawals = 0;
+    withdrawalFee = 0;
+}
+
 // This constructor will set the ID and startBalance
 // It will set all other values to zero
 AdvancedSavings::AdvancedSavings(string accountID, double startBalance) {
@@ -168,6 +186,7 @@ AdvancedSavings::AdvancedSavings(string accountID, double startBalance) {
     balance = startBalance;
     totalDeposits = 0;
     totalWithdrawals = 0;
+    withdrawalFee = 0;
     
 }
 
@@ -183,19 +202,15 @@ void AdvancedSavings::printStatus() {
 // balance. It will also add a dolar fee
 // for every withdrawal except the first.
 void AdvancedSavings::withdraw(double withdrawal) {
-    
-    // Properties
-    int withdrawalFee;
-    
+
     // check the number of withdrawals
-    if(totalWithdrawals == 0) {
-        withdrawalFee = 0;
-    } else {
-        withdrawalFee = totalWithdrawals * 1;
+    // Add a dolar for everyone after the first one.
+    if (totalWithdrawals > 0) {
+        withdrawalFee++;
     }
     
     // Deduct from the balance
-    balance -= (withdrawal + withdrawalFee);
+    balance -= withdrawal;
     
     // Increment the totalWithdrawals
     totalWithdrawals++;
@@ -228,6 +243,9 @@ void AdvancedSavings::endOfYear() {
     } else {
         balance -= 100.0;
     }
+    
+    // Subtract teh withdrawal fee
+    balance -= withdrawalFee;
     
     // Resest the withdrawals and deposits
     totalDeposits = 0;
@@ -289,10 +307,6 @@ void CheckingAccount::withdraw(double withdrawal) {
         totalWithdrawals++;
     }
     
-}
-
-void CheckingAccount::endOfMonth() {
-    // dont't need?
 }
 
 // This method will add the yearly intrest and
@@ -370,8 +384,10 @@ void CreditAccount::deposit(double deposit) {
     
     if(balance < 0) {
         balance += deposit;
+    } else if(balance > 0) {
+        cout << "Your account is paid of with a credit of " << balance << "." << endl;
     } else {
-        //Error?
+        cout << "your account is paid off." << endl;
     }
     
     // Add to total deposit to see if the
@@ -387,7 +403,7 @@ void CreditAccount::withdraw(double withdrawal) {
     if(closed) {
         balance -= withdrawal;
     } else {
-        // Print error?
+        cout << "Your account is closed." << endl;
     }
     
 }
