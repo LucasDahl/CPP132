@@ -85,6 +85,9 @@ bool BankAccount::operator < (const BankAccount &rhs) {
     
 }
 
+void BankAccount::endOfMonth() {}
+void BankAccount::endOfYear() {}
+
 // End BanckAccount===============================
 
 

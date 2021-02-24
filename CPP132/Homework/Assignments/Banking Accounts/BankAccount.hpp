@@ -43,8 +43,8 @@ class BankAccount {
         // Abstract
         virtual void withdraw(double) = 0;
         virtual void printStatus() = 0;
-        virtual void endOfMonth() = 0; // not abstract?
-        virtual void endOfYear() = 0;
+        virtual void endOfMonth(); // not abstract?
+        virtual void endOfYear(); // abstract?
     
         // Overload
         bool operator < (const BankAccount&);
@@ -52,7 +52,7 @@ class BankAccount {
     
 };
 
-// Subclasses
+// MARK: Subclasses
 
 class SimpleSavings : public BankAccount {
     
@@ -64,7 +64,7 @@ class SimpleSavings : public BankAccount {
         SimpleSavings(string, double);
     
         // Methods
-    void withdraw(double);
+        void withdraw(double);
         void printStatus();
         void endOfMonth();
         void endOfYear();
@@ -73,8 +73,6 @@ class SimpleSavings : public BankAccount {
 
 class AdvancedSavings : public BankAccount {
     
-    private:
-
     public:
     
         // Constructors
@@ -89,8 +87,6 @@ class AdvancedSavings : public BankAccount {
 
 class CheckingAccount : public BankAccount {
     
-    private:
-
     public:
     
         // Constructors
@@ -99,7 +95,7 @@ class CheckingAccount : public BankAccount {
         // Methods
         void withdraw(double);
         void printStatus();
-        void endOfMonth();
+        void endOfMonth();// Need?
         void endOfYear();
     
 };
@@ -125,5 +121,8 @@ class CreditAccount : public BankAccount {
         void endOfYear();
     
 };
+
+
+
 
 #endif /* BankAccount_hpp */

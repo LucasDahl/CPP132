@@ -49,6 +49,7 @@
 		95E4D31D25BB3900004F90F2 /* InventoryItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95E4D31C25BB3900004F90F2 /* InventoryItem.cpp */; };
 		95F3EDCB25D457D70005F0C1 /* ExtraMethods.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95F3EDC925D457D70005F0C1 /* ExtraMethods.cpp */; };
 		95F3EDCF25D45E480005F0C1 /* RangedWeapon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95F3EDCD25D45E480005F0C1 /* RangedWeapon.cpp */; };
+		95FBA2A625E429590095CD22 /* Algorithms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95FBA2A525E429590095CD22 /* Algorithms.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -125,6 +126,7 @@
 		95F3EDCA25D457D70005F0C1 /* ExtraMethods.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ExtraMethods.hpp; sourceTree = "<group>"; };
 		95F3EDCD25D45E480005F0C1 /* RangedWeapon.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RangedWeapon.cpp; sourceTree = "<group>"; };
 		95F3EDCE25D45E480005F0C1 /* RangedWeapon.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RangedWeapon.hpp; sourceTree = "<group>"; };
+		95FBA2A525E429590095CD22 /* Algorithms.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Algorithms.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 			children = (
 				9544D6F825DEE556006307EF /* containerNotes.cpp */,
 				9552F0E825E034FC008C7716 /* Iterators.cpp */,
+				95FBA2A525E429590095CD22 /* Algorithms.cpp */,
 			);
 			path = STL;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 				95E4302125A78587000BD22A /* AssignmentOne.cpp in Sources */,
 				9526DA2725D305ED00CE746C /* Weapon.cpp in Sources */,
 				9527865B25BD2F0400E66D35 /* main.cpp in Sources */,
+				95FBA2A625E429590095CD22 /* Algorithms.cpp in Sources */,
 				9579A63E25CE1EAD00C3CEBB /* Vehicle.cpp in Sources */,
 				9540719625B0C04500C84EDE /* ClassR.cpp in Sources */,
 				9579A63625CE118B00C3CEBB /* Month.cpp in Sources */,
