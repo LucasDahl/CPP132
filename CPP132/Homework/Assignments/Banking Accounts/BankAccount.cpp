@@ -51,7 +51,6 @@ string BankAccount::getID() { return ID;}
 // to the balance.
 void BankAccount::deposit(double deposit) {
     
-    // Do error checking for negative
     // Add to the balance
     balance += deposit;
     
@@ -142,9 +141,6 @@ void SimpleSavings::withdraw(double withdrawal) {
 // Each month the balance gains 0.5% intrest
 void SimpleSavings::endOfMonth() {
     balance *= 1.05;
-    // Maybe have to do it like:
-    int interest = balance * 0.05;
-    balance = balance + interest;
 }
 
 // This method sets the total deposits to zero and

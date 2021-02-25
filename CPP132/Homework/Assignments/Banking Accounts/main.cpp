@@ -30,30 +30,30 @@ void sortList(vector<BankAccount*>&);
 bool updateAccount(vector<BankAccount*>&);
 
 
-int main()
-{
-    vector<BankAccount*> myList;
-    myList = openFile("Data.txt");
-    if (myList.size() < 1) return -99;
-
-    sortList(myList);
-    printList(myList);
-
-    bool keepGoing;
-    do
-    {
-       keepGoing = updateAccount(myList) ;
-       cout << endl << endl << endl;
-       cout << "***********************************" << endl
-            << "*  Current Status                 *" << endl
-            << "***********************************" << endl
-            << endl;
-       printList(myList);
-    } while (keepGoing);
-
-
-
-}
+//int main()
+//{
+//    vector<BankAccount*> myList;
+//    myList = openFile("Data.txt");
+//    if (myList.size() < 1) return -99;
+//
+//    sortList(myList);
+//    printList(myList);
+//
+//    bool keepGoing;
+//    do
+//    {
+//       keepGoing = updateAccount(myList) ;
+//       cout << endl << endl << endl;
+//       cout << "***********************************" << endl
+//            << "*  Current Status                 *" << endl
+//            << "***********************************" << endl
+//            << endl;
+//       printList(myList);
+//    } while (keepGoing);
+//
+//
+//
+//}
 
 /*
  * This is the method that allows for the user to

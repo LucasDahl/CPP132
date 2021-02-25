@@ -4,7 +4,7 @@
 //
 // This is the header file for the
 // Bank account class that will
-// have subclasses for different types
+// have subclasses four different types
 // of bank account.
 //
 //  Created by Lucas Dahl on 2/17/21.
