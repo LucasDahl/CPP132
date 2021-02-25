@@ -23,6 +23,8 @@ using namespace std;
  They use iterators, but no need to create them
  algorithms don't remove, leave it to the vector
  
+ Types
+ 
  Algorithms
     
  numeric
