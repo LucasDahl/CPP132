@@ -45,35 +45,41 @@ void doP(string x) { cout << x << " ";}
 
 void printS(string x) { cout << x << " ";}
 
-int main() {
-    
-    vector<string> v;
-    
-    v.push_back("A");
-    v.push_back("B");
-    v.push_back("C");
-    v.push_back("D");
-    v.push_back("E");
-    v.push_back("F");
-    v.push_back("G");
-    v.push_back("H");
-    v.push_back("I");
-    
-    for_each(v.begin(), v.end(), printS);
-    cout << endl;
-
-    
-    // auto = vector<string>::iterator
-    // auot will infer typ
-    auto y = 10 + 12;
-    
-    auto x = find(v.begin(), v.end(), string("C"));
-    
-    for(auto x = v.begin(); x != v.end(); x++) {
-        //do what we need
-    }
-
-}
+//int main() {
+//    
+//    vector<string> v;
+//    
+//    v.push_back("A");
+//    v.push_back("B");
+//    v.push_back("C");
+//    v.push_back("D");
+//    v.push_back("E");
+//    v.push_back("F");
+//    v.push_back("G");
+//    v.push_back("H");
+//    v.push_back("I");
+//    
+//    for_each(v.begin(), v.end(), printS);
+//    cout << endl;
+//
+//    
+//    // auto = vector<string>::iterator
+//    // auot will infer typ
+//    auto y = 10 + 12;
+//    
+//    auto x = find(v.begin(), v.end(), string("C"));
+//    
+//    for(auto x = v.begin(); x != v.end(); x++) {
+//        //do what we need
+//    }
+//    
+//    for(int i = 0; i < 23; i++) {
+//        prev_permutation(v.begin(), v.end());
+//        for_each(v.begin(), v.end(), printS);
+//        cout << v[i] << endl;
+//    }
+//
+//}
 
 // Takes the last two elements and swaps them
 //    next_permutation(v.begin(), v.end());

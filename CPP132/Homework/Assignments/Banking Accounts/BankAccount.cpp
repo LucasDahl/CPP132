@@ -12,6 +12,7 @@
 #include "BankAccount.hpp"
 #include <iostream>
 #include <string>
+#include <iomanip>
 
 using namespace std;
 
@@ -96,9 +97,9 @@ void BankAccount::endOfMonth() {}
 // End BanckAccount===============================
 
 
-//====================
+//=======================
 // MARK: SimpleSavings
-//====================
+//=======================
 
 // Constructors
 
@@ -117,7 +118,7 @@ SimpleSavings::SimpleSavings(string accountID, double startBalance) {
 
 // This method will print the account infromation.
 void SimpleSavings::printStatus() {
-    cout << "Simple Account #" << ID << " has $" << balance << endl;
+    cout << "Simple Account #" << ID << " has $" << setprecision (2) << fixed << balance << endl;
 }
 
 // This method will subtract from the balance
@@ -190,7 +191,7 @@ AdvancedSavings::AdvancedSavings(string accountID, double startBalance) {
 
 // This method will print the account infromation.
 void AdvancedSavings::printStatus() {
-    cout << "Advance Account #" << ID << " has $" << balance << " with ";
+    cout << "Advance Account #" << ID << " has $" << setprecision (2) << fixed << balance << " with ";
     cout << totalWithdrawals << " withdrawls this year." << endl;
 }
 
@@ -272,7 +273,7 @@ CheckingAccount::CheckingAccount(string accountID, double startBalance) {
 
 // This method will print the account infromation.
 void CheckingAccount::printStatus() {
-    cout << "Checking Account #" << ID << " has $" << balance << " with ";
+    cout << "Checking Account #" << ID << " has $" << setprecision (2) << fixed << balance << " with ";
     cout << totalWithdrawals << " withdrawls this year." << endl;
 }
 
@@ -356,20 +357,20 @@ CreditAccount::CreditAccount(string accountID, double startBalance) {
 
 // This method will print the account infromation.
 void CreditAccount::printStatus() {
-    cout << "Credit Account #" << ID << " owes $" << balance << endl;
-    cout << "Credit Account #" << ID << " owes $" << balance << " and is late (month#" << lateMonths << ")" << endl;
-    cout << "Credit Account #" << ID << " owes $" << balance;
+    cout << "Credit Account #" << ID << " owes $" << setprecision (2) << fixed << balance << endl;
+    cout << "Credit Account #" << ID << " owes $" << setprecision (2) << fixed << balance << " and is late (month #" << lateMonths << ")" << endl;
+    cout << "Credit Account #" << ID << " owes $" << setprecision (2) << fixed << balance;
     
     if(closed) {
         cout << " and is currently closed. " << endl;
     } else {
-        cout << endl;
+        cout << " and is currently open. " << endl;
     }
     
     if(balance > 0) {
-        cout << "Credit Account #" << ID << " is overpaid by $" << balance << endl;
+        cout << "Credit Account #" << ID << " is overpaid by $" << setprecision (2) << fixed << balance << endl;
     } else {
-        cout << "Credit Account #" << ID << " owes $" << balance << endl;
+        cout << "Credit Account #" << ID << " owes $" << setprecision (2) << fixed << balance << endl;
     }
     
 }

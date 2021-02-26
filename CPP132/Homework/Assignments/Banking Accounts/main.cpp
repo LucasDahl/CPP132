@@ -49,6 +49,7 @@ bool updateAccount(vector<BankAccount*>&);
 //            << "***********************************" << endl
 //            << endl;
 //       printList(myList);
+//        cout << myList.size() << endl;
 //    } while (keepGoing);
 //
 //
