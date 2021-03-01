@@ -170,7 +170,7 @@ void printS(string x) { cout << x << " ";}
 //vector<string> myVector = {"CC","CC","Z","CC","B","CC","D","CC","EE"};
 //
 //    myVector.erase(             remove(myVector.begin(), myVector.end(), "CC"),                         myVector.end());
-//    // from vector erase        run remove algorithm, to fin the back ebd, use that itr as the start    erase to end()
+//   // from vector erase        run remove algorithm, to find the back ebd, use that itr as the start    erase to end()
 
 // With iterator
 //vector<string>::iterator badStuffStart;
