@@ -241,7 +241,7 @@ void AdvancedSavings::endOfYear() {
         balance -= 100.0;
     }
     
-    // Subtract teh withdrawal fee
+    // Subtract the withdrawal fee
     balance -= withdrawalFee;
     
     // Resest the withdrawals and deposits

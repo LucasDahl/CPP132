@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		951D3F4325EDF286002FAC51 /* STLMapActtivity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 951D3F4225EDF286002FAC51 /* STLMapActtivity.cpp */; };
 		9526DA2225D305C800CE746C /* WeaponExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9526DA2125D305C800CE746C /* WeaponExample.cpp */; };
 		9526DA2725D305ED00CE746C /* Weapon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9526DA2525D305ED00CE746C /* Weapon.cpp */; };
 		9527865B25BD2F0400E66D35 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9527865A25BD2F0400E66D35 /* main.cpp */; };
@@ -38,6 +39,7 @@
 		95983F3825E81F0B0082DF15 /* Sets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95983F3725E81F0B0082DF15 /* Sets.cpp */; };
 		95983F3A25E828070082DF15 /* STLMiniActivityNumberFive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95983F3925E828070082DF15 /* STLMiniActivityNumberFive.cpp */; };
 		95983F3C25E828CE0082DF15 /* STLMiniActivityNumberSix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95983F3B25E828CE0082DF15 /* STLMiniActivityNumberSix.cpp */; };
+		959CF69B25ED63DD00C0DE00 /* recursionNotes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 959CF69A25ED63DD00C0DE00 /* recursionNotes.cpp */; };
 		95AC31E625B21129009835D4 /* StudentClassExamples.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95AC31E525B21129009835D4 /* StudentClassExamples.cpp */; };
 		95AC31EB25B211F7009835D4 /* StudentClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95AC31E925B211F7009835D4 /* StudentClass.cpp */; };
 		95BA45A225AF6D390008AE9C /* ClassNotes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95BA45A125AF6D390008AE9C /* ClassNotes.cpp */; };
@@ -69,6 +71,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		951D3F4225EDF286002FAC51 /* STLMapActtivity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = STLMapActtivity.cpp; sourceTree = "<group>"; };
+		951D3F4625EDF52F002FAC51 /* Movies.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Movies.txt; sourceTree = "<group>"; };
 		9526DA2125D305C800CE746C /* WeaponExample.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WeaponExample.cpp; sourceTree = "<group>"; };
 		9526DA2525D305ED00CE746C /* Weapon.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Weapon.cpp; sourceTree = "<group>"; };
 		9526DA2625D305ED00CE746C /* Weapon.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Weapon.hpp; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 		95983F3725E81F0B0082DF15 /* Sets.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Sets.cpp; sourceTree = "<group>"; };
 		95983F3925E828070082DF15 /* STLMiniActivityNumberFive.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = STLMiniActivityNumberFive.cpp; sourceTree = "<group>"; };
 		95983F3B25E828CE0082DF15 /* STLMiniActivityNumberSix.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = STLMiniActivityNumberSix.cpp; sourceTree = "<group>"; };
+		959CF69A25ED63DD00C0DE00 /* recursionNotes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = recursionNotes.cpp; sourceTree = "<group>"; };
 		95AC31E525B21129009835D4 /* StudentClassExamples.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StudentClassExamples.cpp; sourceTree = "<group>"; };
 		95AC31E925B211F7009835D4 /* StudentClass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StudentClass.cpp; sourceTree = "<group>"; };
 		95AC31EA25B211F7009835D4 /* StudentClass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StudentClass.hpp; sourceTree = "<group>"; };
@@ -331,6 +336,7 @@
 		95C0EDD625A4E3D60038D9D8 /* CPP132 */ = {
 			isa = PBXGroup;
 			children = (
+				951D3F4625EDF52F002FAC51 /* Movies.txt */,
 				957B5A6825DD76B7008F71A7 /* Data.txt */,
 				95C28D1D25B6ADBF004813B4 /* masterFile.txt */,
 				95E4302325A78646000BD22A /* WordList.txt */,
@@ -357,6 +363,7 @@
 				9544D6F525DED4CE006307EF /* templates.cpp */,
 				95983F3725E81F0B0082DF15 /* Sets.cpp */,
 				95CEDFE225E96FAD00DE82F4 /* MapNotes.cpp */,
+				959CF69A25ED63DD00C0DE00 /* recursionNotes.cpp */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -390,6 +397,7 @@
 				954BB32625AE9928000FBDD5 /* SoccerPlayers.cpp */,
 				95983F3925E828070082DF15 /* STLMiniActivityNumberFive.cpp */,
 				95983F3B25E828CE0082DF15 /* STLMiniActivityNumberSix.cpp */,
+				951D3F4225EDF286002FAC51 /* STLMapActtivity.cpp */,
 			);
 			path = "Mini assignments";
 			sourceTree = "<group>";
@@ -499,6 +507,7 @@
 				95AC31EB25B211F7009835D4 /* StudentClass.cpp in Sources */,
 				954BB32725AE9928000FBDD5 /* SoccerPlayers.cpp in Sources */,
 				95E4D31A25BB38F6004F90F2 /* CS132_InventoryExample.cpp in Sources */,
+				959CF69B25ED63DD00C0DE00 /* recursionNotes.cpp in Sources */,
 				957B5A6B25DD76D8008F71A7 /* main.cpp in Sources */,
 				9544D6F925DEE556006307EF /* containerNotes.cpp in Sources */,
 				95E4D31D25BB3900004F90F2 /* InventoryItem.cpp in Sources */,
@@ -507,6 +516,7 @@
 				9568B28A25CB1E4C003999D1 /* Train.cpp in Sources */,
 				9569DDCF25C4875B0074D02A /* InheratanceGradeExample.cpp in Sources */,
 				95983F3A25E828070082DF15 /* STLMiniActivityNumberFive.cpp in Sources */,
+				951D3F4325EDF286002FAC51 /* STLMapActtivity.cpp in Sources */,
 				9579A62F25CDECF300C3CEBB /* Testing.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

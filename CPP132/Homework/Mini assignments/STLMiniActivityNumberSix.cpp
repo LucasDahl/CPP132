@@ -8,12 +8,15 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
-//// Prototype
-//void BiasedSort(vector<string>);
-//
+// Prototype
+//void BiasedSort(vector<string>&);
+//void printString(string);
+//void topString(string);
+
 //int main() {
 //    
 //    vector<string> myList;
@@ -32,12 +35,23 @@ using namespace std;
 //    myList.push_back("Me First Song 1");
 //    
 //    // Print out the vector before the sort
+//    for_each(myList.begin(), myList.end(), printString);
 //    cout << "****" << endl;
 //    BiasedSort(myList);
 //    // Print out the vector after the sort
+//    for_each(myList.begin(), myList.end(), printString);
 //}
 //
 //
-//void BiasedSort(vector<string> list) {
+//// This m,ethod prints out the vector
+//void printString(string s) {
+//    cout << s << endl;
+//}
+//
+//void topString(string str) {
 //    
+//}
+//
+//void BiasedSort(vector<string> &list) {
+//    sort(list.begin(), list.end());
 //}

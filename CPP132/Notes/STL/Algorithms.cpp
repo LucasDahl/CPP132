@@ -32,18 +32,18 @@ using namespace std;
  */
 
 // MARK: Examples
-
-string addWithComma(string x, string y) {
-    return x + ", " + y;
-}
-
-void printMe(string x) {
-    cout << x << endl;
-}
-
-void doP(string x) { cout << x << " ";}
-
-void printS(string x) { cout << x << " ";}
+//
+//string addWithComma(string x, string y) {
+//    return x + ", " + y;
+//}
+//
+//void printMe(string x) {
+//    cout << x << endl;
+//}
+//
+//void doP(string x) { cout << x << " ";}
+//
+//void printS(string x) { cout << x << " ";}
 
 //int main() {
 //    
