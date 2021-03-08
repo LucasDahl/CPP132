@@ -66,7 +66,7 @@
 //    // Properties
 //    set<string> theSet;
 //    string strToAdd;
-//    int max = -1;
+//    double max = -1.0;
 //
 //    if(theMap.size() < 10) {
 //        for(auto &itr : theMap) {
@@ -83,9 +83,8 @@
 //                }
 //            }
 //
-//
 //            theSet.insert(strToAdd); // Add the value of the
-//            max = -1; // reset the max to -1
+//            max = -1.0; // reset the max to -1
 //            theMap.erase(theMap.find(strToAdd)); // erase the max element
 //
 //        }
@@ -95,3 +94,4 @@
 //    // Return the set
 //    return theSet;
 //}
+
