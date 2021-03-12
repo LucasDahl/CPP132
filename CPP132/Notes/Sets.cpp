@@ -11,18 +11,18 @@
 
 using namespace::std;
 
-struct Card {
-    int num;
-    char suit;
-};
-
-void printI(int x) { cout << x << " ";}
-void printCard(Card x) { cout << "{" << x.num << x.suit << "} ";}
-
-bool operator <(const Card &lhs, const Card &rhs) {
-    if (lhs.num != rhs.num) return lhs.num < rhs.num;
-    return lhs.suit < rhs.suit;
-}
+//struct Card {
+//    int num;
+//    char suit;
+//};
+//
+//void printI(int x) { cout << x << " ";}
+//void printCard(Card x) { cout << "{" << x.num << x.suit << "} ";}
+//
+//bool operator <(const Card &lhs, const Card &rhs) {
+//    if (lhs.num != rhs.num) return lhs.num < rhs.num;
+//    return lhs.suit < rhs.suit;
+//}
 
 //struct CompareCard {
 //    bool operator()(const Card lhs, const Card rhs) {

@@ -49,7 +49,7 @@
 //    
 //    if(n == 1) {
 //        cout << "*";
-//    } else if(n  == 2) {
+//    } else if(n == 2) {
 //        cout << "**";
 //    } else {
 //        cout << "<";

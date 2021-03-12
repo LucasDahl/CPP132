@@ -21,6 +21,7 @@
 		954BB32725AE9928000FBDD5 /* SoccerPlayers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 954BB32625AE9928000FBDD5 /* SoccerPlayers.cpp */; };
 		9552F0E925E034FC008C7716 /* Iterators.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9552F0E825E034FC008C7716 /* Iterators.cpp */; };
 		9554619725C11501002DCAA5 /* Testing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9554619625C11501002DCAA5 /* Testing.cpp */; };
+		9557A8A125FBE47600005C15 /* lambdaFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9557A8A025FBE47600005C15 /* lambdaFunctions.cpp */; };
 		9568B28525CB1E30003999D1 /* NewClassExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9568B28425CB1E30003999D1 /* NewClassExample.cpp */; };
 		9568B28A25CB1E4C003999D1 /* Train.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9568B28825CB1E4C003999D1 /* Train.cpp */; };
 		9569DDCF25C4875B0074D02A /* InheratanceGradeExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9569DDCE25C4875B0074D02A /* InheratanceGradeExample.cpp */; };
@@ -37,12 +38,15 @@
 		958339AC25F67B4400F3133A /* ExtraFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 958339AB25F67B4300F3133A /* ExtraFunctions.cpp */; };
 		958339B225F67DEC00F3133A /* triviaMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 958339B025F67DEC00F3133A /* triviaMain.cpp */; };
 		958339B725F682EA00F3133A /* TriviaQuestion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 958339B525F682EA00F3133A /* TriviaQuestion.cpp */; };
+		958339BD25F6A36400F3133A /* Prim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 958339BB25F6A36400F3133A /* Prim.cpp */; };
 		95919B4D25B8FAEB00C92645 /* InClass_ClassMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95919B4C25B8FAEB00C92645 /* InClass_ClassMain.cpp */; };
 		95919B5125B8FB2800C92645 /* SongInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95919B4F25B8FB2800C92645 /* SongInfo.cpp */; };
 		95983F3825E81F0B0082DF15 /* Sets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95983F3725E81F0B0082DF15 /* Sets.cpp */; };
 		95983F3A25E828070082DF15 /* STLMiniActivityNumberFive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95983F3925E828070082DF15 /* STLMiniActivityNumberFive.cpp */; };
 		95983F3C25E828CE0082DF15 /* STLMiniActivityNumberSix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95983F3B25E828CE0082DF15 /* STLMiniActivityNumberSix.cpp */; };
 		959CF69B25ED63DD00C0DE00 /* recursionNotes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 959CF69A25ED63DD00C0DE00 /* recursionNotes.cpp */; };
+		959E7D4725F94256002A0832 /* stackQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 959E7D4625F94256002A0832 /* stackQueue.cpp */; };
+		95A52CC825F9922200204BDF /* Helping.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95A52CC725F9922200204BDF /* Helping.cpp */; };
 		95AC31E625B21129009835D4 /* StudentClassExamples.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95AC31E525B21129009835D4 /* StudentClassExamples.cpp */; };
 		95AC31EB25B211F7009835D4 /* StudentClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95AC31E925B211F7009835D4 /* StudentClass.cpp */; };
 		95AC971125F159CF00B590F8 /* RecursionMiniAssignmentOne.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95AC971025F159CF00B590F8 /* RecursionMiniAssignmentOne.cpp */; };
@@ -94,6 +98,7 @@
 		954BB32625AE9928000FBDD5 /* SoccerPlayers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SoccerPlayers.cpp; sourceTree = "<group>"; };
 		9552F0E825E034FC008C7716 /* Iterators.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Iterators.cpp; sourceTree = "<group>"; };
 		9554619625C11501002DCAA5 /* Testing.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Testing.cpp; sourceTree = "<group>"; };
+		9557A8A025FBE47600005C15 /* lambdaFunctions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = lambdaFunctions.cpp; sourceTree = "<group>"; };
 		9568B28425CB1E30003999D1 /* NewClassExample.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NewClassExample.cpp; sourceTree = "<group>"; };
 		9568B28825CB1E4C003999D1 /* Train.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Train.cpp; sourceTree = "<group>"; };
 		9568B28925CB1E4C003999D1 /* Train.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Train.hpp; sourceTree = "<group>"; };
@@ -120,6 +125,7 @@
 		958339B025F67DEC00F3133A /* triviaMain.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = triviaMain.cpp; sourceTree = "<group>"; };
 		958339B525F682EA00F3133A /* TriviaQuestion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TriviaQuestion.cpp; sourceTree = "<group>"; };
 		958339B625F682EA00F3133A /* TriviaQuestion.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TriviaQuestion.hpp; sourceTree = "<group>"; };
+		958339BB25F6A36400F3133A /* Prim.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Prim.cpp; sourceTree = "<group>"; };
 		95919B4C25B8FAEB00C92645 /* InClass_ClassMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InClass_ClassMain.cpp; sourceTree = "<group>"; };
 		95919B4F25B8FB2800C92645 /* SongInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SongInfo.cpp; sourceTree = "<group>"; };
 		95919B5025B8FB2800C92645 /* SongInfo.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SongInfo.hpp; sourceTree = "<group>"; };
@@ -127,6 +133,9 @@
 		95983F3925E828070082DF15 /* STLMiniActivityNumberFive.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = STLMiniActivityNumberFive.cpp; sourceTree = "<group>"; };
 		95983F3B25E828CE0082DF15 /* STLMiniActivityNumberSix.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = STLMiniActivityNumberSix.cpp; sourceTree = "<group>"; };
 		959CF69A25ED63DD00C0DE00 /* recursionNotes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = recursionNotes.cpp; sourceTree = "<group>"; };
+		959E7D4625F94256002A0832 /* stackQueue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stackQueue.cpp; sourceTree = "<group>"; };
+		95A52CC725F9922200204BDF /* Helping.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Helping.cpp; sourceTree = "<group>"; };
+		95A52CCA25F9927000204BDF /* RectData.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = RectData.txt; sourceTree = "<group>"; };
 		95AC31E525B21129009835D4 /* StudentClassExamples.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StudentClassExamples.cpp; sourceTree = "<group>"; };
 		95AC31E925B211F7009835D4 /* StudentClass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StudentClass.cpp; sourceTree = "<group>"; };
 		95AC31EA25B211F7009835D4 /* StudentClass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StudentClass.hpp; sourceTree = "<group>"; };
@@ -361,6 +370,7 @@
 		95C0EDD625A4E3D60038D9D8 /* CPP132 */ = {
 			isa = PBXGroup;
 			children = (
+				95A52CCA25F9927000204BDF /* RectData.txt */,
 				958339AF25F67B4B00F3133A /* Questions.txt */,
 				951D3F4625EDF52F002FAC51 /* Movies.txt */,
 				957B5A6825DD76B7008F71A7 /* Data.txt */,
@@ -390,6 +400,10 @@
 				95983F3725E81F0B0082DF15 /* Sets.cpp */,
 				95CEDFE225E96FAD00DE82F4 /* MapNotes.cpp */,
 				959CF69A25ED63DD00C0DE00 /* recursionNotes.cpp */,
+				958339BB25F6A36400F3133A /* Prim.cpp */,
+				959E7D4625F94256002A0832 /* stackQueue.cpp */,
+				95A52CC725F9922200204BDF /* Helping.cpp */,
+				9557A8A025FBE47600005C15 /* lambdaFunctions.cpp */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -522,6 +536,7 @@
 				95AC971125F159CF00B590F8 /* RecursionMiniAssignmentOne.cpp in Sources */,
 				954497E425ABB0A6006E0C77 /* InClassAssignment1.cpp in Sources */,
 				957B5A6F25DD7809008F71A7 /* BankAccount.cpp in Sources */,
+				958339BD25F6A36400F3133A /* Prim.cpp in Sources */,
 				9568B28525CB1E30003999D1 /* NewClassExample.cpp in Sources */,
 				95983F3825E81F0B0082DF15 /* Sets.cpp in Sources */,
 				9570D2BD25ACCFDB001C7F50 /* Student.cpp in Sources */,
@@ -545,8 +560,11 @@
 				9544D6F925DEE556006307EF /* containerNotes.cpp in Sources */,
 				95E4D31D25BB3900004F90F2 /* InventoryItem.cpp in Sources */,
 				9552F0E925E034FC008C7716 /* Iterators.cpp in Sources */,
+				95A52CC825F9922200204BDF /* Helping.cpp in Sources */,
 				95D19AA925DC43670074A034 /* DoTry.cpp in Sources */,
 				958339B225F67DEC00F3133A /* triviaMain.cpp in Sources */,
+				959E7D4725F94256002A0832 /* stackQueue.cpp in Sources */,
+				9557A8A125FBE47600005C15 /* lambdaFunctions.cpp in Sources */,
 				9568B28A25CB1E4C003999D1 /* Train.cpp in Sources */,
 				9569DDCF25C4875B0074D02A /* InheratanceGradeExample.cpp in Sources */,
 				95983F3A25E828070082DF15 /* STLMiniActivityNumberFive.cpp in Sources */,
