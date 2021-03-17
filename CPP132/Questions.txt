@@ -11,12 +11,12 @@ NUM 3 How many Dewbacks were in the original 1977 theatrical cut of the first St
 FIB 1 What color is Mace Windu's lightsaber? : Purple
 MC4 1 Who played the part of Mace Windu? : Samuel L. Jackson : Ben Mickleson : A puppet : Mark Ford
 MC4 2 Which species stole the plans to the death star? : Bothans : Elves : Wookies : Ewoks
-MC4 3 What kind of trooper is introduced at the beginning of Rogue One? Death Troopers : Dark Trooper : Accurate Troopers : Stormtroopers
+MC4 3 What kind of trooper is introduced at the beginning of Rogue One? : Death Troopers : Dark Trooper : Accurate Troopers : Stormtroopers
 TOF 1 Han was the first person in the moves to be kissed by Leia : False
 MC4 2 What does AT-AT stand for? : All Terrain Armored Transport : All Terrain Attack Thing : All Terrain Assult Tower : All Terrain Armored Tank
 NUM 3 What odds does C-3P0 give Han for successfully navigating the asteroid field? ____ to 1 : 3270
 FIB 3 Who are the masters of the Dark Side that want to rule the galaxy? : Sith
-MC4 2 Count Dooku is also known as who? Darth Tyranus : Darth Maul : Darth Plagus : Obi-Wan Kenobi
+MC4 2 Count Dooku is also known as who? : Darth Tyranus : Darth Maul : Darth Plagus : Obi-Wan Kenobi
 FIB 2 What is the name of Boba Fett's ship? _____ 1 : Slave
 FIB 3 Who was the original commander of the Death Star? Grand Moff _____ : Tarkin
 MC4 3 What was the name of the planet that the clones were made on? : Kamino : Endor : Kashyyyk : Jakku

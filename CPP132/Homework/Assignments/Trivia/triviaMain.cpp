@@ -3,8 +3,9 @@
 //  CPP132
 //
 // This is the main program
-// That will setup the triva game,
-// with trivia objects.
+// That will setup the triva game with trivia objects.
+// It will also show the user their total score after the
+// game has ended.
 //
 //  Created by Lucas Dahl on 3/8/21.
 //
@@ -21,58 +22,32 @@ using namespace std;
 
 // Prototype
 void getQuestions(ifstream&, vector<TriviaQuestion*>&);
+void openFile(string, vector<TriviaQuestion*>&);
+void printOutQuestions(vector<TriviaQuestion*> &);
+void getScore(int, int, int);
+void getFile(string);
+void openingMessage();
+int amountOfQuestions();
+string getFileName();
 
 int main() {
     
     // Properties
     string fileName;
-    ifstream inputFile;
-    int numberOfQuestions;
-    int earnedPoints = 0;
     vector<TriviaQuestion*> questions;
     
-    // Ask to open the file
-    cout << "Please eneter a file to open. ";
-    cin >> fileName;
+    // This displays the opening message
+    openingMessage();
     
-    if(fileName.find(".txt") == string::npos) { // Can I use?
-        fileName += ".txt";
-    }
+    // Get the file name
+    fileName = getFileName();
+    
+    // Opens the file and sets the questions.
+    openFile(fileName, questions);
+    
+    // Print out the questions for the user
+    printOutQuestions(questions);
 
-    // try and open the file
-    // add .txt if its not there
-    // shuffle up answer order, correct answer is always first in the file
-    inputFile.open(fileName);
-    
-    if(inputFile) {
-        
-        getQuestions(inputFile, questions);
-        
-    } else {
-        
-        // MAYBE CHANGE? Print the error
-        cout << "File " << fileName << "not found, exiting program now." << endl;
-        
-        // Exit the file
-        exit(1);
-        
-    }
-    
-    
-    // Ask the user how many questions they want to answer.
-    cout << "How many quesyions do you want?" << endl;
-    cout << "--> ";
-    cin >> numberOfQuestions;
-
-
-    for(int i = 0; i < numberOfQuestions; i++) {
-        earnedPoints += questions[i]->askQuestion();
-        cout << endl;
-    }
-    
-    
-    cout << "You earned " << earnedPoints << " points!" << endl;
-    
     // Delete the vector
     questions.clear();
     
@@ -83,7 +58,6 @@ void getQuestions(ifstream& inputFile, vector<TriviaQuestion*> &questions) {
     
     // Properties
     string currentLine;
-    
     
     // When reading file use type to get type of question
     while(getline(inputFile, currentLine)) {
@@ -118,9 +92,124 @@ void getQuestions(ifstream& inputFile, vector<TriviaQuestion*> &questions) {
         }
     }
     
-    // Shuffle the questions
-    //MARK: NOT WORKING
-    auto random = default_random_engine{};
-    shuffle(begin(questions), end(questions), random);
+    // Shuffle the questions randomly
+    unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
+    std::default_random_engine random(seed);
+    shuffle(questions.begin(), questions.end(), random);
+    
+}
+
+// This function will dispaly the players info after the game
+void getScore(int correct, int questions, int points) {
+    
+    double per = ((double)correct / questions) * 100.0;
+    string starLine = "***********************************";
+    
+    cout << endl;
+    cout << starLine << endl;
+    cout << "* Score: " << correct << "/" << questions << " \t\t\t\t\t  *" << endl;
+    cout << "* You earned " << points << " points!" << " \t\t\t  *" <<  endl;
+    cout << "* Thats " << fixed << setw(6) << setprecision(2) << per << "%!";
+    cout << right << setw(19) << "*" << endl;
+    cout << starLine << endl;
+    
+}
+
+// Gets the amount of questions the user wants to answer
+int amountOfQuestions() {
+    
+    // Properties
+    int numberOfQuestions;
+    
+    // Ask the user how many questions they want to answer.
+    cout << "How many questions do you want?" << endl;
+    cout << "--> ";
+    cin >> numberOfQuestions;
+    cout << endl;
+    
+    return numberOfQuestions;
+
+}
+
+// This function will get the file name.
+string getFileName() {
+    
+    // Properties
+    string fileName;
+    
+    // Get the file name
+    cout << "Please eneter a file to open. " << endl;
+    cout << "--> ";
+    cin >> fileName;
+    cout << endl;
+    
+    if(fileName.find(".txt") == string::npos) {
+        fileName += ".txt";
+    }
+    
+    return fileName;
+}
+
+// This function will attempt to open the file given by the user.
+void openFile(string fileName, vector<TriviaQuestion*> &questions) {
+    
+    // Properties
+    ifstream inputFile;
+    
+    inputFile.open(fileName);
+    
+    if(inputFile) {
+        
+        getQuestions(inputFile, questions);
+        
+    } else {
+        
+        cout << "File " << fileName << "not found, exiting program now." << endl;
+        
+        // Exit the file
+        exit(1);
+        
+    }
+
+}
+
+// This method gets the number of questions wanted from the
+// user and then asks that many questions.
+void printOutQuestions(vector<TriviaQuestion*> &questions) {
+    
+    // Properties
+    int numberOfQuestions;
+    int points = 0;
+    int totalCorrect = 0;
+    
+    // Get the number of questions
+    numberOfQuestions = amountOfQuestions();
+    
+    for(int i = 0; i < numberOfQuestions; i++) {
+        
+        int pointsEarned = 0;
+        pointsEarned = questions[i]->askQuestion();
+        
+        if(pointsEarned > 0) {
+            points += pointsEarned;
+            totalCorrect++;
+        }
+        
+        cout << endl;
+    }
+    
+    // Get the score for the user
+    getScore(totalCorrect, numberOfQuestions, points);
+    
+}
+
+void openingMessage() {
+    
+    // Properties
+    string starLine = "***********************************";
+    
+    cout << starLine << endl;
+    cout << "* \t\t\t Trivia Game \t\t  *" << endl;
+    cout << starLine << endl << endl;
     
 }

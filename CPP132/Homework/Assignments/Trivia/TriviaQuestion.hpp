@@ -28,6 +28,7 @@ class TriviaQuestion {
     protected:
         virtual void setData(std::string);
         virtual void setChoices(std::string);
+        int makeRandomNumber(int = 1, int = 100);
         
     public:
         TriviaQuestion();
@@ -41,62 +42,40 @@ class TriviaQuestion {
 //====================
 
 class FillInTheBlank : public TriviaQuestion {
-    
-    private:
-    
+ 
     public:
-        FillInTheBlank();
         FillInTheBlank(std::string);
         int askQuestion();
     
 };
 
 class ThreePartMultipleChoice : public TriviaQuestion {
-    
-    private:
-    
+   
     public:
-        ThreePartMultipleChoice();
         ThreePartMultipleChoice(std::string);
         int askQuestion();
     
 };
 
 class FourPartMultipleChoice : public TriviaQuestion {
-    
-    private:
-    
+ 
     public:
-        FourPartMultipleChoice();
         FourPartMultipleChoice(std::string);
         int askQuestion();
 };
 
 class TrueOrFalse : public TriviaQuestion {
-    
-    private:
-    
+
     public:
-        TrueOrFalse();
         TrueOrFalse(std::string);
         int askQuestion();
 };
 
 class NumbericQuestion : public TriviaQuestion {
     
-    private:
-        //std::vector<int> possibleAnswers;
-    
     public:
-        NumbericQuestion();
         NumbericQuestion(std::string);
         int askQuestion();
 };
-
-
-//===================
-// MARK: Container
-//===================
-
 
 #endif /* TrivaQuestion_hpp */
