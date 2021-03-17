@@ -13,21 +13,26 @@
 
 #include <iostream>
 #include <string>
-
-using namespace std;
+#include <vector>
+#include <utility>
 
 class TriviaQuestion {
   
     protected:
-        int questionPoints;
         int points;
-        string questions;
+        std::string data;
+        std::string question;
+        std::string answer;
+        std::vector<std::string> choices;
+    
+    protected:
+        virtual void setData(std::string);
+        virtual void setChoices(std::string);
         
     public:
         TriviaQuestion();
         int getMax();
         virtual int askQuestion() = 0;
-    
     
 };
 
@@ -38,39 +43,60 @@ class TriviaQuestion {
 class FillInTheBlank : public TriviaQuestion {
     
     private:
+    
     public:
         FillInTheBlank();
+        FillInTheBlank(std::string);
         int askQuestion();
     
 };
 
 class ThreePartMultipleChoice : public TriviaQuestion {
+    
     private:
+    
     public:
         ThreePartMultipleChoice();
+        ThreePartMultipleChoice(std::string);
         int askQuestion();
     
 };
 
 class FourPartMultipleChoice : public TriviaQuestion {
+    
     private:
+    
     public:
         FourPartMultipleChoice();
+        FourPartMultipleChoice(std::string);
         int askQuestion();
 };
 
 class TrueOrFalse : public TriviaQuestion {
+    
     private:
+    
     public:
         TrueOrFalse();
+        TrueOrFalse(std::string);
         int askQuestion();
 };
 
 class NumbericQuestion : public TriviaQuestion {
+    
     private:
+        //std::vector<int> possibleAnswers;
+    
     public:
         NumbericQuestion();
+        NumbericQuestion(std::string);
         int askQuestion();
 };
+
+
+//===================
+// MARK: Container
+//===================
+
 
 #endif /* TrivaQuestion_hpp */

@@ -34,7 +34,7 @@ MC3 3 What is the name of the imperial admiral at the beginning of The Empire St
 MC4 2 What is the name of the Toydarian who owned Anakin Skywalker? : Watto : Jabba : Killick : Quato
 MC4 3 Who was the last one to jump down the Death Star's garbage chute? : Han : Leia : Luke : Chewbacca
 MC4 2 What race of aquatic sentient beings does Jar-Jar Binks belong to? : The Gungans : The Wookies : The Rodians : The Jawas
-MC3 1 Who killed Han Solo?  : Vader : Kylo Ren : Rey : Old Age
+MC4 1 Who killed Han Solo?  : Vader : Kylo Ren : Rey : Old Age
 MC4 1 Who built C-3P0? : Anakin Skywalker : Luke Skywalker : Jabba : Palpatine
 MC3 2 What is the name of the organization that builds a blockade around Naboo? : The Trade Federation : The Imperial Senate : The Sith
 MC3 1 Which actress starred as Queen Amidala's decoy and hand-maiden Sabè? :  Kiera Knightley : Natalie Portman : Daisy Ridley
