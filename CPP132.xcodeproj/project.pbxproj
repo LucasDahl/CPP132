@@ -89,7 +89,7 @@
 		9527865D25BD2F8400E66D35 /* FractionalComplex.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FractionalComplex.cpp; sourceTree = "<group>"; };
 		9527865E25BD2F8400E66D35 /* FractionalComplex.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FractionalComplex.hpp; sourceTree = "<group>"; };
 		952CE82B25C8A15C000FCE0F /* Vectors.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Vectors.cpp; sourceTree = "<group>"; };
-		954001D12602AD0B00597A85 /* ExtraQuestions.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ExtraQuestions.txt; sourceTree = "<group>"; };
+		952DD43D2602BADD00FA4326 /* ExtraQuestionsLucasDahl.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ExtraQuestionsLucasDahl.txt; sourceTree = "<group>"; };
 		9540719425B0C04500C84EDE /* ClassR.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ClassR.cpp; sourceTree = "<group>"; };
 		9540719525B0C04500C84EDE /* ClassR.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ClassR.hpp; sourceTree = "<group>"; };
 		9540719925B0C10D00C84EDE /* Shapes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Shapes.cpp; sourceTree = "<group>"; };
@@ -372,7 +372,7 @@
 			isa = PBXGroup;
 			children = (
 				95A52CCA25F9927000204BDF /* RectData.txt */,
-				954001D12602AD0B00597A85 /* ExtraQuestions.txt */,
+				952DD43D2602BADD00FA4326 /* ExtraQuestionsLucasDahl.txt */,
 				958339AF25F67B4B00F3133A /* Questions.txt */,
 				951D3F4625EDF52F002FAC51 /* Movies.txt */,
 				957B5A6825DD76B7008F71A7 /* Data.txt */,

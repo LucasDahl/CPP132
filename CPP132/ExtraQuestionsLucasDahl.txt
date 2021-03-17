@@ -3,115 +3,96 @@ MC3 2 What was Anakin’s padawan’s name? : Ahsoka : Asajj : Ezra
 MC4 3 Which clone did NOT take out their inhibitor chip and turned on the Jedi? : Cody : Rex : Wolffe : Gregor
 TOF 1 Death Watch was the group that rescued Din during the clone wars : True
 NUM 2 Anakin/Darth Vader’s legion was the ___ st legion. : 501
-
 FIB 3 Obi Wan told Anakin "It's over I have the ____ ground" : High
 MC3 2 After the fall of the Empire Jar Jar became a? : Street performer for children : Street Urchin : Leader of Naboo
 MC4 2 Who was Qui Gon Jinn's master? : Master Dooku : Master Windu : Master Yoda : Master Shaak Ti
 TOF 1 Anakin was granted the rank of Master. : False
 NUM 3 How many wives did master Jedi Ki-Adi Mundi have? : 5
-
 FIB 2 The true owner of the Dark Saber is someone who wins it in ______. : Combat
 MC3 1 What did clones call droids durning the clone wars? : Clankers : Machines : Metal
 MC4 2 Which master Jedi found Ahsoka Tano? : Plo Koon : Yoda : Obi Wan : Dooku 
 TOF 2 Mandalore is a creed, rather than a race. : True
 NUM 3 How many Mandalorian Jedi have there been? : 1
-
 FIB 3 Darth ________ the wise was Darth Sidious master. : Plagueis
 MC3 2 Who's armor does Boba Fett wear? : jango Fett : Din Djarin : Bo Katan
 MC4 3 Sabine is part of which clan? : Clan Wren : Clan Fett : Clan Visla : Clan Saxon
 TOF 2 General Syndulla is part of the race Twi Lek. : True
 NUM 1 There are always _ Sith no more, no less. : 2
-
 FIB 3 The organization that opposed peaceful Mandalore was _____ Watch. : Death
 MC3 2 Who was the Grand Admiral of the Imperial Navy. : Thrawn : Firmus : Tarkin
 MC4 3 What planet is Ezra Bridger from? : Lothal : Dathomir : Concord Dawn : Stewjon
 TOF 2 Did Qui-Gon Jinn the first force ghost? : True
 NOM 1 How many Jedi died from the Sith Palpatine during his attempted arrest? : 3
-
 FIB 1 Boba Fett is a clone of _____ Fett. : jango
 MC3 3 Who is Bo katana? : the rightful ruler of Mandator : Mandator war lord : Bounty Hunter
 MC4 3 Which droid has the highest kill count in Star Wars? : Chopper : R2D2 : C3PO : IG88
 TOF 2 Saw Gerrera was the first character from an animated series to appear on the big screen. : True
 NOM How many cannon color of lightsabers are there? : 8
-
 FIB Jango Fett sent ___ Wesell to Kill Padame. : Zam
 MC3 2 What color do healed cyber crystals turn? : White : Blue : Green
 MC4 3 How many Jedi did Yoda train after reaching Master? : 20000 : 10 : 15000 : 250
 TOF The Dark Saber was made by a Jedi. : True
 NOM How many storm troopers are seen hitting their head on a door in episode 4? : 1
-
 FIB 1 The first person General Jack O'Neill promotes is ________ Carter. : Samantha
 MC3 1 The main enemy in Stargate Atlantis is the? : Wraith : Goa'uld : Ori
 MC4 2 The color of the chevrons in Stargate Atlantis are? : Blue : Red : White : Black
 TOF 2 Jack O'Neill has a clone of his younger self on Earth. True
 NUM 3 A typical SG team has _ members. : 4
-
 FIB 1 Teal'c was under command of the Goa'uld _______ . : Apophis
 MC3 3 The correct way to spell General Jack's last name is? : O'Neill : Oneill : O'Neil
 MC4 2 When Dr Jackson ascended who took his place on SG1? : Jonas Quinn : Vala Mal Doran : Teyla Emmagam : Ronon Dex
 TOF 1 Teal'c keeps track of how many times SG1 has saved Earth. True
 NOM 7 Atlantis was first mentioned in what season of Stargate SG1? : 7
-
 FIB 1 Samantha Carter was engaged to ____ Shanaham. : Pete
 MC3 3 Which planet was Jack O'Neill stuck on for 100 days? : Edora : Abydos : P3X-888
 MC4 3 Jack O'Neill's favorite color was? : Peridot : Celadon : Amaranth : Aureolin
 TOF 1 Colonel Jack O'Neill admired Senator Kinsey. : False
 NOM 1 How many times has Daniel Jackson ascended? : 2
-
 FIB 2 The USS Ship The ________ came to aid Atlantis during the siege of the Wraith. : Daedalus
 MC3 1 Who was the first person from the Pegasus Galaxy to join the team? : Teyla : Ronon : Richard
 MC4 2 What name did John give the wraith who was imprisoned with him? : Todd : Bob : No name given : Chad
 TOF 1 The intergalactic gate bridge was blown up. : True
 NOM 3 How many Daedalus class ships have flown to Atlantis from Earth? : 3
-
 FIB 2 The hybrid human wraith was named _______. : Michael
 MC3 3 Which Atlantis expedition member was cloned? : Beckett : McKay : Lorne
 MC4 2 Which SG1 team member became leader of the Atlantis expedition? : Samantha Carter : Teal'c : Jack O'Neill : Daniel Jackson
 TOF 3 Evan Lorne's first assignment from Stargate Command was the Atlantis expedition. : False
 NOM 1 How many Atlantis members were remade by the replicators? 5
-
 FIB 1 Ronon was from a planet called ______. : Sateda
 MC3 1 The first people that the Atlantis expedition came in contact was the? : Athosian : Hoffans : Genii
 MC4 2 Which Genii hated Shepoard the most? : Kolya : Sora : Cowen : Ladon
 TOF 3 Dr Mckay's first name is Rodney : False
 NOM 2 The Atlantis expedition had how many leaders during the series? : 3
-
 FIB 2 Teal'c Jaffa mentor was Master _______. : Bra'tac
 MC3 3 Samantha Carter's fathers name was? : Jacob : Jack : Justin
 MC4 2 Vala Mal Doran's first encounter with people form the SGC was when she tried to steal what ship? : Prometheus : Apollo : Daedalus : odyssey 
 TOF 2 Dr Daniel Jackson is a medical Doctor. : False
 NOM 1 Daniel Jackson lived on Abydos for how many years? : 1
-
 FIB 1 The Atlantis expedition found Atlantis in the _______ Galaxy. : Pegasus
 MC3 2 What was the name of the first ascended ancient that SG1 encountered? : Oma Desala : Daniel Jackson : Adria 
 MC4 3 What were people from Earth called in Stargate by Aliens? : Tau'ri : Earthlings : Annoying : Human
 TOF 3 The Wraith evolved because of the Ancients carelessness. : True
 NUM 2 How many years was Atlantis empty before the expedition moved in? : 10000
-
 FIB 1 The 9th chevron on the Stargate takes you to the ship called _______. : Destiny
 MC3 1 Who figured out the code for the 9th chevron? : Eli Wallace : Nicholas rush : rodent McKAy
 MC4 3 Which group took over the Destiny temporarily? : Lucian Alliance : Genii : Free Jaffa Nation : Wraith
 TOF 2 The Alterans(Ancients) is the name of the race the launched the ship the Destiny. : True
 NUM 1 Stragate Universe is the last of _ Stargate series. : 3
-
 FIB 2 ______ is deathly allergic to citrus(or so he says) and is mentioned in both SG1 and SGA. : Rodney
 MC3 1 Which Stargate series had the most seasons? : SG1 : SGA : SGU
 MC4 2 Which Stargate movie comes first in chronological order? : Stargate Origins : Stargate : Stargate Ark of Truth : Stargate Continuum
 TOF 2 The character Jack O'Neill is the only character to appear in everything except Stargate Origins. : False
 NUM 3 How many Stargate movies are there? : 4
-
 FIB 2 General George _______ was in charge of the Stargate program when the first became Stargate Command. : Hammond
 MC3 3 Which rouge agency tried to take control of Stargate Command : NID : Trust : IOA
 MC4 2 Which military branch runs the Stargate program? : Air Force : Marines : Army : Navy
 TOF 1 Cheyenne Mountain Complex is in Area 51. : False
 NUM 3 What year was the Stargate found? : 1928
-
 FIB 1 Rick's last name is _______. : Sanchez
 MC3 3 Rick's original dimension was? : C-137 : D-137 : C-148 : D-158
 MC4 1 Rick turned himself into a? : Pickle : French Fry : Rat : Tomato
 TOF 3 Rick and Morty live outside of Seattle. : True
 NOM 1 Rick and Morty fist the Citadel how many times together? : 1
-
 FIB 1 Rick's best friend is ____ Person. : Bird
 MC3 1 Who does Morty want to spend his life with? Jessica : Summer : Beth
 MC4 2 The gang of Mortiesin Morty town is called? : Morty Town Locos : Morty Town Morties : Morty Locos : The one True Morty
