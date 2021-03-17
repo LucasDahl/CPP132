@@ -22,28 +22,23 @@ using namespace std;
 
 // Prototype
 void getQuestions(ifstream&, vector<TriviaQuestion*>&);
-void openFile(string, vector<TriviaQuestion*>&);
+void openFile(vector<TriviaQuestion*>&);
 void printOutQuestions(vector<TriviaQuestion*> &);
 void getScore(int, int, int);
 void getFile(string);
 void openingMessage();
 int amountOfQuestions();
-string getFileName();
 
 int main() {
     
     // Properties
-    string fileName;
     vector<TriviaQuestion*> questions;
     
     // This displays the opening message
     openingMessage();
     
-    // Get the file name
-    fileName = getFileName();
-    
     // Opens the file and sets the questions.
-    openFile(fileName, questions);
+    openFile(questions);
     
     // Print out the questions for the user
     printOutQuestions(questions);
@@ -120,21 +115,34 @@ int amountOfQuestions() {
     
     // Properties
     int numberOfQuestions;
+    bool flag = false;
     
     // Ask the user how many questions they want to answer.
-    cout << "How many questions do you want?" << endl;
-    cout << "--> ";
-    cin >> numberOfQuestions;
-    cout << endl;
+    do {
+        cout << "How many questions do you want?" << endl;
+        cout << "--> ";
+        cin >> numberOfQuestions;
+        cout << endl;
+        
+        if(cin.fail()) {
+            cout << "Must be a digit." << endl;
+            cin.clear();
+            cin.ignore();
+        } else {
+            flag = true;
+        }
+        
+    } while(!flag);
     
     return numberOfQuestions;
 
 }
 
-// This function will get the file name.
-string getFileName() {
+// This function will attempt to open the file given by the user.
+void openFile(vector<TriviaQuestion*> &questions) {
     
     // Properties
+    ifstream inputFile;
     string fileName;
     
     // Get the file name
@@ -146,15 +154,6 @@ string getFileName() {
     if(fileName.find(".txt") == string::npos) {
         fileName += ".txt";
     }
-    
-    return fileName;
-}
-
-// This function will attempt to open the file given by the user.
-void openFile(string fileName, vector<TriviaQuestion*> &questions) {
-    
-    // Properties
-    ifstream inputFile;
     
     inputFile.open(fileName);
     
