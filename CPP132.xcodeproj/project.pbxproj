@@ -13,6 +13,7 @@
 		9527865B25BD2F0400E66D35 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9527865A25BD2F0400E66D35 /* main.cpp */; };
 		9527865F25BD2F8400E66D35 /* FractionalComplex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9527865D25BD2F8400E66D35 /* FractionalComplex.cpp */; };
 		952CE82C25C8A15C000FCE0F /* Vectors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 952CE82B25C8A15C000FCE0F /* Vectors.cpp */; };
+		9536B0A026090FC000B1F548 /* QuestionTesting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9536B09F26090FC000B1F548 /* QuestionTesting.cpp */; };
 		9540719625B0C04500C84EDE /* ClassR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9540719425B0C04500C84EDE /* ClassR.cpp */; };
 		9540719A25B0C10D00C84EDE /* Shapes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9540719925B0C10D00C84EDE /* Shapes.cpp */; };
 		954497E425ABB0A6006E0C77 /* InClassAssignment1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 954497E325ABB0A6006E0C77 /* InClassAssignment1.cpp */; };
@@ -62,6 +63,11 @@
 		95E4302125A78587000BD22A /* AssignmentOne.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95E4302025A78587000BD22A /* AssignmentOne.cpp */; };
 		95E4D31A25BB38F6004F90F2 /* CS132_InventoryExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95E4D31925BB38F6004F90F2 /* CS132_InventoryExample.cpp */; };
 		95E4D31D25BB3900004F90F2 /* InventoryItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95E4D31C25BB3900004F90F2 /* InventoryItem.cpp */; };
+		95E57AE126095B0100A00667 /* QuestionOne.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95E57AE026095B0100A00667 /* QuestionOne.cpp */; };
+		95E57AE426095B2B00A00667 /* QuestionTwo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95E57AE326095B2B00A00667 /* QuestionTwo.cpp */; };
+		95E57AE726095B4400A00667 /* QuestionThree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95E57AE626095B4400A00667 /* QuestionThree.cpp */; };
+		95E57AEA26095B6300A00667 /* QuestionFour.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95E57AE926095B6300A00667 /* QuestionFour.cpp */; };
+		95E57AED26095B8100A00667 /* QuestionFive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95E57AEC26095B8100A00667 /* QuestionFive.cpp */; };
 		95F3EDCB25D457D70005F0C1 /* ExtraMethods.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95F3EDC925D457D70005F0C1 /* ExtraMethods.cpp */; };
 		95F3EDCF25D45E480005F0C1 /* RangedWeapon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95F3EDCD25D45E480005F0C1 /* RangedWeapon.cpp */; };
 		95FBA2A625E429590095CD22 /* Algorithms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95FBA2A525E429590095CD22 /* Algorithms.cpp */; };
@@ -90,6 +96,7 @@
 		9527865E25BD2F8400E66D35 /* FractionalComplex.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FractionalComplex.hpp; sourceTree = "<group>"; };
 		952CE82B25C8A15C000FCE0F /* Vectors.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Vectors.cpp; sourceTree = "<group>"; };
 		952DD43D2602BADD00FA4326 /* ExtraQuestionsLucasDahl.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ExtraQuestionsLucasDahl.txt; sourceTree = "<group>"; };
+		9536B09F26090FC000B1F548 /* QuestionTesting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuestionTesting.cpp; sourceTree = "<group>"; };
 		9540719425B0C04500C84EDE /* ClassR.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ClassR.cpp; sourceTree = "<group>"; };
 		9540719525B0C04500C84EDE /* ClassR.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ClassR.hpp; sourceTree = "<group>"; };
 		9540719925B0C10D00C84EDE /* Shapes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Shapes.cpp; sourceTree = "<group>"; };
@@ -158,6 +165,11 @@
 		95E4D31925BB38F6004F90F2 /* CS132_InventoryExample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CS132_InventoryExample.cpp; sourceTree = "<group>"; };
 		95E4D31C25BB3900004F90F2 /* InventoryItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InventoryItem.cpp; sourceTree = "<group>"; };
 		95E4D31F25BB3905004F90F2 /* InventoryItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InventoryItem.h; sourceTree = "<group>"; };
+		95E57AE026095B0100A00667 /* QuestionOne.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuestionOne.cpp; sourceTree = "<group>"; };
+		95E57AE326095B2B00A00667 /* QuestionTwo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuestionTwo.cpp; sourceTree = "<group>"; };
+		95E57AE626095B4400A00667 /* QuestionThree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuestionThree.cpp; sourceTree = "<group>"; };
+		95E57AE926095B6300A00667 /* QuestionFour.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuestionFour.cpp; sourceTree = "<group>"; };
+		95E57AEC26095B8100A00667 /* QuestionFive.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuestionFive.cpp; sourceTree = "<group>"; };
 		95F3EDC925D457D70005F0C1 /* ExtraMethods.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ExtraMethods.cpp; sourceTree = "<group>"; };
 		95F3EDCA25D457D70005F0C1 /* ExtraMethods.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ExtraMethods.hpp; sourceTree = "<group>"; };
 		95F3EDCD25D45E480005F0C1 /* RangedWeapon.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RangedWeapon.cpp; sourceTree = "<group>"; };
@@ -259,6 +271,12 @@
 		9568B28325CB1D26003999D1 /* Final */ = {
 			isa = PBXGroup;
 			children = (
+				9536B09F26090FC000B1F548 /* QuestionTesting.cpp */,
+				95E57AE026095B0100A00667 /* QuestionOne.cpp */,
+				95E57AE326095B2B00A00667 /* QuestionTwo.cpp */,
+				95E57AE626095B4400A00667 /* QuestionThree.cpp */,
+				95E57AE926095B6300A00667 /* QuestionFour.cpp */,
+				95E57AEC26095B8100A00667 /* QuestionFive.cpp */,
 			);
 			path = Final;
 			sourceTree = "<group>";
@@ -522,6 +540,8 @@
 				95919B5125B8FB2800C92645 /* SongInfo.cpp in Sources */,
 				95BA45A225AF6D390008AE9C /* ClassNotes.cpp in Sources */,
 				95E4302125A78587000BD22A /* AssignmentOne.cpp in Sources */,
+				95E57AE726095B4400A00667 /* QuestionThree.cpp in Sources */,
+				95E57AEA26095B6300A00667 /* QuestionFour.cpp in Sources */,
 				9526DA2725D305ED00CE746C /* Weapon.cpp in Sources */,
 				9527865B25BD2F0400E66D35 /* main.cpp in Sources */,
 				95FBA2A625E429590095CD22 /* Algorithms.cpp in Sources */,
@@ -532,7 +552,9 @@
 				9579A63225CE0A2D00C3CEBB /* QuestionFour.cpp in Sources */,
 				9544D6F625DED4CE006307EF /* templates.cpp in Sources */,
 				95AC971425F15A1100B590F8 /* RecursionAssignmentTwo.cpp in Sources */,
+				95E57AE126095B0100A00667 /* QuestionOne.cpp in Sources */,
 				95C28D1925B5F24A004813B4 /* PasswordEncrypter.cpp in Sources */,
+				95E57AE426095B2B00A00667 /* QuestionTwo.cpp in Sources */,
 				952CE82C25C8A15C000FCE0F /* Vectors.cpp in Sources */,
 				95CEDFE325E96FAD00DE82F4 /* MapNotes.cpp in Sources */,
 				95AC971125F159CF00B590F8 /* RecursionMiniAssignmentOne.cpp in Sources */,
@@ -545,6 +567,7 @@
 				95919B4D25B8FAEB00C92645 /* InClass_ClassMain.cpp in Sources */,
 				9540719A25B0C10D00C84EDE /* Shapes.cpp in Sources */,
 				95BC9D6425BF452100945266 /* PurseMainExample.cpp in Sources */,
+				95E57AED26095B8100A00667 /* QuestionFive.cpp in Sources */,
 				95F3EDCB25D457D70005F0C1 /* ExtraMethods.cpp in Sources */,
 				9554619725C11501002DCAA5 /* Testing.cpp in Sources */,
 				95D5F69025A8D5ED0031B7DD /* StructData.cpp in Sources */,
@@ -556,6 +579,7 @@
 				95AC31EB25B211F7009835D4 /* StudentClass.cpp in Sources */,
 				954BB32725AE9928000FBDD5 /* SoccerPlayers.cpp in Sources */,
 				958339B725F682EA00F3133A /* TriviaQuestion.cpp in Sources */,
+				9536B0A026090FC000B1F548 /* QuestionTesting.cpp in Sources */,
 				95E4D31A25BB38F6004F90F2 /* CS132_InventoryExample.cpp in Sources */,
 				959CF69B25ED63DD00C0DE00 /* recursionNotes.cpp in Sources */,
 				957B5A6B25DD76D8008F71A7 /* main.cpp in Sources */,
